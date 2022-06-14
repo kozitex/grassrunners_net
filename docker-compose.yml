@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  db:
+    platform: linux/amd64
+    container_name: database
+    image: mysql:latest
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: wp-db
+
+  wordpress:
+    container_name: site
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    restart: always
+    volumes:
+      - "./:/var/www/html"
+      - ./php.ini:/usr/local/etc/php/conf.d/php.ini
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wp-db
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: password
+  
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 8888:80
+
+volumes:
+  db_data:
