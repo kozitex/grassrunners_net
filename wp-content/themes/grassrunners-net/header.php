@@ -4,6 +4,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<!-- FAVICONを設定 -->
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
+	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/img/apple-touch-icon.png" sizes="180x180">
 	<!-- sanitize.cssを読み込み -->
 	<link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
 	<!-- Google Fontsを読み込み -->
