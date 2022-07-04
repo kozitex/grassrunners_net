@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div id="video-area">
-    <video id="video" poster="<?php echo get_bloginfo('template_directory'); ?>/img/bg.jpeg" webkit-playsinline playsinline muted autoplay loop>
+    <video id="video" poster="<?php echo get_bloginfo('template_directory'); ?>/img/bg.png" webkit-playsinline playsinline muted autoplay loop>
         <source src="<?php echo get_bloginfo('template_directory'); ?>/video/bg.mp4" type="video/mp4">
     </video>
 </div>
