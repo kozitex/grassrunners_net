@@ -51,7 +51,7 @@
     <?php
         while ( $query->have_posts() ) : $query->the_post();
     ?>
-        <li class="work animate" data-id="<?php echo $post->post_name; ?>">
+        <li class="work animate <?php echo the_field('class'); ?>" data-id="<?php echo $post->post_name; ?>">
             <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
             <div class="title"><?php the_title(); ?></div>
         </li>
@@ -76,7 +76,15 @@
     <div class="box">
         <div class="close-btn"></div>
         <div class="content">
-            <img src="<?php the_field('sample-image'); ?>" alt="<?php the_title(); ?>">
+            <?php
+              $kind = get_field('sample-image-kind');
+              if ($kind == 'url') {
+                $url = get_field('sample-image-url');
+              } else {
+                $url = get_field('sample-image-img');
+              }
+            ?>
+            <img src="<?php echo $url; ?>" alt="<?php the_title(); ?>">
             <div class="info">
                 <div class="info-item"><span>サイト・システム名</span></div>
                 <div class="info-content"><?php the_field('client-name'); ?></div>
@@ -84,9 +92,25 @@
                 <div class="info-content"><?php the_field('method'); ?></div>
                 <div class="info-item"><span>URL</span></div>
                 <div class="info-content">
-                    <a href="<?php the_field('client-url'); ?>" target="_blank">
-                        <?php the_field('client-url'); ?>
+                  <?php
+                    if (get_field('url2')) :
+                    $url1 = get_field('url1');
+                    $url2 = get_field('url2');
+                  ?>
+                    ・<a href="<?php echo $url1['url']; ?>" target="<?php echo $url1['target']; ?>">
+                        <?php echo $url1['title']; ?>
+                    </a><br>
+                    ・<a href="<?php echo $url2['url']; ?>" target="<?php echo $url2['target']; ?>">
+                        <?php echo $url2['title']; ?>
                     </a>
+                  <?php
+                    else :
+                    $url1 = get_field('url1');
+                  ?>
+                    <a href="<?php echo $url1['url']; ?>" target="<?php echo $url1['target']; ?>">
+                        <?php echo $url1['title']; ?>
+                    </a>
+                  <?php endif; ?>
                 </div>
             </div>
             <div class="desc"><?php the_content(); ?></div>

@@ -1,0 +1,4498 @@
+# Translation of Plugins - Slimstat Analytics - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Slimstat Analytics - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-11-07 14:50:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Slimstat Analytics - Stable (latest release)\n"
+
+#: admin/config/index.php:575
+msgid "Delete all settings and statistics on plugin uninstall. Warning! If you enable this feature, all statistics and plugin settings will be permanently deleted from the database."
+msgstr "プラグインのアンインストールに関するすべての設定と統計情報を削除します。警告: この機能を有効化すると、すべての統計情報とプラグイン設定がデータベースから完全に削除されます。"
+
+#: admin/config/index.php:573
+msgid "Delete Data on Uninstall"
+msgstr "アンインストール時にデータを削除"
+
+#: admin/config/index.php:552
+msgid "To be able to automatically download and update the MaxMind GeoLite2 database, you must sign up on <a href=\"https://dev.maxmind.com/geoip/geoip2/geolite2/\" target=\"_blank\">MaxMind GeoLite2</a> and create a license key. Then enter your license key in this field. Disable- and re-enable MaxMind Geolocation above to activate the license key. Note: It takes a couple of minutes after you created the license key to get it activated on the MaxMind website."
+msgstr "MaxMind GeoLite2 データベースを自動的にダウンロードおよび更新できるようにするには、<a href=\"https://dev.maxmind.com/geoip/geoip2/geolite2/\" target=\"_blank\">MaxMind GeoLite2</a>に登録し、ライセンスキーを作成する必要があります。その後、このフィールドにライセンスキーを入力してください。ライセンスキーを有効化するには、上記の MaxMind Geolocation を一旦無効化し、再び有効化します。注: ライセンスキーを作成した後、MaxMind サイトでライセンスキーが有効になるまでに数分かかります。"
+
+#: admin/config/index.php:550
+msgid "MaxMind License Key"
+msgstr "MaxMind ライセンスキー"
+
+#: admin/config/index.php:547
+msgid "Updates are downloaded automatically every 4 weeks, when available."
+msgstr "アップデートが利用可能な場合は4週間ごとに自動的にダウンロードされます。"
+
+#: admin/config/index.php:114
+msgid "Mask your visitors' IP addresses (by converting the last number into a zero) and do not track their browser fingerprint, to comply with European privacy laws."
+msgstr "ヨーロッパの個人情報保護法に準拠するため、訪問者の IP アドレスをマスクし (最後の数字をゼロに変換します)、ブラウザーのフィンガープリントを追跡しません。"
+
+#: wp-slimstat.php:2030
+msgid "Title"
+msgstr "タイトル"
+
+#: wp-slimstat.php:2022
+msgid "Report"
+msgstr "レポート"
+
+#: admin/view/wp-slimstat-reports.php:640
+msgid "Top Custom Events"
+msgstr "上位のカスタムイベント"
+
+#: admin/view/wp-slimstat-reports.php:616
+msgid "Recent Custom Events"
+msgstr "最近のカスタムイベント"
+
+#: admin/view/wp-slimstat-db.php:42
+msgid "Fingerprint"
+msgstr "フィンガープリント"
+
+#: admin/config/index.php:614
+msgid "All settings were successfully reset to their default values."
+msgstr "全設定は正常に初期値にリセットされました。"
+
+#: admin/config/index.php:570
+msgid "Restore all the settings to their default value. This action DOES NOT delete any records collected by the plugin."
+msgstr "全設定をデフォルト値に戻します。このアクションは、プラグインによって収集されたレコードを削除しません。"
+
+#: admin/config/index.php:569
+msgid "Factory Reset"
+msgstr "初期値にリセット"
+
+#: admin/config/index.php:569
+msgid "Please confirm that you want to RESET your settings."
+msgstr "リセットするかどうか確認してください。"
+
+#: admin/config/index.php:561
+msgid "Data"
+msgstr "データ"
+
+#: languages/index.php:574
+msgid "Malformed resource URL"
+msgstr "不正なリソース URL"
+
+#: languages/index.php:570
+msgid "Invalid content type format. Try clearing your WordPress cache."
+msgstr "無効なコンテンツタイプの形式です。WordPress のキャッシュをクリアしてみてください。"
+
+#: languages/index.php:569
+msgid "Invalid content type signature. Try clearing your WordPress cache."
+msgstr "無効なコンテンツタイプの署名です。WordPress のキャッシュをクリアしてみてください。"
+
+#: admin/config/index.php:420
+msgid "Link Attributes: class names, REL and HREF"
+msgstr "リンク属性: クラス名、REL、HREF"
+
+#: admin/view/wp-slimstat-db.php:1114
+msgid "Visitors who clicked on a link to your website listed on a search engine result page (SERP). This metric only counts visits coming from EXTERNAL search pages."
+msgstr "検索エンジンの結果ページ(SERP)にリスト化されている、あなたのウェブサイトへのリンクをクリックした訪問者。このメトリックは、唯一の外部検索ページから来ている訪問をカウントします。"
+
+#: admin/view/wp-slimstat-db.php:1112
+msgid "From External SERP"
+msgstr "外部SERPから"
+
+#: admin/view/wp-slimstat-db.php:873
+msgid "Visitors who landed on your site after searching for a keyword on a search engine and clicking on the corresponding search result link. This value includes both internal and external search result pages."
+msgstr "検索エンジンでキーワードを検索し、対応する検索結果リンクをクリックした後に、あなたのサイトに到着した訪問者。この値には、内部検索結果ページと外部検索結果ページの両方が含まれます。"
+
+#: admin/view/wp-slimstat-db.php:871
+msgid "From Any SERP"
+msgstr "あらゆるSERPから"
+
+#: admin/view/wp-slimstat-reports.php:1354
+msgid "Page"
+msgstr "固定ページ"
+
+#: admin/view/wp-slimstat-reports.php:79
+msgid "At a Glance"
+msgstr "概要"
+
+#: languages/index.php:571
+msgid "Unspecified error while attempting to add a new record to the table"
+msgstr "テーブルに新しいレコードを追加しようとしたときに発生した不明なエラー"
+
+#: admin/config/index.php:129
+msgid "If you are already using another tool to monitor which users opt-out of tracking, and assuming that this tool sets its own cookie to remember their selection, you can enter the cookie names and values in this field to let Slimstat comply with their choice. Please use the following format: <code>cookie_name=value</code>. Slimstat will track any visitors who either don't send a cookie with that name, or send a cookie whose value <strong>does not CONTAIN</strong> the string you specified. If your tool uses structured values like JSON or similar encodings, find the substring related to tracking and enter that as the value here below. For example, <a href='https://wordpress.org/plugins/smart-cookie-kit/' target='_blank'>Smart Cookie Kit</a> uses something like <code>{\"settings\":{\"technical\":true,\"statistics\":false,\"profiling\":false},\"ver\":\"2.0.0\"}</code>, so your pair should look like: <code>CookiePreferences-your.website.here=\"statistics\":false</code>. Separate multiple pairs with commas."
+msgstr ""
+"どのユーザーがトラッキングをオプトアウトするかを監視するために別のツールをすでに使用しており、このツールが独自のクッキーを設定してユーザーの選択を記憶することを前提としている場合は、このフィールドにクッキー名と値を入力して、Slimstatにその選択を遵守させることができます。以下のフォーマットを使用してください。\n"
+"<code>cookie_name=value</code>. Slimstatは、その名前のクッキーを送信しない訪問者、または指定した文字列が<strong>含まれていない値</strong>のクッキーを送信した訪問者を追跡します。お使いのツールが JSON や類似のエンコーディングのような構造化された値を使用している場合は、トラッキングに関連する部分文字列を見つけて、それを下のここに値として入力してください。\n"
+"例えば、<a href='https://wordpress.org/plugins/smart-cookie-kit/' target='_blank'>スマートクッキーキット</a>は<code>{\"settings\":{\"technical\":true, \"statistics\":false, \"profiling\":false}, \"ver\": \"2.0.0\"}</code>のようなものを使用しているので、あなたのペアは次のようになります。<code>CookiePreferences-your.website.here=\"statistics\":false</code>のようになります。複数のペアはカンマで区切ってください。"
+
+#: admin/view/index.php:63
+msgid "Last 12 months"
+msgstr "過去12ヶ月間"
+
+#: admin/view/wp-slimstat-reports.php:486
+msgid "Top Human Browsers"
+msgstr "上位の人間用ブラウザ"
+
+#: admin/view/wp-slimstat-reports.php:474
+msgid "Top Bots"
+msgstr "上位のボット"
+
+#: admin/view/wp-slimstat-reports.php:282
+msgid "This report includes all types of clients, both bots and humans."
+msgstr "このレポートには、ボットと人間の両方のあらゆるタイプのクライアントが含まれています。"
+
+#: admin/view/wp-slimstat-reports.php:273
+msgid "Top User Agents"
+msgstr "上位のユーザーエージェント"
+
+#: admin/config/index.php:396
+msgid "Enter a list of lowercase <a href=\"http://www.lingoes.net/en/translator/langcode.htm\" target=\"_blank\">ISO 639-1 language codes</a> (i.e.: <code>en-us, fr-ca, zh-cn</code>) that should not be tracked. Please note: this field does not allow wildcards."
+msgstr "追跡すべきでない小文字の<a href=\"http://www.lingoes.net/en/translator/langcode.htm\" target=\"_blank\">ISO 639-1言語コード</a> (例: <code>en-us, fr-ca, zh-cn</code>)のリストを入力してください。注意：このフィールドではワイルドカードは使用できません。"
+
+#: admin/config/index.php:394
+msgid "Languages"
+msgstr "言語"
+
+#: admin/config/index.php:266
+msgid "By default, Top and Recent reports display the percentage of pageviews compared to the total for each entry, and the actual number of hits on hover in a tooltip. Enable this feature if you prefer to see the number of hits directly and the percentage in the tooltip."
+msgstr "デフォルトでは、トップレポートと最近のレポートでは、各エントリの合計と比較したページビューの割合と、ホバーしたときの実際のヒット数がツールチップに表示されます。ヒット数とパーセンテージを直接ツールチップで表示したい場合は、この機能を有効にしてください。"
+
+#: admin/config/index.php:264
+msgid "Display Hits"
+msgstr "表示回数"
+
+#: admin/config/index.php:259
+msgid "Display Titles"
+msgstr "タイトルを表示"
+
+#: languages/index.php:576
+msgid "Invalid MaxMind data file. Please <a target=\"_blank\" href=\"https://slimstat.freshdesk.com/support/solutions/articles/12000039798-how-to-manually-install-the-maxmind-geolocation-data-file-\">follow these steps</a> to download it manually."
+msgstr "無効な MaxMind データファイルです。<a target=\"_blank\" href=\"https://slimstat.freshdesk.com/support/solutions/articles/12000039798-how-to-manually-install-the-maxmind-geolocation-data-file-\">以下の手順</a>に従って手動でダウンロードしてください。"
+
+#: admin/config/index.php:750
+msgid "Your new settings have been saved."
+msgstr "新しい設定が保存されました。"
+
+#: admin/index.php:828
+msgid "Unique IPs in the last %s days"
+msgstr "過去%s日のユニーク IP"
+
+#: admin/index.php:826
+msgid "Pageviews in the last %s days"
+msgstr "過去%s日間のページビュー数"
+
+#: admin/index.php:35
+msgid "Real-time"
+msgstr "リアルタイム"
+
+#: admin/config/index.php:590
+msgid "We are contributing to the <a href='https://browscap.org/' target='_blank'>Browscap Capabilities Project</a>, which we use to decode your visitors' user agent string into browser name and operating system. We use an <a href='https://github.com/slimstat/browscap-cache' target='_blank'>optimized version of their data structure</a>, for improved performance. When enabled, Slimstat uses this library in addition to the built-in heuristic function, to determine your visitors' browser information. Updates are downloaded automatically every week, when available."
+msgstr "私たちは <a href='https://browscap.org/' target='_blank'>Browscap Capabilities Project</a> に貢献しており、これを訪問者のユーザーエージェント文字列をブラウザー名と OS にデコードするために使用しています。パフォーマンスを向上させるために、<a href='https://github.com/slimstat/browscap-cache' target='_blank'>同プロジェクトの最適化されたバージョンのデータ構造</a>を使用しています。有効化すると、Slimstat は、内蔵のヒューリスティック機能に加えて、訪問者のブラウザー情報を判断するためにこのライブラリを使用します。アップデートがあれば、1週間ごとに自動的にダウンロードされます。"
+
+#: admin/config/index.php:588
+msgid "Browscap Library"
+msgstr "Browscap ライブラリ"
+
+#: admin/config/index.php:564
+msgid "Delete all the information collected by Slimstat so far, but not the archived records (stored in <code>wp_slim_stats_archive</code>). This operation <strong>does not</strong> reset your settings and it can be undone by manually copying your records from the archive table, if you have the corresponding option enabled."
+msgstr "Slimstat によってこれまでに収集されたすべての情報を削除しますが、アーカイブされたレコード（<code> wp_slim_stats_archive </code>に保存されているもの）は削除しません。 この操作では<strong>設定はリセットされません</strong>ので、対応するオプションが有効になっている場合は、アーカイブテーブルから手動でレコードをコピーすることで元に戻すことができます。"
+
+#: admin/config/index.php:557
+msgid "Danger Zone"
+msgstr "危険ゾーン"
+
+#: admin/config/index.php:547
+msgid "Your data file was last downloaded on <strong>%s</strong>."
+msgstr "データファイルは前回<strong>%s</strong>にダウンロードされました。"
+
+#: admin/config/index.php:545
+msgid "MaxMind Geolocation"
+msgstr "MaxMind 位置情報"
+
+#: admin/config/index.php:541
+msgid "Third-party Libraries"
+msgstr "サードパーティのライブラリ"
+
+#: admin/config/index.php:536
+msgid "Enable this option to add column indexes to the main Slimstat table. This will make SQL queries faster and increase the size of the table by about 30%."
+msgstr "このオプションを有効にすると、メインのSlimstatテーブルにカラムインデックスが追加されます。これにより、SQL クエリが高速化され、テーブルのサイズが約 30% 増加します。"
+
+#: admin/config/index.php:534
+msgid "Increase Performance"
+msgstr "パフォーマンスの向上"
+
+#: admin/config/index.php:531
+msgid "Enable this option to display the SQL code associated to each report. This can be useful to troubleshoot issues with data consistency or missing pageviews."
+msgstr "このオプションを有効にすると、各レポートに関連付けられた SQL コードが表示されます。これは、データの一貫性やページビューの欠落などの問題をトラブルシューティングするのに便利です。"
+
+#: admin/config/index.php:529
+msgid "SQL Debug"
+msgstr "SQL デバッグ"
+
+#: admin/config/index.php:503
+msgid "REST API"
+msgstr "REST API"
+
+#: admin/config/index.php:498
+msgid "Enter a list of usernames who should have access to the plugin settings. Please be advised that administrators <strong>are not</strong> implicitly allowed, so do not forget to include yourself! Usernames are case sensitive. Wildcards are not allowed."
+msgstr "プラグインの設定にアクセスできるユーザ名のリストを入力してください。管理者は暗黙のうちに許可<strong>されていない</strong>ので、自分自身を含めることを忘れないようにしてください! ユーザ名は大文字と小文字を区別します。ワイルドカードは使用できません。"
+
+#: admin/config/index.php:493
+msgid "Specify the minimum <a href='https://wordpress.org/support/article/roles-and-capabilities/' target='_new'>capability</a> your WordPress users must have to configure Slimstat (default: <code>manage_options</code>). The field here below can be used to override this option for specific users."
+msgstr "WordPress のユーザーが Slimstat を設定するために最低限必要な <a href='https://wordpress.org/support/article/roles-and-capabilities/' target='_new'>機能</a> を指定します (デフォルト: <code>manage_options</code>)。以下のフィールドは、特定のユーザーのためにこのオプションを上書きするために使用することができます。"
+
+#: admin/config/index.php:481
+msgid "Enter a list of usernames who should have access to the customizer. Administrators are implicitly allowed, so you don't need to list them here below. Usernames are case sensitive. Wildcards are not allowed."
+msgstr "カスタマイザーへのアクセス権を持つユーザー名のリストを入力します。管理者は暗黙のうちに許可されているので、以下にリストアップする必要はありません。ユーザ名は大文字と小文字を区別します。ワイルドカードは使用できません。"
+
+#: admin/config/index.php:476
+msgid "Specify the minimum <a href='https://wordpress.org/support/article/roles-and-capabilities/' target='_new'>capability</a> your WordPress users must have to access the Customizer (default: <code>manage_options</code>). The field here below can be used to override this option for specific users."
+msgstr "WordPress のユーザーがカスタマイザーにアクセスするために最低限必要な<a href='https://wordpress.org/support/article/roles-and-capabilities/' target='_new'>権限</a> を指定します (デフォルト: <code>manage_options</code>)。以下のフィールドは、特定のユーザーに対してこのオプションを上書きするために使用できます。"
+
+#: admin/config/index.php:464
+msgid "Enter a list of usernames who should have access to the statistics. Administrators are implicitly allowed, so you don't need to list them here below. Usernames are case sensitive. Wildcards are not allowed."
+msgstr "統計情報へのアクセス権を持つユーザ名のリストを入力してください。管理者は暗黙のうちに許可されているので、以下にリストアップする必要はありません。ユーザ名は大文字と小文字を区別します。ワイルドカードは使用できません。"
+
+#: admin/config/index.php:459
+msgid "Specify the minimum <a href='https://wordpress.org/support/article/roles-and-capabilities/' target='_new'>capability</a> your WordPress users must have to have to access the reports (default: <code>manage_options</code>). The field here below can be used to override this option for specific users."
+msgstr "WordPress ユーザーがレポートにアクセスするために必要な<a href='https://wordpress.org/support/article/roles-and-capabilities/' target='_new'>機能</a>を指定します（ デフォルト：<code> manage_options </code>） 以下のフィールドは特定のユーザーのためにこのオプションを上書きするために使用することができます。"
+
+#: admin/config/index.php:456 admin/config/index.php:473
+#: admin/config/index.php:490
+msgid "Minimum Capability"
+msgstr "最低限の機能"
+
+#: admin/config/index.php:436
+msgid "<strong>Wildcards</strong><br>You can use the character <code>*</code> to match <em>any string, including the empty string</em>, and the character <code>!</code> to match <em>any character, including no character</em>. For example, <code>user*</code> matches user12 and userfoo, <code>u*100</code> matches user100 and ur100, <code>user!0</code> matches user10, user0 and user90, but not user100."
+msgstr "<strong>ワイルドカード</strong><br>文字 <code>*</code> は<em>空の文字列を含む任意の文字列</em>と一致し、文字 <code>!</code> は<em>文字なしを含む任意の文字</em>と一致します。例えば、 <code>user*</code> は user12 と userfoo に一致し、<code>u*100</code> は user100 と ur100 に一致し、<code>user!0</code> は user10、user0、user90 にマッチしますが、user100 には一致しません。"
+
+#: admin/config/index.php:432
+msgid "Enter a list of Slimstat content types that should not be tracked: <code>post, page, attachment, tag, 404, taxonomy, author, archive, search, feed, login</code>, etc. See note at the bottom of this page for more information on how to use wildcards. String should be entered in lowercase."
+msgstr "追跡しない Slimstat のコンテンツタイプのリストを入力します。<code>投稿、ページ、添付ファイル、タグ、404、タクソノミー、投稿者、アーカイブ、検索、フィード、ログイン</code> など。ワイルドカードの使用方法の詳細については、このページの下部にある注意事項を参照してください。文字列は小文字で入力してください。"
+
+#: admin/config/index.php:427
+msgid "Enter a list of referring URLs that should not be tracked: <code>https://mysite.com*</code>, <code>*/ignore-me-please</code>, etc. See note at the bottom of this page for more information on how to use wildcards. Strings are case-insensitive and must include the protocol (https://, https://)."
+msgstr "追跡しない参照先URLのリストを入力します。<code>https://mysite.com*</code>、 <code>*/ignore-me-please</code> など。ワイルドカードの使用方法の詳細については、このページの下部にある注意事項を参照してください。文字列は大文字小文字を区別せず、プロトコル (https://, https://) を含めなければなりません。"
+
+#: admin/config/index.php:417
+msgid "Enter a list of permalinks that should not be tracked. Do not include your website domain name: <code>/about, ?p=1</code>, etc. See note at the bottom of this page for more information on how to use wildcards. Strings are case-insensitive."
+msgstr "追跡しないパーマリンクのリストを入力してください。サイトのドメイン名は含めないでください。<code>/about, ?p=1</code> など。ワイルドカードの使用方法の詳細については、このページの下部にある注意事項を参照してください。文字列は大文字小文字を区別しません。"
+
+#: admin/config/index.php:406
+msgid "Enter a list of operating system codes that should not be tracked. Please refer to <a href=\"https://slimstat.freshdesk.com/solution/articles/12000031504-what-are-the-operating-system-codes-used-by-slimstat-\" target=\"_blank\">this page</a> in our knowledge base to learn more about which codes can be used. See note at the bottom of this page for more information on how to use wildcards."
+msgstr "追跡しないオペレーティングシステムコードのリストを入力してください。使用できるコードの詳細については、ナレッジベースの<a href=\"https://slimstat.freshdesk.com/solution/articles/12000031504-what-are-the-operating-system-codes-used-by-slimstat-\" target=\"_blank\">このページ</a>を参照してください。ワイルドカードの使用方法の詳細については、このページの下部にある注意事項を参照してください。"
+
+#: admin/config/index.php:401
+msgid "Enter a list of browser names that should not be tracked. You can specify the browser's version adding a slash after the name (i.e. <em>Firefox/36</em>). Technically speaking, Slimstat will match your list against the visitor's user agent string. Strings are case-insensitive. See note at the bottom of this page for more information on how to use wildcards."
+msgstr "追跡しないブラウザ名のリストを入力してください。ブラウザのバージョンを指定するには、名前の後にスラッシュを付けます (例: <em>Firefox/36</em>)。技術的に言えば、Slimstat は訪問者のユーザーエージェント文字列とリストを照合します。文字列は大文字小文字を区別しません。ワイルドカードの使用方法の詳細については、このページの下部にある注意事項を参照してください。"
+
+#: admin/config/index.php:391
+msgid "Enter a list of lowercase <a href=\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\" target=\"_blank\">ISO 3166-1 country codes</a> (i.e.: <code>us, it, es</code>) that should not be tracked. Please note: this field does not allow wildcards."
+msgstr "追跡しない<a href=\"https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2\" target=\"_blank\">ISO 3166-1 国コード</a>のリストを小文字で入力してください。(例: <code>us, it, es</code>) 注意: このフィールドではワイルドカードは使用できません。"
+
+#: admin/config/index.php:386
+msgid "Enter a list of IP addresses that should not be tracked. Each subnet <strong>must</strong> be defined using the <a href='https://www.iplocation.net/subnet-mask' target='_blank'>CIDR notation</a> (i.e. <em>192.168.0.0/24</em>). This filter applies both to the public IP address and the originating IP address, if available. Using the CIDR notation, you will use octets to determine the mask. For example, 54.0.0.0/8 matches any address that has 54 as the first number; 54.12.0.0/16 matches any address that starts with 54.12, and so on."
+msgstr "追跡すべきでない IP アドレスのリストを入力してください。各サブネットは <a href='https://www.iplocation.net/subnet-mask' target='_blank'>CIDR 表記</a> (例: <em>192.168.0.0.0/24</em>)で定義する<strong>必要があります</strong>。このフィルターは、公開 IP アドレスと発信元 IP アドレスの両方に適用されます。CIDR 表記を使用して、マスクを決定するためにオクテットを使用します。例えば、54.0.0.0.0/8 は、最初の番号が 54 であるアドレスにマッチし、54.12.0.0/16 は、54.12 で始まるアドレスに一致します。"
+
+#: admin/config/index.php:381
+msgid "Enter a list of <a href=\"https://wordpress.org/support/article/roles-and-capabilities/\" target=\"_new\">WordPress capabilities</a>, so that users who have any of them assigned to their role will not be tracked. Please note that although capabilities are case-insensitive, it is recommended to enter them all in lowercase. See note at the bottom of this page for more information on how to use wildcards."
+msgstr "<a href=\"https://wordpress.org/support/article/roles-and-capabilities/\" target=\"_new\"> WordPress の機能</a>のリストを入力して、それらのいずれかが割り当てられているユーザー 彼らの役割に追跡されません。 機能では大文字と小文字が区別されませんが、すべて小文字で入力することをお勧めします。 ワイルドカードの使用方法の詳細については、このページの下部にある注を参照してください。"
+
+#: admin/config/index.php:376
+msgid "Enter a list of usernames that should not be tracked. Please note that spaces are <em>not</em> ignored and that usernames are case sensitive. See note at the bottom of this page for more information on how to use wildcards."
+msgstr "追跡してはいけないユーザー名のリストを入力してください。 スペースは<em>無視されず</em>、ユーザー名は大文字と小文字が区別されます。 ワイルドカードの使用方法の詳細については、このページの下部にある注を参照してください。"
+
+#: admin/config/index.php:371
+msgid "<a href=\"https://en.wikipedia.org/wiki/Link_prefetching\" target=\"_blank\">Link Prefetching</a> is a technique that allows web browsers to pre-load resources, before the user clicks on the corresponding link. If enabled, this kind of requests will not be tracked."
+msgstr "<a href=\"https://en.wikipedia.org/wiki/Link_prefetching\" target=\"_blank\">リンク先読み</a>は、ユーザーがをクリックする前に、Webブラウザがリソースを事前に読み込むことを可能にする手法です。 対応するリンク 有効にした場合、この種の要求は追跡されません。"
+
+#: admin/config/index.php:369
+msgid "Prefetch Requests"
+msgstr "プリフェッチ要求"
+
+#: admin/config/index.php:366
+msgid "If enabled, pageviews generated by crawlers, spiders, search engine bots, and other automated tools will not be tracked. Please note that if the tracker is set to work in Client mode, some of those pageviews might not be tracked anyway, since these tools usually do not run any embedded Javascript code."
+msgstr "有効にした場合、クローラー、スパイダー、検索エンジンボット、およびその他の自動化ツールによって生成されたページビューは追跡されません。 トラッカーがクライアントモードで動作するように設定されている場合、これらのツールは通常埋め込まれた Javascript コードを実行しないため、これらのページビューの一部は追跡されない可能性があります。"
+
+#: admin/config/index.php:361
+msgid "If enabled, visits from users identified as spammers by third-party tools like Akismet will not be tracked. Pageviews generated by users whose comments are later marked as spam, will also be removed from the database on a daily basis."
+msgstr "有効にした場合、Akismet のようなサードパーティ製のツールによってスパマーと識別されたユーザーからの訪問は追跡されません。 コメントが後でスパムとしてマークされているユーザーによって生成されたページビューも、毎日データベースから削除されます。"
+
+#: admin/config/index.php:359
+msgid "Spammers"
+msgstr "スパマー"
+
+#: admin/config/index.php:356
+msgid "If enabled, logged in WordPress users will not be tracked, neither on the website nor in the backend."
+msgstr "有効にした場合、ログインした WordPress ユーザーはウェブサイトでもバックエンドでも追跡されません。"
+
+#: admin/config/index.php:354
+msgid "WP Users"
+msgstr "WP ユーザー"
+
+#: admin/config/index.php:346
+msgid "Exclusions"
+msgstr "除外"
+
+#: admin/config/index.php:324
+msgid "Enable this option if you want to see the full user agent string when hovering over each browser icon in the Access Log and elsewhere."
+msgstr "アクセスログなどの各ブラウザアイコンの上にマウスを移動したときに完全なユーザーエージェント文字列を表示するには、このオプションを有効にします。"
+
+#: admin/config/index.php:319
+msgid "This key is needed to query the Mozscape API (see option here above). Treat it like a password and do not share it with anyone, or they will be able to make API requests using your account."
+msgstr "このキーは Mozscape API を照会するために必要です（上記のオプションを参照）。 パスワードのように扱い、他の人と共有しないでください。そうしないと、第三者が、あなたのアカウントを使って不正に API リクエストを行うことができます。"
+
+#: admin/config/index.php:293
+msgid "points"
+msgstr "ポイント"
+
+#: admin/config/index.php:292
+msgid "Customize the maximum number of data points displayed on the world map. Please note that larger numbers might negatively affect rendering times."
+msgstr "世界地図に表示されるデータポイントの最大数をカスタマイズします。 大きい数字は表示時間に悪影響を与える可能性があることに注意してください。"
+
+#: admin/config/index.php:287
+msgid "Define the number of rows to visualize in the Access Log."
+msgstr "アクセスログで可視化する行数を定義します。"
+
+#: admin/config/index.php:283
+msgid "When a value greater than zero is entered, the Access Log view will refresh every X seconds. Enter <strong>0</strong> (the number zero) if you would like to deactivate this feature."
+msgstr "ゼロよりも大きな値を入力すると、アクセス ログ ビューは X 秒ごとに更新されます。この機能を無効にする場合は、<strong>0</strong> (数字のゼロ) を入力してください。"
+
+#: admin/config/index.php:271
+msgid "Enable this option to display the hostname associated to each IP address. Please note that this might affect performance, as Slimstat will need to query your DNS server for each address."
+msgstr "このオプションを有効にすると、各 IP アドレスに関連付けられたホスト名が表示されます。このオプションを有効にすると、Slimstat は各アドレスについて DNS サーバーに問い合わせを行う必要があるため、パフォーマンスに影響を与える可能性があることに注意してください。"
+
+#: admin/config/index.php:269
+msgid "Show Hostnames"
+msgstr "ホスト名の表示"
+
+#: admin/config/index.php:261
+msgid "For improved legibility, most reports list post and page titles instead of their permalinks. Use this option to change this behavior."
+msgstr "読みやすさを向上させるために、ほとんどのレポートでは、パーマリンクの代わりに投稿やページのタイトルをリストアップしています。この動作を変更するには、このオプションを使用します。"
+
+#: admin/config/index.php:251
+msgid "Slimstat displays two sets of charts, allowing you to compare the current time window with the previous one. Disable this option if you find those four charts confusing, and prefer seeing only the selected time range. Please keep in mind that you can always temporarily hide one series by clicking on the corresponding entry in the legend."
+msgstr "Slimstat は2つのチャートを表示し、現在の時間ウィンドウと以前の時間ウィンドウを比較することができます。4つのチャートが分かりにくい場合や選択した時間範囲のみを表示したい場合は、このオプションを無効にしてください。凡例の対応する項目をクリックすることで、常に1つの系列を一時的に隠すことができることを覚えておいてください。"
+
+#: admin/config/index.php:244
+msgid "IP Geolocation"
+msgstr "IP 位置情報"
+
+#: admin/config/index.php:335
+msgid "You can limit the number of records that each SQL query will take into consideration when crunching aggregate values (maximum, average, etc). You might need to adjust this value if you're getting an error saying that you exceeded your PHP memory limit while accessing the statistics."
+msgstr "集計値 (最大値、平均値など) を計算する際に各 SQL クエリが考慮するレコード数を制限することができます。統計情報へのアクセス中に PHP のメモリ制限を超えたというエラーが出た場合は、この値を調整する必要があるかもしれません。"
+
+#: admin/config/index.php:332
+msgid "SQL Limit"
+msgstr "SQLの制限"
+
+#: admin/config/index.php:241
+msgid "Define the number of rows to display in Top and Recent reports. You can adjust this number to improve your server performance."
+msgstr "上位のレポートと最近のレポートに表示する行数を定義します。この数を調整することで、サーバーのパフォーマンスを向上させることができます。"
+
+#: admin/config/index.php:240 admin/config/index.php:288
+#: admin/config/index.php:334
+msgid "rows"
+msgstr "行"
+
+#: admin/config/index.php:235
+msgid "Default number of days in the time window used to generate all the reports. We set it to 4 weeks so that the comparison charts will overlap nicely (i.e. Monday over Monday) for a more meaningful analysis. This value is ignored if the option here above is turned on."
+msgstr "すべてのレポートを生成するために使用されるタイム・ウィンドウのデフォルトの日数です。より意味のある分析のために比較チャートがきれいに重なるように、4週間に設定しました（例えば、月曜日と月曜日が重なるように）。上記のオプションがオンの場合、この値は無視されます。"
+
+#: admin/config/index.php:232
+msgid "Time Range"
+msgstr "時間の範囲"
+
+#: admin/config/index.php:229
+msgid "Determine what time window to use for the reports. Enable this option to default to the current month, disable it to use the past X number of days (see option here below). Use the date and time filters for a more granular analysis."
+msgstr "レポートに使用するタイムウィンドウを決定します。このオプションを有効にすると、デフォルトは当月になり、無効にすると過去X日分の日数が使用されます（以下のオプションを参照）。より詳細な分析を行うには、日付と時間のフィルタを使用します。"
+
+#: admin/config/index.php:227
+msgid "Current Month"
+msgstr "今月"
+
+#: admin/config/index.php:192
+msgid "Try enabling this option if you are experiencing issues related to the header field X-Requested-With not being allowed by Access-Control-Allow-Headers in preflight response (or similar)."
+msgstr "プリフライト応答（または同様のもの）で、ヘッダーフィールド X-Requested-With が Access-Control-Allow-Headers によって許可されていないことに関連する問題が発生している場合は、このオプションを有効にしてみてください。"
+
+#: admin/config/index.php:182
+msgid "Reset your visitors' visit duration every time they access a new page within the current visit."
+msgstr "訪問者が現在の訪問内で新しいページにアクセスするたびに、訪問者の訪問時間をリセットします。"
+
+#: admin/config/index.php:180
+msgid "Extend Duration"
+msgstr "期間の延長"
+
+#: admin/config/index.php:171
+msgid "Slimstat determines your visitors' Country of origin through a third-party data file <a href='https://dev.maxmind.com/geoip/geoip2/geolite2/' target='_blank'>distributed by MaxMind</a>. This information is available in two precision levels: country and city. By default, Slimstat will install the country precision level. Use this option to switch to the more granular level, if you don't mind its 60 Mb average size. After updating this option, please <strong>go to the Maintenance tab</strong> and uninstall/install the MaxMind GeoLite DB file by clicking on the corresponding button."
+msgstr "Slimstatは、<a href='https://dev.maxmind.com/geoip/geoip2/geolite2/' target='_blank'>MaxMind社</a>が配布している第三者のデータファイルを使用して、訪問者の出身国を決定します。この情報は、国と都市の 2 つの精度レベルで利用できます。デフォルトでは、Slimstatは国の精度レベルをインストールします。平均60 Mbのサイズを気にしない場合は、このオプションを使用して、より詳細なレベルに切り替えてください。このオプションを更新した後、<strong>メンテナンスタブ</strong>に移動し、対応するボタンをクリックしてMaxMind GeoLite DBファイルをアンインストール/インストールしてください。"
+
+#: admin/config/index.php:158
+msgid "List all the file extensions that you want to be identified as Downloads. Please note that links pointing to external resources (i.e. PDFs on an external website) will be tracked as Downloads and not Outbound Links, if they match one of the extensions listed here below."
+msgstr "ダウンロードとして認識させたいファイルの拡張子をすべてリストアップしてください。外部リソース（外部ウェブサイトのPDFなど）へのリンクは、以下にリストされている拡張子のいずれかと一致する場合、アウトバウンドリンクではなく、ダウンロードとして追跡されますのでご注意ください。"
+
+#: admin/config/index.php:153
+msgid "By default, when a referrer's domain's pageview is the same as the current site, that information is not saved in the database. However, if you are running a multisite network with subfolders, you might need to enable this option to track same-domain referrers from one site to another, as they are technically 'independent' websites."
+msgstr "デフォルトでは、リファラーのドメインのページビューが現在のサイトと同じである場合、その情報はデータベースに保存されません。しかし、サブフォルダを持つマルチサイトネットワークを実行している場合、技術的には「独立した」ウェブサイトであるため、あるサイトから別のサイトへの同じドメインのリファラーを追跡するために、このオプションを有効にする必要があるかもしれません。"
+
+#: admin/config/index.php:142
+msgid "Customize the message displayed to your visitors here below. Match your website styles and layout by adding the appropriate HTML markup to your message."
+msgstr "訪問者に表示されるメッセージをカスタマイズすることができます。メッセージに適切なHTMLマークアップを追加することで、サイトのスタイルやレイアウトに合わせて表示することができます。"
+
+#: admin/config/index.php:134
+msgid "Similarly to the option here above, you can configure Slimstat to work with an opt-in mechanism. Please use the following format: <code>cookie_name=value</code>. Slimstat will only track visitors who send a cookie whose value <strong>CONTAINS</strong> the string you specified. Separate multiple pairs with commas."
+msgstr "上記のこちらのオプションと同様に、Slimstat がオプトイン方式で動作するように設定することができます。以下のフォーマットを使用してください: <code>cookie_name=value</code>. Slimstat は、指定した文字列を<strong>含む</strong>値を持つ cookie を送信した訪問者だけを追跡します。複数のペアはカンマで区切ってください。"
+
+#: admin/config/index.php:124
+msgid "The European <a href='https://en.wikipedia.org/wiki/General_Data_Protection_Regulation' target='_blank'>General Data Protection Regulation (GDPR)</a> requires website owners to provide a way for their visitors to opt-out of tracking. By enabling this option, the message here below will be displayed to all users who don't have the corresponding cookie set."
+msgstr "ヨーロッパの <a href='https://en.wikipedia.org/wiki/General_Data_Protection_Regulation' target='_blank'>一般データ保護規則 (GDPR)</a> では、ウェブサイトの所有者は、訪問者が追跡をオプトアウトするための方法を提供することを要求しています。このオプションを有効にすると、対応する cookie が設定されていないすべてのユーザーに以下のメッセージが表示されます。"
+
+#: admin/config/index.php:112
+msgid "Privacy Mode"
+msgstr "プライバシーモード"
+
+#: admin/config/index.php:108
+msgid "Data Protection"
+msgstr "データ保護"
+
+#: admin/config/index.php:98
+msgid "If server space is not an issue for you, use this option to archive pageviews to a separate table, instead of deleting them. This will increase performance by reducing the amount of data to process in the main table, while allowing you to access your data at a later time, if needed. Please note that the archive table (<strong>wp_slim_stats_archive</strong>) will be <strong>DELETED</strong> along with all the other tables, when you uninstall Slimstat. Make sure to backup your data before you proceed."
+msgstr "サーバースペースが問題ではない場合は、このオプションを使用してページビューを削除するのではなく、別のテーブルにアーカイブします。これにより、メインテーブルで処理するデータ量を減らすことでパフォーマンスが向上し、必要に応じて後でデータにアクセスできるようになります。Slimstat をアンインストールすると、アーカイブテーブル (<strong>wp_slim_stats_archive</strong>) は他のすべてのテーブルと一緒に<strong>削除される</strong>ことに注意してください。先に進む前に必ずデータのバックアップを取ってください。"
+
+#: admin/config/index.php:93
+msgid "Enable a daily cron job to erase or archive (see option here below) pageviews older than the number of days specified here. You can enter <strong>0</strong> (the number zero) if you want to disable this feature."
+msgstr "ここで指定した日数よりも古いページビューを消去またはアーカイブするための毎日の cron ジョブを有効にします（以下のオプションを参照してください）。この機能を無効にしたい場合は、<strong>0</strong> (数字の0) を入力してください。"
+
+#: admin/config/index.php:90
+msgid "Data Retention"
+msgstr "データ保持"
+
+#: admin/config/index.php:81
+msgid "If you are using our premium add-ons, you can enable this option to hide all the <strong>active</strong> ones from the list of plugins in WordPress. Please note that you will still be notified of new updates available for any given hidden add-on."
+msgstr "プレミアムアドオンを使用している場合、このオプションを有効にすると、WordPress のプラグイン一覧から<strong>有効</strong>のものをすべて非表示にすることができます。非表示にしたアドオンの新しい更新情報は通知されますのでご注意ください。"
+
+#: admin/config/index.php:76
+msgid "Customize the information displayed when activating the option here above: <strong>hits</strong> refers to the total amount of pageviews, regardless of the user; <strong>(unique) IPs</strong> displays the amount of distinct IP addresses tracked in the given time range."
+msgstr "上記のオプションを有効にしたときに表示される情報をカスタマイズします。<strong>ヒット</strong>は、ユーザーに関係なく、ページビューの総量を指します。 <strong>(ユニーク) IP</strong> は、特定の時間範囲で追跡された個別のIPアドレスの数を表示します。"
+
+#: admin/config/index.php:69
+msgid "Add a new column to the Edit Posts/Pages screens, which will contain the hit count or unique visits per post. You can customize the default timeframe in Settings > Reports > Report Interval."
+msgstr "投稿/ページの編集画面に新しい列を追加して、投稿ごとのヒット数またはユニーク訪問数を格納します。設定 > レポート > レポート間隔でデフォルトの時間枠をカスタマイズすることができます。"
+
+#: admin/config/index.php:64
+msgid "Choose if you want to display the Slimstat menu in the sidebar or as a drop down in the admin bar (if visible)."
+msgstr "Slimstat メニューをサイドバーに表示するか、管理バーのドロップダウンとして表示するかを選択します (表示されている場合)。"
+
+#: admin/config/index.php:62
+msgid "Use Admin Bar"
+msgstr "管理バーを使用する"
+
+#: admin/config/index.php:48
+msgid "Select <strong>Client</strong> if you are using a caching plugin (W3 Total Cache, WP SuperCache, HyperCache, etc). Slimstat will behave pretty much like Google Analytics, and visitors whose browser doesn't support Javascript will be ignored. Select <strong>Server</strong> if you are not using a caching tool on your website, and would like to track <em>every single visit</em> to your site."
+msgstr "キャッシュプラグイン (W3 Total Cache、WP SuperCache、HyperCacheなど) を使用している場合は、<strong>クライアント</strong>を選択してください。Slimstat は Google Analytics とほぼ同じように動作し、Javascript をサポートしていないブラウザを使用している訪問者は無視されます。キャッシュツールを使用しておらず、<em>サイトへの1回の訪問ごと</em>に追跡したい場合は、<strong>サーバー</strong>を選択してください。"
+
+#: admin/config/index.php:39
+msgid "Track Backend"
+msgstr "バックエンドを追跡"
+
+#: admin/config/index.php:685
+msgid "The geolocation database could not be uninstalled from your server. Please make sure Slimstat can save files in your <code>wp-content/uploads</code> folder."
+msgstr "位置情報データベースをサーバーからアンインストールできませんでした。Slimstat が <code>wp-content/uploads</code> フォルダにファイルを保存できるようにしてください。"
+
+#: admin/view/wp-slimstat-db.php:1227
+msgid "Single-page Visits"
+msgstr "単一ページ訪問数"
+
+#: admin/view/wp-slimstat-db.php:1213
+msgid "A visit is a group of pageviews within a 30-minute time span. Returning visitors are counted multiple times if they start a new visit."
+msgstr "訪問は、30分以内のページビューのグループです。 新しい訪問を開始した場合、戻ってきた訪問者は複数回カウントされます。"
+
+#: admin/view/wp-slimstat-db.php:1130
+msgid "Visitors who clicked on a link to your website listed on a search engine result page (SERP), tracked in the last 5 minutes."
+msgstr "過去5分間に追跡した、検索エンジンの結果ページ（search engine result page,SERP）に表示されているあなたのウェブサイトへのリンクをクリックした訪問者。"
+
+#: admin/view/wp-slimstat-db.php:1122
+msgid "Number of single-page visits tracked over the selected period of time."
+msgstr "選択した期間中に追跡された単一ページの訪問数。"
+
+#: admin/view/wp-slimstat-db.php:1118
+msgid "A landing page is the first page on your website that a visitors opens, also known as <em>entrance page</em>. For example, if they search for 'Brooklyn Office Space,' and they land on a page on your website, this page gets counted (for that visit) as a landing page."
+msgstr "ランディングページは、訪問者が開いた最初のページで、<em>エントランスページ</em>とも呼ばれます。 たとえば、「Brooklyn Office Space」を検索してWebサイトのページにアクセスした場合、このページは（その訪問のために）ランディングページとしてカウントされます。"
+
+#: admin/view/wp-slimstat-db.php:1110
+msgid "Visitors who typed your website URL directly into their browser address bar. It can also refer to visitors who clicked on one of their bookmarked links, untagged links within emails, or links in documents that don't include tracking variables."
+msgstr "Web サイトの URL を直接ブラウザーのアドレスバーに入力した訪問者。 ブックマークされたリンク、メール内のタグなしリンク、または追跡変数を含まないドキュメント内のリンクのいずれかをクリックした訪問者を指すこともあります。"
+
+#: admin/view/wp-slimstat-db.php:869
+msgid "How many daily pageviews have been generated on average."
+msgstr "毎日の生成平均ページビュー数。"
+
+#: admin/view/wp-slimstat-db.php:862 admin/view/wp-slimstat-db.php:1102
+msgid "A pageview is a request to load a single HTML page on your website."
+msgstr "ページビューとは、あなたのウェブサイトで1つのHTMLページを読み込むためのリクエストのことです。"
+
+#: admin/view/wp-slimstat-db.php:41
+msgid "Timezone Offset"
+msgstr "タイムゾーンオフセット"
+
+#: admin/view/layout.php:22
+msgid "Reset Layout"
+msgstr "レイアウトをリセット"
+
+#: admin/view/layout.php:12
+msgid "By using the network-wide customizer, all your users will see the same layout you define, and they will not be able to customize it further."
+msgstr "ネットワークワイドカスタマイザを使用すると、サイトのユーザーはあなたが定義した同じレイアウトで見るでしょう。そして、ユーザはレイアウトをカスタマイズすることができません。"
+
+#: admin/view/layout.php:9
+msgid "You can drag and drop the placeholders here below from one widget area to another, to customize the layout of each report screen. You can place multiple charts on the same view, clone reports or move them to the Inactive Reports if you are not interested in that specific metric."
+msgstr "各レポート画面のレイアウトをカスタマイズするには、プレースホルダをあるウィジェット領域から別のウィジェット領域にドラッグアンドドロップします。 特定の指標に関心がない場合は、同じビューに複数のグラフを配置したり、レポートを複製したり、それらを非アクティブレポートに移動したりできます。"
+
+#: admin/view/index.php:129
+msgid "Install our <a href='%s' class='noslimstat'>Browscap Library</a> to identify your visitors' browser and operating system."
+msgstr "訪問者のブラウザとオペレーティングシステムを識別するために、<a href='%s' class='noslimstat'> Browscapライブラリ</a>をインストールしてください。"
+
+#: admin/view/wp-slimstat-reports.php:1440
+msgid "The number of links (external, equity or nonequity or not) to your homepage."
+msgstr "あなたのホームページへのリンク数（外部、持分、非持分の有無）。"
+
+#: admin/view/wp-slimstat-reports.php:1439
+msgid "Moz Links"
+msgstr "Moz リンク"
+
+#: admin/view/wp-slimstat-reports.php:1434
+msgid "Moz Backlinks"
+msgstr "Moz バックリンク"
+
+#: admin/view/wp-slimstat-reports.php:1430
+msgid "A normalized 100-point score representing the likelihood of a domain to rank well in search engine results."
+msgstr "検索エンジンの結果でドメインが上位にランクされる可能性を表す正規化された100ポイントスコア。"
+
+#: admin/view/wp-slimstat-reports.php:1429
+msgid "Moz Domain Authority"
+msgstr "Moz ドメイン権限"
+
+#: admin/view/wp-slimstat-reports.php:57
+msgid "WP User"
+msgstr "WP ユーザー"
+
+#: admin/view/wp-slimstat-reports.php:57
+msgid "Has Left Comments"
+msgstr "コメントしたことがある"
+
+#: languages/index.php:565
+msgid "Microsoft"
+msgstr "Microsoft"
+
+#: languages/index.php:561
+msgid "Apple"
+msgstr "Apple"
+
+#: languages/index.php:559
+msgid "Java-based OS"
+msgstr "Java ベースの OS"
+
+#: languages/index.php:558
+msgid "Apple iOS"
+msgstr "Apple iOS"
+
+#: languages/index.php:557
+msgid "Linux FreeBSD"
+msgstr "Linux FreeBSD"
+
+#: languages/index.php:556
+msgid "Fire OS"
+msgstr "Fire OS"
+
+#: languages/index.php:555
+msgid "Chrome OS"
+msgstr "Chrome OS"
+
+#: languages/index.php:554
+msgid "BlackBerry"
+msgstr "BlackBerry"
+
+#: languages/index.php:547
+msgid "Zaurus WAP"
+msgstr "Zaurus WAP"
+
+#: languages/index.php:546
+msgid "WyderOS"
+msgstr "WyderOS"
+
+#: languages/index.php:545
+msgid "Windows XP"
+msgstr "Windows XP"
+
+#: languages/index.php:544
+msgid "Windows Vista"
+msgstr "Windows Vista"
+
+#: languages/index.php:542
+msgid "Windows RT / Runtime"
+msgstr "Windows RT / ランタイム"
+
+#: languages/index.php:538
+msgid "Windows NT"
+msgstr "Windows NT"
+
+#: languages/index.php:537
+msgid "Windows ME"
+msgstr "Windows ME"
+
+#: languages/index.php:536
+msgid "Windows CE"
+msgstr "Windows CE"
+
+#: languages/index.php:535
+msgid "Windows 98"
+msgstr "Windows 98"
+
+#: languages/index.php:534
+msgid "Windows 95"
+msgstr "Windows 95"
+
+#: languages/index.php:533
+msgid "Windows 8.1"
+msgstr "Windows 8.1"
+
+#: languages/index.php:532
+msgid "Windows 8"
+msgstr "Windows 8"
+
+#: languages/index.php:530 languages/index.php:531
+msgid "Windows 7"
+msgstr "Windows 7"
+
+#: languages/index.php:529
+msgid "Windows 32-bit"
+msgstr "Windows 32-bit"
+
+#: languages/index.php:528
+msgid "Windows 3.1"
+msgstr "Windows 3.1"
+
+#: languages/index.php:527
+msgid "Windows 2003"
+msgstr "Windows 2003"
+
+#: languages/index.php:526
+msgid "Windows 2000"
+msgstr "Windows 2000"
+
+#: languages/index.php:525
+msgid "Windows 16-bit"
+msgstr "Windows 16-bit"
+
+#: languages/index.php:524
+msgid "Windows 10"
+msgstr "Windows 10"
+
+#: languages/index.php:523
+msgid "WebOS"
+msgstr "WebOS"
+
+#: languages/index.php:522
+msgid "WAP"
+msgstr "WAP"
+
+#: languages/index.php:521
+msgid "Xandros Linux"
+msgstr "Xandros Linux"
+
+#: languages/index.php:519
+msgid "Unix"
+msgstr "Unix"
+
+#: languages/index.php:517 languages/index.php:563
+msgid "Symbian OS"
+msgstr "Symbian OS"
+
+#: languages/index.php:516
+msgid "SuSE Linux"
+msgstr "SuSE Linux"
+
+#: languages/index.php:515
+msgid "Sun OS"
+msgstr "Sun OS"
+
+#: languages/index.php:513
+msgid "Slackware Linux"
+msgstr "Slackware Linux"
+
+#: languages/index.php:512
+msgid "Risc OS"
+msgstr "Risc OS"
+
+#: languages/index.php:511 languages/index.php:562
+msgid "Blackberry"
+msgstr "Blackberry"
+
+#: languages/index.php:510
+msgid "RedHat Linux"
+msgstr "RedHat Linux"
+
+#: languages/index.php:509
+msgid "PowerTV"
+msgstr "PowerTV"
+
+#: languages/index.php:507
+msgid "PCLinux OS"
+msgstr "PCLinux OS"
+
+#: languages/index.php:505 languages/index.php:506
+msgid "Palm OS"
+msgstr "Palm OS"
+
+#: languages/index.php:504
+msgid "IBM OS/2"
+msgstr "IBM OS/2"
+
+#: languages/index.php:503
+msgid "OpenVMS"
+msgstr "OpenVMS"
+
+#: languages/index.php:502
+msgid "OpenBSD"
+msgstr "OpenBSD"
+
+#: languages/index.php:500
+msgid "NetBSD"
+msgstr "NetBSD"
+
+#: languages/index.php:498
+msgid "MEPIS Linux"
+msgstr "MEPIS Linux"
+
+#: languages/index.php:497 languages/index.php:499
+msgid "MS-DOS"
+msgstr "MS-DOS"
+
+#: languages/index.php:496
+msgid "Mandrake Linux"
+msgstr "Mandrake Linux"
+
+#: languages/index.php:495
+msgid "Mac PowerPC"
+msgstr "Mac PowerPC"
+
+#: languages/index.php:493 languages/index.php:494
+msgid "Mac OS X"
+msgstr "Mac OS X"
+
+#: languages/index.php:492
+msgid "Mac 68k"
+msgstr "Mac 68k"
+
+#: languages/index.php:491
+msgid "Mac"
+msgstr "Mac"
+
+#: languages/index.php:490
+msgid "Linux Generic"
+msgstr "Linux Generic"
+
+#: languages/index.php:489
+msgid "Knoppix Linux"
+msgstr "Knoppix Linux"
+
+#: languages/index.php:488
+msgid "Kanotix Linux"
+msgstr "Kanotix Linux"
+
+#: languages/index.php:487
+msgid "Java"
+msgstr "Java"
+
+#: languages/index.php:486
+msgid "SGI / IRIX"
+msgstr "SGI / IRIX"
+
+#: languages/index.php:485
+msgid "iPhone OS X"
+msgstr "iPhone OS X"
+
+#: languages/index.php:483 languages/index.php:484
+msgid "iPhone OS"
+msgstr "iPhone OS"
+
+#: languages/index.php:482
+msgid "HP-UX"
+msgstr "HP-UX"
+
+#: languages/index.php:480
+msgid "FreeBSD"
+msgstr "FreeBSD"
+
+#: languages/index.php:479
+msgid "Firefox OS"
+msgstr "Firefox OS"
+
+#: languages/index.php:473
+msgid "ChromeOS"
+msgstr "ChromeOS"
+
+#: languages/index.php:472
+msgid "CentOS"
+msgstr "CentOS"
+
+#: languages/index.php:471
+msgid "BlackBerry OS"
+msgstr "BlackBerry OS"
+
+#: languages/index.php:470
+msgid "BeOS"
+msgstr "BeOS"
+
+#: languages/index.php:467
+msgid "IBM AIX"
+msgstr "IBM AIX"
+
+#: languages/index.php:464
+msgid "Zulu (South Africa)"
+msgstr "ズールー語 (南アフリカ)"
+
+#: languages/index.php:463
+msgid "Zulu"
+msgstr "ズールー"
+
+#: languages/index.php:462
+msgid "Chinese (T)"
+msgstr "中国語 (T)"
+
+#: languages/index.php:461
+msgid "Chinese (Singapore)"
+msgstr "中国語 (シンガポール)"
+
+#: languages/index.php:460
+msgid "Chinese (Macau)"
+msgstr "中国語 (マカオ)"
+
+#: languages/index.php:459
+msgid "Chinese (Hong Kong)"
+msgstr "中国語 (香港)"
+
+#: languages/index.php:458
+msgid "Chinese (S)"
+msgstr "中国語 (S)"
+
+#: languages/index.php:457
+msgid "Chinese"
+msgstr "中国語"
+
+#: languages/index.php:456
+msgid "Xhosa (South Africa)"
+msgstr "コサ語 (南アフリカ)"
+
+#: languages/index.php:455
+msgid "Xhosa"
+msgstr "コサ語"
+
+#: languages/index.php:454
+msgid "Vietnamese (Viet Nam)"
+msgstr "ベトナム語 (ベトナム)"
+
+#: languages/index.php:453
+msgid "Vietnamese"
+msgstr "ベトナム語"
+
+#: languages/index.php:452
+msgid "Uzbek (Cyrillic) (Uzbekistan)"
+msgstr "ウズベキスタン語 (キリル) (ウズベキスタン)"
+
+#: languages/index.php:451
+msgid "Uzbek (Latin)"
+msgstr "ウズベク語 (ラテン)"
+
+#: languages/index.php:450
+msgid "Urdu (Islamic Republic of Pakistan)"
+msgstr "ウルドゥー語 (パキスタンイスラム共和国)"
+
+#: languages/index.php:449
+msgid "Urdu"
+msgstr "ウルドゥー語"
+
+#: languages/index.php:448
+msgid "Ukrainian (Ukraine)"
+msgstr "ウクライナ語 (ウクライナ)"
+
+#: languages/index.php:447
+msgid "Ukrainian"
+msgstr "ウクライナ語"
+
+#: languages/index.php:446
+msgid "Tsonga"
+msgstr "ツォンガ語"
+
+#: languages/index.php:445
+msgid "Tatar (Russia)"
+msgstr "タタール語 (ロシア)"
+
+#: languages/index.php:444
+msgid "Tatar"
+msgstr "タタール語"
+
+#: languages/index.php:443
+msgid "Turkish (Turkey)"
+msgstr "トルコ語 (トルコ)"
+
+#: languages/index.php:442
+msgid "Turkish"
+msgstr "トルコ語"
+
+#: languages/index.php:441
+msgid "Tswana (South Africa)"
+msgstr "ツワナ語 (南アフリカ)"
+
+#: languages/index.php:440
+msgid "Tswana"
+msgstr "ツワナ語"
+
+#: languages/index.php:439
+msgid "Tagalog (Philippines)"
+msgstr "タガログ語 (フィリピン)"
+
+#: languages/index.php:438
+msgid "Tagalog"
+msgstr "タガログ語"
+
+#: languages/index.php:437
+msgid "Thai (Thailand)"
+msgstr "タイ語 (タイ)"
+
+#: languages/index.php:436
+msgid "Thai"
+msgstr "タイ語"
+
+#: languages/index.php:435
+msgid "Telugu (India)"
+msgstr "テルグ語 (インド)"
+
+#: languages/index.php:434
+msgid "Telugu"
+msgstr "テルグ語"
+
+#: languages/index.php:433
+msgid "Tamil (India)"
+msgstr "タミル語 (インド)"
+
+#: languages/index.php:432
+msgid "Tamil"
+msgstr "タミル語"
+
+#: languages/index.php:431
+msgid "Swahili (Kenya)"
+msgstr "スワヒリ語 (ケニア)"
+
+#: languages/index.php:430
+msgid "Swahili"
+msgstr "スワヒリ語"
+
+#: languages/index.php:429
+msgid "Swedish (Sweden)"
+msgstr "スウェーデン語 (スウェーデン)"
+
+#: languages/index.php:428
+msgid "Swedish (Finland)"
+msgstr "スウェーデン語 (フィンランド)"
+
+#: languages/index.php:427
+msgid "Swedish"
+msgstr "スウェーデン語"
+
+#: languages/index.php:426
+msgid "Serbian (Latin) (Serbia and Montenegro)"
+msgstr "セルビア語 (セルビア、モンテネグロ)"
+
+#: languages/index.php:425
+msgid "Serbian (Serbia and Montenegro)"
+msgstr "セルビア語 (セルビア、モンテネグロ)"
+
+#: languages/index.php:424
+msgid "Serbian (Latin) (Bosnia and Herzegovina)"
+msgstr "セルビア語 (ラテン) (ボスニアヘルツェゴビナ)"
+
+#: languages/index.php:423
+msgid "Albanian (Albania)"
+msgstr "アルバニア語 (アルバニア)"
+
+#: languages/index.php:422
+msgid "Albanian"
+msgstr "アルバニア語"
+
+#: languages/index.php:421
+msgid "Slovenian (Slovenia)"
+msgstr "スロベニア語 (スロベニア)"
+
+#: languages/index.php:420
+msgid "Slovenian"
+msgstr "スロベニア語"
+
+#: languages/index.php:419
+msgid "Slovak (Slovakia)"
+msgstr "スロバキア語 (スロバキア)"
+
+#: languages/index.php:418
+msgid "Slovak"
+msgstr "スロバキア語"
+
+#: languages/index.php:417
+msgid "Sami (Northern) (Sweden)"
+msgstr "サーミ語 (北部) (スウェーデン)"
+
+#: languages/index.php:416
+msgid "Sami (Northern) (Norway)"
+msgstr "サーミ語 (ノルウェー)"
+
+#: languages/index.php:415
+msgid "Sami (Northern) (Finland)"
+msgstr "サーミ語 (北部) (フィンランド)"
+
+#: languages/index.php:414
+msgid "Sami (Northern)"
+msgstr "サーミ語 (北部)"
+
+#: languages/index.php:413
+msgid "Sanskrit (India)"
+msgstr "サンスクリット語 (インド)"
+
+#: languages/index.php:412
+msgid "Sanskrit"
+msgstr "サンスクリット語"
+
+#: languages/index.php:411
+msgid "Russian (Russia)"
+msgstr "ロシア語 (ロシア)"
+
+#: languages/index.php:410
+msgid "Russian"
+msgstr "ロシア語"
+
+#: languages/index.php:409
+msgid "Romanian (Romania)"
+msgstr "ルーマニア語 (ルーマニア)"
+
+#: languages/index.php:408
+msgid "Romanian"
+msgstr "ルーマニア語"
+
+#: languages/index.php:407
+msgid "Quechua (Peru)"
+msgstr "ケチュア語 (ペルー)"
+
+#: languages/index.php:406
+msgid "Quechua (Ecuador)"
+msgstr "ケチュア語 (エクアドル)"
+
+#: languages/index.php:405
+msgid "Quechua (Bolivia)"
+msgstr "ケチュア語 (ボリビア)"
+
+#: languages/index.php:404
+msgid "Quechua"
+msgstr "ケチュア語"
+
+#: languages/index.php:403
+msgid "Portuguese (Portugal)"
+msgstr "ポルトガル語 (ポルトガル)"
+
+#: languages/index.php:402
+msgid "Portuguese (Brazil)"
+msgstr "ポルトガル語 (ブラジル)"
+
+#: languages/index.php:401
+msgid "Portuguese"
+msgstr "ポルトガル語"
+
+#: languages/index.php:400
+msgid "Pashto (Afghanistan)"
+msgstr "パシュトゥー語 (アフガニスタン)"
+
+#: languages/index.php:399
+msgid "Pashto"
+msgstr "パシュトゥー語"
+
+#: languages/index.php:398
+msgid "Polish (Poland)"
+msgstr "ポーランド語 (ポーランド)"
+
+#: languages/index.php:397
+msgid "Polish"
+msgstr "ポーランド語"
+
+#: languages/index.php:396
+msgid "Punjabi (India)"
+msgstr "パンジャブ語 (インド)"
+
+#: languages/index.php:395
+msgid "Punjabi"
+msgstr "パンジャーブ語"
+
+#: languages/index.php:394
+msgid "Northern Sotho (South Africa)"
+msgstr "北ソト語 (南アフリカ)"
+
+#: languages/index.php:393
+msgid "Northern Sotho"
+msgstr "北ソト"
+
+#: languages/index.php:392
+msgid "Norwegian (Nynorsk) (Norway)"
+msgstr "ノルウェー語 (ノルウェー)"
+
+#: languages/index.php:391
+msgid "Dutch (Netherlands)"
+msgstr "オランダ語 (オランダ)"
+
+#: languages/index.php:390
+msgid "Dutch (Belgium)"
+msgstr "オランダ語 (ベルギー)"
+
+#: languages/index.php:389
+msgid "Dutch"
+msgstr "オランダ語"
+
+#: languages/index.php:388
+msgid "Norwegian (Bokmål) (Norway)"
+msgstr "ノルウェー語 (ノルウェー)"
+
+#: languages/index.php:387
+msgid "Norwegian (Bokmål)"
+msgstr "ノルウェー語（ボクモール）"
+
+#: languages/index.php:386
+msgid "Maltese (Malta)"
+msgstr "マルタ語 (マルタ)"
+
+#: languages/index.php:385
+msgid "Maltese"
+msgstr "マルタ語"
+
+#: languages/index.php:384
+msgid "Malay (Malaysia)"
+msgstr "マレー語 (マレーシア)"
+
+#: languages/index.php:383
+msgid "Malay (Brunei Darussalam)"
+msgstr "マレー語 (ブルネイダルサラーム)"
+
+#: languages/index.php:382
+msgid "Malay"
+msgstr "マレー語"
+
+#: languages/index.php:381
+msgid "Marathi (India)"
+msgstr "マラーティー語 (インド)"
+
+#: languages/index.php:380
+msgid "Marathi"
+msgstr "マラーティー語"
+
+#: languages/index.php:379
+msgid "Mongolian (Mongolia)"
+msgstr "モンゴル語 (モンゴル)"
+
+#: languages/index.php:378
+msgid "Mongolian"
+msgstr "モンゴル語"
+
+#: languages/index.php:377
+msgid "FYRO Macedonian (Former Yugoslav Republic of Macedonia)"
+msgstr "マケドニア旧ユーゴスラビア共和国"
+
+#: languages/index.php:376
+msgid "FYRO Macedonian"
+msgstr "マケドニア・旧ユーゴスラビア共和国マケドニア語"
+
+#: languages/index.php:375
+msgid "Maori (New Zealand)"
+msgstr "マオリ語 (ニュージーランド)"
+
+#: languages/index.php:374
+msgid "Maori"
+msgstr "マオリ語"
+
+#: languages/index.php:373
+msgid "Latvian (Latvia)"
+msgstr "ラトビア語 (ラトビア)"
+
+#: languages/index.php:372
+msgid "Latvian"
+msgstr "ラトビア語"
+
+#: languages/index.php:371
+msgid "Lithuanian (Lithuania)"
+msgstr "リトアニア語 (リトアニア)"
+
+#: languages/index.php:370
+msgid "Lithuanian"
+msgstr "リトアニア語"
+
+#: languages/index.php:369
+msgid "Kyrgyz (Kyrgyzstan)"
+msgstr "キルギス語 (キルギス)"
+
+#: languages/index.php:368
+msgid "Kyrgyz"
+msgstr "キルギス語"
+
+#: languages/index.php:367
+msgid "Konkani (India)"
+msgstr "コンカニ語 (インド)"
+
+#: languages/index.php:366
+msgid "Konkani"
+msgstr "コンカニ語"
+
+#: languages/index.php:365
+msgid "Korean (Korea)"
+msgstr "韓国語 (韓国)"
+
+#: languages/index.php:364
+msgid "Korean"
+msgstr "韓国語"
+
+#: languages/index.php:363
+msgid "Kannada (India)"
+msgstr "カンナダ語 (インド)"
+
+#: languages/index.php:362
+msgid "Kannada"
+msgstr "カンナダ語"
+
+#: languages/index.php:361
+msgid "Kazakh (Kazakhstan)"
+msgstr "カザフ語 (カザフスタン)"
+
+#: languages/index.php:360
+msgid "Kazakh"
+msgstr "カザフ語"
+
+#: languages/index.php:359
+msgid "Georgian (Georgia)"
+msgstr "グルジア語 (グルジア)"
+
+#: languages/index.php:358
+msgid "Georgian"
+msgstr "グルジア語"
+
+#: languages/index.php:357
+msgid "Japanese (Japan)"
+msgstr "日本語 (日本)"
+
+#: languages/index.php:356
+msgid "Japanese"
+msgstr "日本語"
+
+#: languages/index.php:355
+msgid "Italian (Italy)"
+msgstr "イタリア語 (イタリア)"
+
+#: languages/index.php:354
+msgid "Italian (Switzerland)"
+msgstr "イタリア語 (スイス)"
+
+#: languages/index.php:353
+msgid "Italian"
+msgstr "イタリア語"
+
+#: languages/index.php:352
+msgid "Icelandic (Iceland)"
+msgstr "アイスランド語 (アイスランド)"
+
+#: languages/index.php:351
+msgid "Icelandic"
+msgstr "アイスランド語"
+
+#: languages/index.php:350
+msgid "Indonesian (Indonesia)"
+msgstr "インドネシア語 (インドネシア)"
+
+#: languages/index.php:349
+msgid "Indonesian"
+msgstr "インドネシア語"
+
+#: languages/index.php:348
+msgid "Armenian (Armenia)"
+msgstr "アルメニア語 (アルメニア)"
+
+#: languages/index.php:347
+msgid "Armenian"
+msgstr "アルメニア語"
+
+#: languages/index.php:346
+msgid "Hungarian (Hungary)"
+msgstr "ハンガリー語 (ハンガリー)"
+
+#: languages/index.php:345
+msgid "Hungarian"
+msgstr "ハンガリー語"
+
+#: languages/index.php:344
+msgid "Croatian (Croatia)"
+msgstr "クロアチア語 (クロアチア)"
+
+#: languages/index.php:343
+msgid "Croatian (Bosnia and Herzegovina)"
+msgstr "クロアチア語 (ボスニアヘルツェゴビナ)"
+
+#: languages/index.php:342
+msgid "Croatian"
+msgstr "クロアチア語"
+
+#: languages/index.php:341
+msgid "Hindi (India)"
+msgstr "ヒンディー語 (インド)"
+
+#: languages/index.php:340
+msgid "Hindi"
+msgstr "ヒンディー語"
+
+#: languages/index.php:339
+msgid "Hebrew (Israel)"
+msgstr "ヘブライ語 (イスラエル)"
+
+#: languages/index.php:338
+msgid "Hebrew"
+msgstr "ヘブライ語"
+
+#: languages/index.php:337
+msgid "Gujarati (India)"
+msgstr "グジャラート語 (インド)"
+
+#: languages/index.php:336
+msgid "Gujarati"
+msgstr "グジャラート語"
+
+#: languages/index.php:335
+msgid "Galician (Spain)"
+msgstr "ガリシア語 (スペイン)"
+
+#: languages/index.php:334
+msgid "Galician"
+msgstr "ガリシア語"
+
+#: languages/index.php:333
+msgid "French (Principality of Monaco)"
+msgstr "フランス語 (モナコ公国)"
+
+#: languages/index.php:332
+msgid "French (Luxembourg)"
+msgstr "フランス語 (ルクセンブルク)"
+
+#: languages/index.php:331
+msgid "French (France)"
+msgstr "フランス語 (フランス)"
+
+#: languages/index.php:330
+msgid "French (Switzerland)"
+msgstr "フランス語 (スイス)"
+
+#: languages/index.php:329
+msgid "French (Canada)"
+msgstr "フランス語 (カナダ)"
+
+#: languages/index.php:328
+msgid "French (Belgium)"
+msgstr "フランス語 (ベルギー)"
+
+#: languages/index.php:327
+msgid "French"
+msgstr "フランス語"
+
+#: languages/index.php:326
+msgid "Faroese (Faroe Islands)"
+msgstr "フェロー諸島(フェロー諸島)"
+
+#: languages/index.php:325
+msgid "Faroese"
+msgstr "フェロー語"
+
+#: languages/index.php:324
+msgid "Finnish (Finland)"
+msgstr "フィンランド語 (フィンランド)"
+
+#: languages/index.php:323
+msgid "Finnish"
+msgstr "フィンランド語"
+
+#: languages/index.php:322
+msgid "Farsi (Iran)"
+msgstr "ペルシア語 (イラン)"
+
+#: languages/index.php:321
+msgid "Farsi"
+msgstr "ペルシア語"
+
+#: languages/index.php:320
+msgid "Basque (Spain)"
+msgstr "バスク語 (スペイン)"
+
+#: languages/index.php:319
+msgid "Basque"
+msgstr "バスク語"
+
+#: languages/index.php:318
+msgid "Estonian (Estonia)"
+msgstr "エストニア語 (エストニア)"
+
+#: languages/index.php:317
+msgid "Estonian"
+msgstr "エストニア語"
+
+#: languages/index.php:316
+msgid "Spanish (Venezuela)"
+msgstr "スペイン語 (ベネズエラ)"
+
+#: languages/index.php:315
+msgid "Spanish (Uruguay)"
+msgstr "スペイン語 (ウルグアイ)"
+
+#: languages/index.php:314
+msgid "Spanish (El Salvador)"
+msgstr "スペイン語 (エルサルバドル)"
+
+#: languages/index.php:313
+msgid "Spanish (Paraguay)"
+msgstr "スペイン語 (パラグアイ)"
+
+#: languages/index.php:312
+msgid "Spanish (Puerto Rico)"
+msgstr "スペイン語 (プエルトリコ)"
+
+#: languages/index.php:311
+msgid "Spanish (Peru)"
+msgstr "スペイン語 (ペルー)"
+
+#: languages/index.php:310
+msgid "Spanish (Panama)"
+msgstr "スペイン語 (パナマ)"
+
+#: languages/index.php:309
+msgid "Spanish (Nicaragua)"
+msgstr "スペイン語 (ニカラグア)"
+
+#: languages/index.php:308
+msgid "Spanish (Mexico)"
+msgstr "スペイン語 (メキシコ)"
+
+#: languages/index.php:307
+msgid "Spanish (Honduras)"
+msgstr "スペイン語 (ホンジュラス)"
+
+#: languages/index.php:306
+msgid "Spanish (Guatemala)"
+msgstr "スペイン語 (グアテマラ)"
+
+#: languages/index.php:305
+msgid "Spanish (Spain)"
+msgstr "スペイン語 (スペイン)"
+
+#: languages/index.php:304
+msgid "Spanish (Ecuador)"
+msgstr "スペイン語 (エクアドル)"
+
+#: languages/index.php:303
+msgid "Spanish (Dominican Republic)"
+msgstr "スペイン語 (ドミニカ共和国)"
+
+#: languages/index.php:302
+msgid "Spanish (Costa Rica)"
+msgstr "スペイン語 (コスタリカ)"
+
+#: languages/index.php:301
+msgid "Spanish (Colombia)"
+msgstr "スペイン語 (コロンビア)"
+
+#: languages/index.php:300
+msgid "Spanish (Chile)"
+msgstr "スペイン語 (チリ)"
+
+#: languages/index.php:299
+msgid "Spanish (Bolivia)"
+msgstr "スペイン語 (ボリビア)"
+
+#: languages/index.php:298
+msgid "Spanish (Argentina)"
+msgstr "スペイン語 (アルゼンチン)"
+
+#: languages/index.php:297
+msgid "Spanish"
+msgstr "スペイン語"
+
+#: languages/index.php:296
+msgid "Esperanto"
+msgstr "エスペラント語"
+
+#: languages/index.php:295
+msgid "English (Zimbabwe)"
+msgstr "英語 (ジンバブエ)"
+
+#: languages/index.php:294
+msgid "English (South Africa)"
+msgstr "英語 (南アフリカ)"
+
+#: languages/index.php:293
+msgid "English (United States)"
+msgstr "英語 (アメリカ)"
+
+#: languages/index.php:292
+msgid "English (Trinidad and Tobago)"
+msgstr "英語 (トリニダード・トバゴ)"
+
+#: languages/index.php:291
+msgid "English (Republic of the Philippines)"
+msgstr "英語 (フィリピン共和国)"
+
+#: languages/index.php:290
+msgid "English (New Zealand)"
+msgstr "英語 (ニュージーランド)"
+
+#: languages/index.php:289
+msgid "English (Jamaica)"
+msgstr "英語 (ジャマイカ)"
+
+#: languages/index.php:288
+msgid "English (Ireland)"
+msgstr "英語 (アイルランド)"
+
+#: languages/index.php:287
+msgid "English (United Kingdom)"
+msgstr "英語 (イギリス)"
+
+#: languages/index.php:286
+msgid "English (Caribbean)"
+msgstr "英語 (カリブ)"
+
+#: languages/index.php:285
+msgid "English (Canada)"
+msgstr "英語 (カナダ)"
+
+#: languages/index.php:284
+msgid "English (Belize)"
+msgstr "英語 (ベリーズ)"
+
+#: languages/index.php:283
+msgid "English (Australia)"
+msgstr "英語 (オーストラリア)"
+
+#: languages/index.php:282
+msgid "English"
+msgstr "英語"
+
+#: languages/index.php:281
+msgid "Greek (Greece)"
+msgstr "ギリシャ語 (ギリシャ)"
+
+#: languages/index.php:280
+msgid "Greek"
+msgstr "ギリシャ語"
+
+#: languages/index.php:279
+msgid "Divehi (Maldives)"
+msgstr "ディベヒ語 (モルディブ)"
+
+#: languages/index.php:278
+msgid "Divehi"
+msgstr "ディベヒ語"
+
+#: languages/index.php:277
+msgid "German (Luxembourg)"
+msgstr "ドイツ語 (ルクセンブルク)"
+
+#: languages/index.php:276
+msgid "German (Liechtenstein)"
+msgstr "ドイツ語 (リヒテンシュタイン)"
+
+#: languages/index.php:275
+msgid "German (Germany)"
+msgstr "ドイツ語 (ドイツ)"
+
+#: languages/index.php:274
+msgid "German (Switzerland)"
+msgstr "ドイツ語 (スイス)"
+
+#: languages/index.php:273
+msgid "German (Austria)"
+msgstr "ドイツ語 (オーストリア)"
+
+#: languages/index.php:272
+msgid "German"
+msgstr "ドイツ語"
+
+#: languages/index.php:271
+msgid "Danish (Denmark)"
+msgstr "デンマーク語 (デンマーク)"
+
+#: languages/index.php:270
+msgid "Danish"
+msgstr "デンマーク語"
+
+#: languages/index.php:269
+msgid "Welsh (United Kingdom)"
+msgstr "ウェールズ語 (イギリス)"
+
+#: languages/index.php:268
+msgid "Welsh"
+msgstr "ウェールズ語"
+
+#: languages/index.php:267
+msgid "Czech (Czech Republic)"
+msgstr "チェコ語 (チェコ共和国)"
+
+#: languages/index.php:266
+msgid "Czech"
+msgstr "チェコ語"
+
+#: languages/index.php:265
+msgid "Catalan (Spain)"
+msgstr "カタロニア語 (スペイン)"
+
+#: languages/index.php:264
+msgid "Catalan"
+msgstr "カタロニア語"
+
+#: languages/index.php:263
+msgid "Bosnian (Bosnia and Herzegovina)"
+msgstr "ボスニア語 (ボスニアヘルツェゴビナ)"
+
+#: languages/index.php:262
+msgid "Bulgarian (Bulgaria)"
+msgstr "ブルガリア語 (ブルガリア)"
+
+#: languages/index.php:261
+msgid "Bulgarian"
+msgstr "ブルガリア語"
+
+#: languages/index.php:260
+msgid "Belarusian (Belarus)"
+msgstr "ベラルーシ語 (ベラルーシ)"
+
+#: languages/index.php:259
+msgid "Belarusian"
+msgstr "ベラルーシ語"
+
+#: languages/index.php:258
+msgid "Azeri (Latin) (Azerbaijan)"
+msgstr "アゼルバイジャン語 (ラテン) (アゼルバイジャン)"
+
+#: languages/index.php:257
+msgid "Azeri (Latin)"
+msgstr "アゼルバイジャン語 (ラテン)"
+
+#: languages/index.php:256
+msgid "Arabic (Yemen)"
+msgstr "アラビア語 (イエメン)"
+
+#: languages/index.php:255
+msgid "Arabic (Tunisia)"
+msgstr "アラビア語 (チュニジア)"
+
+#: languages/index.php:254
+msgid "Arabic (Syria)"
+msgstr "アラビア語 (シリア)"
+
+#: languages/index.php:253
+msgid "Arabic (Saudi Arabia)"
+msgstr "アラビア語 (サウジアラビア)"
+
+#: languages/index.php:252
+msgid "Arabic (Qatar)"
+msgstr "アラビア語 (カタール)"
+
+#: languages/index.php:251
+msgid "Arabic (Oman)"
+msgstr "アラビア語 (オマーン)"
+
+#: languages/index.php:250
+msgid "Arabic (Morocco)"
+msgstr "アラビア語 (モロッコ)"
+
+#: languages/index.php:249
+msgid "Arabic (Libya)"
+msgstr "アラビア語 (リビア)"
+
+#: languages/index.php:248
+msgid "Arabic (Lebanon)"
+msgstr "アラビア語 (レバノン)"
+
+#: languages/index.php:247
+msgid "Arabic (Kuwait)"
+msgstr "アラビア語 (クウェート)"
+
+#: languages/index.php:246
+msgid "Arabic (Jordan)"
+msgstr "アラビア語 (ヨルダン)"
+
+#: languages/index.php:245
+msgid "Arabic (Iraq)"
+msgstr "アラビア語 (イラク)"
+
+#: languages/index.php:244
+msgid "Arabic (Egypt)"
+msgstr "アラビア語 (エジプト)"
+
+#: languages/index.php:243
+msgid "Arabic (Algeria)"
+msgstr "アラビア語 (アルジェリア)"
+
+#: languages/index.php:242
+msgid "Arabic (Bahrain)"
+msgstr "アラビア語 (バーレーン)"
+
+#: languages/index.php:241
+msgid "Arabic (U.A.E.)"
+msgstr "アラビア語 (アラブ首長国連邦)"
+
+#: languages/index.php:240
+msgid "Arabic"
+msgstr "アラビア語"
+
+#: languages/index.php:239
+msgid "Afrikaans (South Africa)"
+msgstr "アフリカーンス語 (南アフリカ)"
+
+#: languages/index.php:238
+msgid "Afrikaans"
+msgstr "アフリカーンス語"
+
+#: languages/index.php:231
+msgid "Europe"
+msgstr "ヨーロッパ"
+
+#: languages/index.php:230
+msgid "Maldives"
+msgstr "モルディブ"
+
+#: languages/index.php:229
+msgid "Isle of Man"
+msgstr "マン島"
+
+#: languages/index.php:228
+msgid "Jersey"
+msgstr "ジャージー島"
+
+#: languages/index.php:227
+msgid "Guernsey"
+msgstr "ガーンジー"
+
+#: languages/index.php:226
+msgid "Zimbabwe"
+msgstr "ジンバブエ"
+
+#: languages/index.php:225
+msgid "Zambia"
+msgstr "ザンビア"
+
+#: languages/index.php:224
+msgid "Yemen"
+msgstr "イエメン"
+
+#: languages/index.php:223
+msgid "Western Sahara"
+msgstr "西サハラ"
+
+#: languages/index.php:222
+msgid "U.S. Virgin Islands"
+msgstr "アメリカ領ヴァージン諸島"
+
+#: languages/index.php:221
+msgid "British Virgin Islands"
+msgstr "英領ヴァージン諸島"
+
+#: languages/index.php:220
+msgid "Viet Nam"
+msgstr "ベトナム"
+
+#: languages/index.php:219
+msgid "Venezuela"
+msgstr "ベネズエラ"
+
+#: languages/index.php:218
+msgid "Vanuatu"
+msgstr "バヌアツ"
+
+#: languages/index.php:217
+msgid "Uzbekistan"
+msgstr "ウズベキスタン"
+
+#: languages/index.php:216
+msgid "Uruguay"
+msgstr "ウルグアイ"
+
+#: languages/index.php:215
+msgid "United States"
+msgstr "アメリカ合衆国"
+
+#: languages/index.php:214
+msgid "United Kingdom"
+msgstr "イギリス"
+
+#: languages/index.php:213
+msgid "United Arab Emirates"
+msgstr "アラブ首長国連邦"
+
+#: languages/index.php:212
+msgid "Ukraine"
+msgstr "ウクライナ"
+
+#: languages/index.php:211
+msgid "Uganda"
+msgstr "ウガンダ"
+
+#: languages/index.php:210
+msgid "Turks and Caicos Islands"
+msgstr "タークス・カイコス諸島"
+
+#: languages/index.php:209
+msgid "Turkmenistan"
+msgstr "トルクメニスタン"
+
+#: languages/index.php:208
+msgid "Turkey"
+msgstr "トルコ"
+
+#: languages/index.php:207
+msgid "Tunisia"
+msgstr "チュニジア"
+
+#: languages/index.php:206
+msgid "Trinidad and Tobago"
+msgstr "トリニダード・トバゴ"
+
+#: languages/index.php:205
+msgid "Tonga"
+msgstr "トンガ"
+
+#: languages/index.php:204
+msgid "Togo"
+msgstr "トーゴ"
+
+#: languages/index.php:203
+msgid "Timor-Leste"
+msgstr "東ティモール"
+
+#: languages/index.php:202
+msgid "Thailand"
+msgstr "タイ"
+
+#: languages/index.php:201
+msgid "United Republic of Tanzania"
+msgstr "タンザニア統一共和国"
+
+#: languages/index.php:200
+msgid "Tajikistan"
+msgstr "タジキスタン"
+
+#: languages/index.php:199
+msgid "Taiwan"
+msgstr "台湾"
+
+#: languages/index.php:198
+msgid "Syrian Arab Republic"
+msgstr "シリア・アラブ共和国"
+
+#: languages/index.php:197
+msgid "Switzerland"
+msgstr "スイス"
+
+#: languages/index.php:196
+msgid "Sweden"
+msgstr "スウェーデン"
+
+#: languages/index.php:195
+msgid "Swaziland"
+msgstr "スワジランド"
+
+#: languages/index.php:194
+msgid "Svalbard and Jan Mayen"
+msgstr "スバールバル諸島ヤンマイエン島"
+
+#: languages/index.php:193
+msgid "Suriname"
+msgstr "スリナム"
+
+#: languages/index.php:192
+msgid "South Sudan"
+msgstr "南スーダン"
+
+#: languages/index.php:191
+msgid "Sudan"
+msgstr "スーダン"
+
+#: languages/index.php:190
+msgid "Seychelles"
+msgstr "セイシェル"
+
+#: languages/index.php:189
+msgid "Sri Lanka"
+msgstr "スリランカ"
+
+#: languages/index.php:188
+msgid "Spain"
+msgstr "スペイン"
+
+#: languages/index.php:187
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "サウスジョージア・サウスサンドウィッチ諸島"
+
+#: languages/index.php:186
+msgid "South Africa"
+msgstr "南アフリカ"
+
+#: languages/index.php:185
+msgid "Somalia"
+msgstr "ソマリア"
+
+#: languages/index.php:184
+msgid "Solomon Islands"
+msgstr "ソロモン諸島"
+
+#: languages/index.php:183
+msgid "Slovenia"
+msgstr "スロベニア"
+
+#: languages/index.php:182
+msgid "Slovakia"
+msgstr "スロバキア"
+
+#: languages/index.php:181
+msgid "Singapore"
+msgstr "シンガポール"
+
+#: languages/index.php:180
+msgid "Sierra Leone"
+msgstr "シエラレオネ"
+
+#: languages/index.php:179
+msgid "Serbia"
+msgstr "セルビア"
+
+#: languages/index.php:178
+msgid "Senegal"
+msgstr "セネガル"
+
+#: languages/index.php:177
+msgid "Saudi Arabia"
+msgstr "サウジアラビア"
+
+#: languages/index.php:176
+msgid "Sao Tome and Principe"
+msgstr "サントメ・プリンシペ"
+
+#: languages/index.php:175
+msgid "Samoa"
+msgstr "サモア"
+
+#: languages/index.php:174
+msgid "Saint Vincent and the Grenadines"
+msgstr "セントビンセントとグレナディーン"
+
+#: languages/index.php:173
+msgid "Saint Martin"
+msgstr "セント・マーチン"
+
+#: languages/index.php:172
+msgid "Saint Lucia"
+msgstr "セントルシア"
+
+#: languages/index.php:171
+msgid "Saint Kitts and Nevis"
+msgstr "セントクリストファー・ネイビス"
+
+#: languages/index.php:170
+msgid "Rwanda"
+msgstr "ルワンダ"
+
+#: languages/index.php:169
+msgid "Russian Federation"
+msgstr "ロシア連邦"
+
+#: languages/index.php:168
+msgid "Romania"
+msgstr "ルーマニア"
+
+#: languages/index.php:167
+msgid "Réunion"
+msgstr "レユニオン"
+
+#: languages/index.php:166
+msgid "Qatar"
+msgstr "カタール"
+
+#: languages/index.php:165
+msgid "Puerto Rico"
+msgstr "プエルトリコ"
+
+#: languages/index.php:164
+msgid "Portugal"
+msgstr "ポルトガル"
+
+#: languages/index.php:163
+msgid "Poland"
+msgstr "ポーランド"
+
+#: languages/index.php:162
+msgid "Philippines"
+msgstr "フィリピン"
+
+#: languages/index.php:161
+msgid "Peru"
+msgstr "ペルー"
+
+#: languages/index.php:160
+msgid "Paraguay"
+msgstr "パラグアイ"
+
+#: languages/index.php:159
+msgid "Papua New Guinea"
+msgstr "パプアニューギニア"
+
+#: languages/index.php:158
+msgid "Panama"
+msgstr "パナマ"
+
+#: languages/index.php:157
+msgid "Occupied Palestinian Territory"
+msgstr "パレスチナ占領地域"
+
+#: languages/index.php:156
+msgid "Palau"
+msgstr "パラウ"
+
+#: languages/index.php:155
+msgid "Pakistan"
+msgstr "パキスタン"
+
+#: languages/index.php:154
+msgid "Oman"
+msgstr "オマーン"
+
+#: languages/index.php:153
+msgid "Norway"
+msgstr "ノルウェー"
+
+#: languages/index.php:152
+msgid "Nigeria"
+msgstr "ナイジェリア"
+
+#: languages/index.php:151
+msgid "Niger"
+msgstr "ニジェール"
+
+#: languages/index.php:150
+msgid "Nicaragua"
+msgstr "ニカラグア"
+
+#: languages/index.php:149
+msgid "New Zealand"
+msgstr "ニュージーランド"
+
+#: languages/index.php:148
+msgid "New Caledonia"
+msgstr "ニューカレドニア"
+
+#: languages/index.php:147
+msgid "Netherlands"
+msgstr "オランダ"
+
+#: languages/index.php:146
+msgid "Nepal"
+msgstr "ネパール"
+
+#: languages/index.php:145
+msgid "Namibia"
+msgstr "ナミビア"
+
+#: languages/index.php:144
+msgid "Myanmar"
+msgstr "ミャンマー"
+
+#: languages/index.php:143
+msgid "Mozambique"
+msgstr "モザンビーク"
+
+#: languages/index.php:142
+msgid "Morocco"
+msgstr "モロッコ"
+
+#: languages/index.php:141
+msgid "Montserrat"
+msgstr "モントセラート"
+
+#: languages/index.php:140
+msgid "Montenegro"
+msgstr "モンテネグロ"
+
+#: languages/index.php:139
+msgid "Mongolia"
+msgstr "モンゴル"
+
+#: languages/index.php:138
+msgid "Moldova"
+msgstr "モルドバ"
+
+#: languages/index.php:137
+msgid "Mexico"
+msgstr "メキシコ"
+
+#: languages/index.php:136
+msgid "Mauritius"
+msgstr "モーリシャス"
+
+#: languages/index.php:135
+msgid "Mauritania"
+msgstr "モーリタニア"
+
+#: languages/index.php:134
+msgid "Martinique"
+msgstr "マルティニーク"
+
+#: languages/index.php:133
+msgid "Malta"
+msgstr "マルタ"
+
+#: languages/index.php:132
+msgid "Mali"
+msgstr "マリ"
+
+#: languages/index.php:131
+msgid "Malaysia"
+msgstr "マレーシア"
+
+#: languages/index.php:130
+msgid "Malawi"
+msgstr "マラウイ"
+
+#: languages/index.php:129
+msgid "Madagascar"
+msgstr "マダガスカル"
+
+#: languages/index.php:128
+msgid "The Former Yugoslav Republic of Macedonia"
+msgstr "マケドニア旧ユーゴスラビア共和国"
+
+#: languages/index.php:127
+msgid "Luxembourg"
+msgstr "ルクセンブルク"
+
+#: languages/index.php:126
+msgid "Lithuania"
+msgstr "リトアニア"
+
+#: languages/index.php:125
+msgid "Liechtenstein"
+msgstr "リヒテンシュタイン"
+
+#: languages/index.php:124
+msgid "Libyan Arab Jamahiriya"
+msgstr "リビア・アラブ・ジャマヒリーヤ"
+
+#: languages/index.php:123
+msgid "Liberia"
+msgstr "リベリア"
+
+#: languages/index.php:122
+msgid "Lesotho"
+msgstr "レソト"
+
+#: languages/index.php:121
+msgid "Lebanon"
+msgstr "レバノン"
+
+#: languages/index.php:120
+msgid "Latvia"
+msgstr "ラトビア"
+
+#: languages/index.php:119
+msgid "Lao People's Democratic Republic"
+msgstr "ラオス人民民主共和国"
+
+#: languages/index.php:118
+msgid "Kyrgyzstan"
+msgstr "キルギスタン"
+
+#: languages/index.php:117
+msgid "Kuwait"
+msgstr "クウェート"
+
+#: languages/index.php:116
+msgid "Kosovo"
+msgstr "コソボ"
+
+#: languages/index.php:115
+msgid "Republic of Korea"
+msgstr "韓国"
+
+#: languages/index.php:114
+msgid "Democratic People's Republic of Korea"
+msgstr "朝鮮民主主義人民共和国"
+
+#: languages/index.php:113
+msgid "Nauru"
+msgstr "ナウル"
+
+#: languages/index.php:112
+msgid "Kenya"
+msgstr "ケニア"
+
+#: languages/index.php:111
+msgid "Kazakhstan"
+msgstr "カザフスタン"
+
+#: languages/index.php:110
+msgid "Jordan"
+msgstr "ヨルダン"
+
+#: languages/index.php:109
+msgid "Japan"
+msgstr "日本"
+
+#: languages/index.php:108
+msgid "Jamaica"
+msgstr "ジャマイカ"
+
+#: languages/index.php:107
+msgid "Italy"
+msgstr "イタリア"
+
+#: languages/index.php:106
+msgid "Israel"
+msgstr "イスラエル"
+
+#: languages/index.php:105
+msgid "Ireland"
+msgstr "アイルランド"
+
+#: languages/index.php:104
+msgid "Iraq"
+msgstr "イラク"
+
+#: languages/index.php:103
+msgid "Islamic Republic of Iran"
+msgstr "イラン・イスラム共和国"
+
+#: languages/index.php:102
+msgid "Indonesia"
+msgstr "インドネシア"
+
+#: languages/index.php:101
+msgid "India"
+msgstr "インド"
+
+#: languages/index.php:100
+msgid "Iceland"
+msgstr "アイスランド"
+
+#: languages/index.php:99
+msgid "Hungary"
+msgstr "ハンガリー"
+
+#: languages/index.php:98
+msgid "Hong Kong"
+msgstr "香港"
+
+#: languages/index.php:97
+msgid "Honduras"
+msgstr "ホンジュラス"
+
+#: languages/index.php:96
+msgid "Haiti"
+msgstr "ハイチ"
+
+#: languages/index.php:95
+msgid "Guyana"
+msgstr "ガイアナ"
+
+#: languages/index.php:94
+msgid "Guinea-Bissau"
+msgstr "ギニアビサウ"
+
+#: languages/index.php:93
+msgid "Guinea"
+msgstr "ギニア"
+
+#: languages/index.php:92
+msgid "Guatemala"
+msgstr "グアテマラ"
+
+#: languages/index.php:91
+msgid "Guadeloupe"
+msgstr "グアドループ"
+
+#: languages/index.php:90
+msgid "Grenada"
+msgstr "グレナダ"
+
+#: languages/index.php:89
+msgid "Greenland"
+msgstr "グリーンランド"
+
+#: languages/index.php:88
+msgid "Greece"
+msgstr "ギリシャ"
+
+#: languages/index.php:87
+msgid "Ghana"
+msgstr "ガーナ"
+
+#: languages/index.php:86
+msgid "Germany"
+msgstr "ドイツ"
+
+#: languages/index.php:85
+msgid "Georgia"
+msgstr "ジョージア"
+
+#: languages/index.php:84
+msgid "Gambia"
+msgstr "ガンビア"
+
+#: languages/index.php:83
+msgid "Gabon"
+msgstr "ガボン"
+
+#: languages/index.php:82
+msgid "French Guiana"
+msgstr "フランス領ギアナ"
+
+#: languages/index.php:81
+msgid "France"
+msgstr "フランス"
+
+#: languages/index.php:80
+msgid "Finland"
+msgstr "フィンランド"
+
+#: languages/index.php:79
+msgid "Fiji"
+msgstr "フィジー"
+
+#: languages/index.php:78
+msgid "Falkland Islands (Malvinas)"
+msgstr "フォークランド諸島 (マルビナス)"
+
+#: languages/index.php:77
+msgid "Faroe Islands"
+msgstr "フェロー諸島"
+
+#: languages/index.php:76
+msgid "Ethiopia"
+msgstr "エチオピア"
+
+#: languages/index.php:75
+msgid "Estonia"
+msgstr "エストニア"
+
+#: languages/index.php:74
+msgid "Eritrea"
+msgstr "エリトリア"
+
+#: languages/index.php:73
+msgid "Equatorial Guinea"
+msgstr "赤道ギニア"
+
+#: languages/index.php:72
+msgid "El Salvador"
+msgstr "エルサルバドル"
+
+#: languages/index.php:71
+msgid "Egypt"
+msgstr "エジプト"
+
+#: languages/index.php:70
+msgid "Ecuador"
+msgstr "エクアドル"
+
+#: languages/index.php:69
+msgid "Dominican Republic"
+msgstr "ドミニカ共和国"
+
+#: languages/index.php:68
+msgid "Dominica"
+msgstr "ドミニカ"
+
+#: languages/index.php:67
+msgid "Djibouti"
+msgstr "ジブチ"
+
+#: languages/index.php:66
+msgid "Denmark"
+msgstr "デンマーク"
+
+#: languages/index.php:65
+msgid "Czech Republic"
+msgstr "チェコ共和国"
+
+#: languages/index.php:64
+msgid "Cyprus"
+msgstr "キプロス"
+
+#: languages/index.php:63
+msgid "Cuba"
+msgstr "キューバ"
+
+#: languages/index.php:62
+msgid "Croatia"
+msgstr "クロアチア"
+
+#: languages/index.php:61
+msgid "Côte d'Ivoire"
+msgstr "コートジボワール"
+
+#: languages/index.php:60
+msgid "Costa Rica"
+msgstr "コスタリカ"
+
+#: languages/index.php:59
+msgid "The Democratic Republic of the Congo"
+msgstr "コンゴ民主共和国"
+
+#: languages/index.php:58
+msgid "Congo"
+msgstr "コンゴ民主共和国"
+
+#: languages/index.php:57
+msgid "Comoros"
+msgstr "コモロ"
+
+#: languages/index.php:56
+msgid "Colombia"
+msgstr "コロンビア"
+
+#: languages/index.php:55
+msgid "China"
+msgstr "中国"
+
+#: languages/index.php:54
+msgid "Chile"
+msgstr "チリ"
+
+#: languages/index.php:53
+msgid "Chad"
+msgstr "チャド"
+
+#: languages/index.php:52
+msgid "Central African Republic"
+msgstr "中央アフリカ共和国"
+
+#: languages/index.php:51
+msgid "Cayman Islands"
+msgstr "ケイマン諸島"
+
+#: languages/index.php:50
+msgid "Cape Verde"
+msgstr "カーボベルデ"
+
+#: languages/index.php:49
+msgid "Canada"
+msgstr "カナダ"
+
+#: languages/index.php:48
+msgid "Cameroon"
+msgstr "カメルーン"
+
+#: languages/index.php:47
+msgid "Cambodia"
+msgstr "カンボジア"
+
+#: languages/index.php:46
+msgid "Burundi"
+msgstr "ブルンジ"
+
+#: languages/index.php:45
+msgid "Burkina Faso"
+msgstr "ブルキナファソ"
+
+#: languages/index.php:44
+msgid "Bulgaria"
+msgstr "ブルガリア"
+
+#: languages/index.php:43
+msgid "Brunei Darussalam"
+msgstr "ブルネイ・ダルサラーム"
+
+#: languages/index.php:42
+msgid "Brazil"
+msgstr "ブラジル"
+
+#: languages/index.php:41
+msgid "Botswana"
+msgstr "ボツワナ"
+
+#: languages/index.php:40
+msgid "Bosnia and Herzegovina"
+msgstr "ボスニア・ヘルツェゴビナ"
+
+#: languages/index.php:39
+msgid "Bolivia"
+msgstr "ボリビア"
+
+#: languages/index.php:38
+msgid "Bhutan"
+msgstr "ブータン"
+
+#: languages/index.php:37
+msgid "Bermuda"
+msgstr "バミューダ島"
+
+#: languages/index.php:36
+msgid "Benin"
+msgstr "ベニン"
+
+#: languages/index.php:35
+msgid "Belize"
+msgstr "ベリーズ"
+
+#: languages/index.php:34
+msgid "Belgium"
+msgstr "ベルギー"
+
+#: languages/index.php:33
+msgid "Belarus"
+msgstr "ベラルーシ"
+
+#: languages/index.php:32
+msgid "Barbados"
+msgstr "バルバドス"
+
+#: languages/index.php:31
+msgid "Bangladesh"
+msgstr "バングラデシュ"
+
+#: languages/index.php:30
+msgid "Bahrain"
+msgstr "バーレーン"
+
+#: languages/index.php:29
+msgid "Bahamas"
+msgstr "バハマ"
+
+#: languages/index.php:28
+msgid "Azerbaijan"
+msgstr "アゼルバイジャン"
+
+#: languages/index.php:27
+msgid "Austria"
+msgstr "オーストリア"
+
+#: languages/index.php:26
+msgid "Australia"
+msgstr "オーストラリア"
+
+#: languages/index.php:25
+msgid "Aruba"
+msgstr "アルバ"
+
+#: languages/index.php:24
+msgid "Armenia"
+msgstr "アルメニア"
+
+#: languages/index.php:23
+msgid "Argentina"
+msgstr "アルゼンチン"
+
+#: languages/index.php:22
+msgid "Antigua and Barbuda"
+msgstr "アンティグア・バーブーダ"
+
+#: languages/index.php:21
+msgid "Anguilla"
+msgstr "アンギラ"
+
+#: languages/index.php:20
+msgid "Angola"
+msgstr "アンゴラ"
+
+#: languages/index.php:19
+msgid "Andorra"
+msgstr "アンドラ"
+
+#: languages/index.php:18
+msgid "Algeria"
+msgstr "アルジェリア"
+
+#: languages/index.php:17
+msgid "Albania"
+msgstr "アルバニア"
+
+#: languages/index.php:16
+msgid "Aland Islands"
+msgstr "オーランド諸島"
+
+#: languages/index.php:15
+msgid "Afghanistan"
+msgstr "アフガニスタン"
+
+#: languages/index.php:13
+msgid "Local IP Address"
+msgstr "ローカル IP アドレス"
+
+#: wp-slimstat.php:1010
+msgid "This parameter specifies the type of QUERY you would like to perform. Accepted funciton values include: count, count-all, recent, recent-all, top and top-all."
+msgstr "このパラメータは、実行したいクエリのタイプを指定します。受け入れられる関数の値は、count、count-all、recent、recent-all、top、top-all です。"
+
+#: wp-slimstat.php:984
+msgid "[REST API] Please use a valid token in order to access the REST API endpoint at this URL."
+msgstr "[REST API] この URL の REST API エンドポイントにアクセスするには、有効なトークンを使用してください。"
+
+#: wp-slimstat.php:970
+msgid "[REST API] You sent an invalid request. Accepted function values include: <code>count, count-all, recent, recent-all, top and top-all</code>. Please review your request and try again."
+msgstr "[REST API] 無効なリクエストを送信しました。受け入れられる関数の値は以下の通りです: <code>count、count-all、recent、recent-all、top、top-all</code> リクエストを確認して、もう一度試してみてください。"
+
+#: wp-slimstat.php:939
+msgid "[REST API] The <code>function</code> parameter is required. Please review your request and try again."
+msgstr "[REST API] <code>function</code> パラメータは必須です。リクエストを確認して、もう一度試してみてください。"
+
+#: wp-slimstat.php:935
+msgid "[REST API] The <code>dimension</code> parameter is required. Please review your request and try again."
+msgstr "[REST API] <code>dimension</code> パラメータは必須です。リクエストを確認して、もう一度試してみてください。"
+
+#: wp-slimstat.php:778
+msgid "Invalid Report ID"
+msgstr "無効なレポート ID"
+
+#: languages/index.php:573
+msgid "Pageview not tracked because the IP address format was invalid."
+msgstr "IP アドレスの形式が無効なため、ページビューが追跡されませんでした。"
+
+#: languages/index.php:575
+msgid "Tracking is turned off, but it looks like the client-side code is still attached to your pages. Do you have a caching tool enabled?"
+msgstr "追跡はオフになっていますが、クライアント側のコードがまだページに添付されているようです。キャッシュを有効にしていますか？"
+
+#. translators: %s: plugin name.
+#: languages/i18n-v3.php:295
+msgid "Translation of %s"
+msgstr "%s翻訳"
+
+#. translators: %1$s is the notification dismissal link start tag, %2$s is the
+#. link closing tag.
+#: languages/i18n-v3.php:275
+msgid "%1$sPlease don't show me this notification anymore%2$s"
+msgstr "%1$s今後この通知を表示しない%2$s"
+
+#: languages/i18n-v3.php:259
+msgid "Register now &raquo;"
+msgstr "今すぐ登録 &raquo;"
+
+#. translators: 2: plugin name; 4: link to translation platform.
+#: languages/i18n-v3.php:241
+msgid "You're using WordPress in a language we don't support yet. We'd love for %2$s to be translated in that language too, but unfortunately, it isn't right now. You can change that! Register at %4$s to help translate it!"
+msgstr "まだ対応していない言語で WordPress をご利用中です。 %2$s をお使いの言語にも翻訳したいと思っていますが、残念ながら、今は翻訳されていません。ぜひご協力いただけませんか ? %4$s で登録して翻訳に協力しましょう。"
+
+#. translators: 1: language name; 2: plugin name; 3: completion percentage; 4:
+#. link to translation platform.
+#: languages/i18n-v3.php:237
+msgid "You're using WordPress in %1$s. While %2$s has been translated to %1$s for %3$d%%, it's not been shipped with the plugin yet. You can help! Register at %4$s to help complete the translation to %1$s!"
+msgstr "WordPressを%1$sで使っています。%2$s は%1$sに %3$d%% 翻訳されていますが、プラグインではまだ出荷されていません。手伝ってください! %4$sに登録して、%1$sへの翻訳を完了させてください!"
+
+#. translators: 1: language name; 3: completion percentage; 4: link to
+#. translation platform.
+#: languages/i18n-v3.php:233
+msgid "As you can see, there is a translation of this plugin in %1$s. This translation is currently %3$d%% complete. We need your help to make it complete and to fix any errors. Please register at %4$s to help complete the translation to %1$s!"
+msgstr "ご覧のように、このプラグインは%1$sに翻訳されています。この翻訳は現在 %3$d%% 完了しています。翻訳を完成させ、エラーを修正するためにあなたの助けが必要です。%1$sへの翻訳を完成させるために、%4$sに登録してください!"
+
+#: admin/view/index.php:62
+msgid "Last 12 weeks"
+msgstr "過去12週間"
+
+#: admin/view/index.php:61
+msgid "Last 4 weeks"
+msgstr "過去4週間"
+
+#: admin/view/wp-slimstat-db.php:39
+msgid "Visitor's Email"
+msgstr "訪問者のメールアドレス"
+
+#: admin/config/index.php:590
+msgid "You are currently using version %s."
+msgstr "現在、バージョン %s を使用しています。"
+
+#: admin/view/wp-slimstat-db.php:1229
+msgid "Human users that generated one single page view on your website."
+msgstr "あなたのサイトで単一ページビューを生成した人間のユーザー。"
+
+#: admin/view/wp-slimstat-db.php:1221
+msgid "Total number of one-page visits divided by the total number of entries to a website. Please see the <a href=\"https://support.google.com/analytics/answer/1009409?hl=en\" target=\"_blank\">official Google docs</a> for more information."
+msgstr "単一ページの訪問数をサイトの総エントリー数で割ったもの。詳しくは <a href=\"https://support.google.com/analytics/answer/1009409?hl=en\" target=\"_blank\">Google 公式ドキュメント</a>をご覧ください。"
+
+#: admin/config/index.php:469
+msgid "Customizer"
+msgstr "カスタマイザー"
+
+#: admin/config/index.php:132
+msgid "Opt-in Cookies"
+msgstr "オプトイン Cookie"
+
+#: admin/view/wp-slimstat-reports.php:1403
+msgid "Filter by element in a group"
+msgstr "グループ内の要素で絞り込む"
+
+#: admin/view/wp-slimstat-reports.php:804
+msgid "Users by Page"
+msgstr "ページごとのユーザー"
+
+#: admin/view/wp-slimstat-db.php:106
+msgid "Grouped Value"
+msgstr "グループ値"
+
+#: admin/view/index.php:10
+msgid "Dimension"
+msgstr "ディメンション(分析軸)"
+
+#: admin/config/index.php:137
+msgid "Opt-out Message"
+msgstr "オプトアウトメッセージ"
+
+#: admin/config/index.php:127
+msgid "Opt-out Cookies"
+msgstr "オプトアウト Cookie"
+
+#: admin/config/index.php:122
+msgid "Allow Opt-out"
+msgstr "オプトアウトを許可"
+
+#: admin/view/wp-slimstat-reports.php:1256
+#: admin/view/wp-slimstat-reports.php:1266
+msgid "(previous)"
+msgstr "(前)"
+
+#: admin/view/index.php:93
+msgid "&plusmn; hours"
+msgstr "&plusmn; 時間"
+
+#: admin/view/index.php:90
+msgid "To define an interval, enter the number of days (negative to go back in time)."
+msgstr "間隔を定義するには、日数を入力します（時間を遡るにはマイナス）。"
+
+#: admin/view/index.php:90
+msgid "&plusmn; days"
+msgstr "&plusmn; 日"
+
+#: admin/config/index.php:249
+msgid "Comparison Chart"
+msgstr "比較グラフ"
+
+#: admin/config/index.php:430
+msgid "Content Types"
+msgstr "コンテンツタイプ"
+
+#: admin/config/index.php:411
+msgid "Page Properties"
+msgstr "ページプロパティ"
+
+#: admin/config/index.php:379
+msgid "Capabilities"
+msgstr "権限"
+
+#: admin/config/index.php:384
+msgid "IP Addresses"
+msgstr "IP アドレス"
+
+#: admin/config/index.php:374 admin/config/index.php:462
+#: admin/config/index.php:479 admin/config/index.php:496
+msgid "Usernames"
+msgstr "ユーザー名"
+
+#: admin/config/index.php:350
+msgid "User Properties"
+msgstr "ユーザープロパティ"
+
+#: admin/config/index.php:290
+msgid "Map Data Points"
+msgstr "地図データポイント"
+
+#: admin/config/index.php:276
+msgid "Access Log and World Map"
+msgstr "アクセスログと世界地図"
+
+#: admin/config/index.php:117
+msgid "Set Cookie"
+msgstr "Cookie を設定"
+
+#: admin/config/index.php:547
+msgid "The <a href='https://dev.maxmind.com/geoip/geoip2/geolite2/' target='_blank'>MaxMind GeoLite2 library</a>, which Slimstat uses to geolocate your visitors, is released under the Creative Commons BY-SA 4.0 license, and cannot be directly bundled with the plugin because of license incompatibility issues. You must obtain and set a GeoLite2 license key below. If you're getting an error after enabling this option, please <a href='https://slimstat.freshdesk.com/solution/articles/12000039798-how-to-manually-install-the-maxmind-geolocation-data-file-' target='_blank'>take a look at our knowledge base</a> to learn how to install this file manually."
+msgstr "Slimstat が訪問者の位置情報に使用する <a href='https://dev.maxmind.com/geoip/geoip2/geolite2/' target='_blank'>MaxMind GeoLite2 ライブラリ</a>は、Creative Commons BY-SA 4.0 ライセンスの下でリリースされており、ライセンス非互換性の問題のためプラグインに直接同梱することはできません。このため、GeoLite2 ライセンスキーを取得して設定する必要があります。このオプションを有効化した後にエラーが発生する場合は、<a href='https://slimstat.freshdesk.com/solution/articles/12000039798-how-to-manually-install-the-maxmind-geolocation-data-file-' target='_blank'>ナレッジベース</a>でこのファイルを手動でインストールする方法をご覧ください。"
+
+#: admin/view/wp-slimstat-reports.php:822
+msgid "Dots on the map represent the most recent pageviews geolocated by City. This feature is only available by enabling the corresponding precision level in the settings."
+msgstr "地図上のドットは、都市ごとに地理的に割り当てられた最新のページビューを表しています。この機能は、設定で対応する精度レベルを有効にすることでのみ利用可能です。"
+
+#: admin/config/index.php:119
+msgid "Disable this option if, for legal or security reasons, you do not want Slimstat to assign a <a href=\"https://en.wikipedia.org/wiki/HTTP_cookie\" target=\"_blank\">cookie</a> to your visitors. Please note that by deactivating this feature, Slimstat will not be able to identify returning visitors as such."
+msgstr "法的またはセキュリティ上の理由から、訪問者に <a href=\"https://en.wikipedia.org/wiki/HTTP_cookie\" target=\"_blank\">cookie</a> を割り当てたくない場合は、このオプションを無効にしてください。この機能を無効にすることで、Slimstat はそのような訪問者を識別することができなくなることに注意してください。"
+
+#: admin/view/right-now.php:251
+msgid "Invalid Referrer"
+msgstr "無効なリファラー"
+
+#: admin/view/wp-slimstat-db.php:107
+msgid "Percentage"
+msgstr "パーセント"
+
+#: admin/config/index.php:507
+msgid "Tokens"
+msgstr "トークン"
+
+#: admin/config/index.php:190
+msgid "Relative Ajax"
+msgstr "相対 Ajax"
+
+#: admin/view/wp-slimstat-reports.php:828
+msgid "Top Cities"
+msgstr "上位の都市"
+
+#: admin/config/index.php:170 admin/view/wp-slimstat-db.php:49
+msgid "City"
+msgstr "市区町村"
+
+#: admin/config/index.php:169
+msgid "Country"
+msgstr "国"
+
+#: admin/config/index.php:167
+msgid "Geolocation Precision"
+msgstr "位置情報の精度"
+
+#: admin/config/index.php:509
+msgid "In order to send requests to <a href='https://slimstat.freshdesk.com/support/solutions/articles/12000033661-slimstat-rest-api' target='_blank'>the Slimstat REST API</a>, you will need to pass a valid token to the endpoint (param ?token=XXX). Using the field here below, you can define as many tokens as you like, and distribute them to your API users. Please note: treat these tokens as passwords, as they will grant read access to your reports to anyone who knows them. Use a service like <a href='https://randomkeygen.com/#ci_key' target='_blank'>RandomKeyGen.com</a> to generate unique secure tokens."
+msgstr "<a href='https://slimstat.freshdesk.com/support/solutions/articles/12000033661-slimstat-rest-api' target='_blank'>Slimstat REST API</a> にリクエストを送信するには、有効なトークンをエンドポイントに渡す必要があります (param ?token=XXX)。以下のフィールドを使用してトークンを定義し、API ユーザーに配布することができます。注意: これらのトークンはパスワードと同じように扱ってください。<a href='https://randomkeygen.com/#ci_key' target='_blank'>RandomKeyGen.com</a> のようなサービスを利用して、ユニークで安全なトークンを生成してください。"
+
+#: wp-slimstat.php:1020
+msgid "This parameter is used to filter a given dimension (resources, browsers, operating systems, etc) so that it satisfies certain conditions (i.e.: browser contains Chrome). Please make sure to urlencode this value, and to use the usual filter format: browser contains Chrome&&&referer contains slim (encoded: browser%20contains%20Chrome%26%26%26referer%20contains%20slim)"
+msgstr "このパラメータは、特定のディメンション (リソース、ブラウザ、OSなど) をフィルタリングして、特定の条件を満たすようにするために使われます (例: ブラウザに Chrome を含む)。この値を必ず urlencode し、通常のフィルタ形式を使用するようにしてください: browser contains Chrome&&&referer contains slim (エンコード後: browser%20contains%20Chrome%26%26%26referer%20contains%20slim)"
+
+#: wp-slimstat.php:1015
+msgid "This parameter indicates what dimension to return: * (all data), ip, resource, browser, operating system, etc. You can only specify one dimension at a time."
+msgstr "このパラメータは、返すディメンションを示します: * (すべてのデータ)、IP、リソース、ブラウザ、OSなど。一度に指定できるのは1つのディメンションのみです。"
+
+#: wp-slimstat.php:1006
+msgid "You will need to specify a valid token to be able to query the data. Tokens are defined in Slimstat > Settings > Access Control."
+msgstr "データを照会できるようにするには、有効なトークンを指定する必要があります。トークンは、Slimstat > 設定 > アクセス制御で定義します。"
+
+#: admin/view/layout.php:54
+msgid "Move to Inactive"
+msgstr "停止中に移動"
+
+#: admin/config/index.php:404
+msgid "Operating Systems"
+msgstr "OS"
+
+#: admin/config/index.php:156
+msgid "Downloads"
+msgstr "ダウンロード"
+
+#: wp-slimstat.php:2035
+msgid "Optional filters"
+msgstr "オプションのフィルター"
+
+#: wp-slimstat.php:457
+msgid "Attempted XSS Injection: %s"
+msgstr "XSS インジェクションの試行: %s"
+
+#: languages/index.php:572
+msgid "Malformed referrer URL"
+msgstr "不正なリファラーURL"
+
+#: admin/view/right-now.php:267
+msgid "Delete this entry from the database"
+msgstr "データベースからこのエントリーを削除"
+
+#: admin/config/index.php:422
+msgid "Do not track events on page elements whose class names, <em>rel</em> attributes or <em>href</em> attribute contain one of the following strings. Please keep in mind that the class <code>noslimstat</code> is used to avoid tracking interactive links throughout the reports. If you remove it from this list, some features might not work as expected."
+msgstr "クラス名、 <em>rel</em> 属性、または <em>href</em> 属性が以下の文字列のいずれかを含むページ要素のイベントを追跡しないでください。 <code>noslimstat</code> クラスは、レポート全体でインタラクティブなリンクを追跡しないようにするために使用されていることを覚えておいてください。このリストから削除すると、いくつかの機能が期待通りに動作しないかもしれません。"
+
+#: admin/config/index.php:151
+msgid "Same-Domain Referrers"
+msgstr "同一ドメインリファラー"
+
+#: admin/config/index.php:707
+msgid "There was an error deleting the Browscap data folder on your server. Please check your permissions."
+msgstr "サーバー上の Browscap データフォルダーを削除する際にエラーが発生しました。権限を確認してください。"
+
+#: admin/view/index.php:125
+msgid "<a href='%s' class='noslimstat'>Install MaxMind's GeoLite DB</a> to identify your visitors' country of origin."
+msgstr "<a href='%s' class='noslimstat'>MaxMind の GeoLite DB</a> をインストールして、訪問者の出身国を識別できます。"
+
+#: admin/config/index.php:526
+msgid "The information here above is useful to troubleshoot issues with the tracker. <strong>Errors</strong> are returned when the tracker could not record a page view for some reason, and are indicative of some kind of malfunction. Please include the message here above when sending a <a href=\"https://support.wp-slimstat.com\" target=\"_blank\">support request</a>."
+msgstr "上記の情報は、トラッカーの問題をトラブルシューティングするのに役立ちます。<strong>エラー</strong>は、トラッカーが何らかの理由でページビューを記録できなかった場合に返されるもので、何らかの誤動作を示しています。<a href=\"https://support.wp-slimstat.com\" target=\"_blank\">サポートリクエスト</a>を送信する際には、上記のメッセージを含めてください。"
+
+#: admin/config/index.php:525
+msgid "Reset this error"
+msgstr "このエラーをリセットする"
+
+#: admin/config/index.php:523
+msgid "Tracker Error"
+msgstr "トラッカーエラー"
+
+#: admin/config/index.php:703
+msgid "The Browscap data file has been uninstalled from your server."
+msgstr "Browscap データファイルがサーバーからアンインストールされました。"
+
+#: admin/config/index.php:775 admin/view/index.php:6
+msgid "<strong>AdBlock browser extension detected</strong> - If you see this notice, it means that your browser is not loading our stylesheet and/or Javascript files correctly. This could be caused by an overzealous ad blocker feature enabled in your browser (AdBlock Plus and friends). <a href=\"https://slimstat.freshdesk.com/support/solutions/articles/12000000414-the-reports-are-not-being-rendered-correctly-or-buttons-do-not-work\" target=\"_blank\">Please make sure to add an exception</a> to your configuration and allow the browser to load these assets."
+msgstr "<strong>AdBlock ブラウザ拡張機能が検出されました</strong> - この通知が表示された場合、お使いのブラウザが当社のスタイルシートおよび/または Javascript ファイルを正しく読み込んでいないことを意味します。これは、お使いのブラウザで有効になっている過剰な広告ブロッカー機能 (AdBlock Plus とその仲間) が原因である可能性があります。<a href=\"https://slimstat.freshdesk.com/support/solutions/articles/12000000414-the-reports-are-not-being-rendered-correctly-or-buttons-do-not-work\" target=\"_blank\">必ず設定に例外を追加</a>して、ブラウザがこれらのアセットを読み込めるようにしてください。"
+
+#: admin/config/index.php:280
+msgid "Auto Refresh"
+msgstr "自動更新"
+
+#: admin/config/index.php:246
+msgid "Customize the URL of the geolocation service to be used in the Access Log. Default value: <code>https://whatismyipaddress.com/ip/</code>"
+msgstr "アクセスログで使用する位置情報サービスの URL をカスタマイズします。デフォルト値: <code>https://whatismyipaddress.com/ip/</code>"
+
+#: admin/config/index.php:75
+msgid "IPs"
+msgstr "IP"
+
+#: admin/config/index.php:59
+msgid "Enable this option if you want to add reports to your WordPress Dashboard. Use the Customizer to choose which ones to display."
+msgstr "WordPress ダッシュボードにレポートを追加したい場合は、このオプションを有効にします。表示するレポートを選択するには、カスタマイザーを使用します。"
+
+#: admin/view/wp-slimstat-reports.php:786
+msgid "Pages with Outbound Links"
+msgstr "アウトバウンドリンクのあるページ"
+
+#: admin/view/wp-slimstat-reports.php:1513
+msgid "Alexa Delta"
+msgstr "Alexa Delta"
+
+#: admin/view/index.php:134
+msgid "A caching plugin might be enabled on your website. Please <a href='%s' target='_blank' class='noslimstat'>make sure to configure</a> Slimstat Analytics accordingly, to get accurate information."
+msgstr "あなたのウェブサイトでは、キャッシュプラグインが有効になっている可能性があります。正確な情報を得るためには、Slimstat Analytics を<a href='%s' target='_blank' class='noslimstat'>それに応じて設定</a>してください。"
+
+#: admin/config/index.php:525 admin/config/index.php:608
+msgid "So far so good."
+msgstr "今のところ良い調子です。"
+
+#. Plugin Name of the plugin
+msgid "Slimstat Analytics"
+msgstr "Slimstat Analytics"
+
+#: admin/view/wp-slimstat-reports.php:1435
+msgid "Number of external equity links to your website."
+msgstr "あなたのウェブサイトへの外部エクイティ・リンクの数。"
+
+#: admin/view/wp-slimstat-reports.php:183
+msgid "Slimstat retrieves live information from Alexa, Facebook and Mozscape, to measures your site's rankings. Values are updated every 12 hours. Please enter your personal access ID in the settings to access your personalized Mozscape data."
+msgstr "Slimstat は、Alexa、Facebook、Mozscape からライブ情報を取得し、あなたのサイトのランキングを測定します。値は12時間ごとに更新されます。Mozscape のデータにアクセスするには、設定で個人のアクセス ID を入力してください。"
+
+#: admin/config/index.php:317
+msgid "Mozscape Secret Key"
+msgstr "Mozscape シークレットキー"
+
+#: admin/config/index.php:315
+msgid "Get accurate rankings for your website through the <a href=\"https://moz.com/community/join?redirect=/products/api/keys\" target=\"_blank\">Mozscape API</a>. Sign up for a free community account to get started. Then enter your personal identification code in this field."
+msgstr "<a href=\"https://moz.com/community/join?redirect=/products/api/keys\" target=\"_blank\">Mozscape API</a> を通じて、あなたのウェブサイトの正確なランキングを取得します。無料のコミュニティアカウントにサインアップして始めましょう。その後、このフィールドに個人識別コードを入力してください。"
+
+#: admin/config/index.php:313
+msgid "Mozscape Access ID"
+msgstr "Mozscape アクセス ID"
+
+#: admin/config/index.php:201
+msgid "Allowed Domains"
+msgstr "許可ドメイン"
+
+#: admin/config/index.php:147
+msgid "Link Tracking"
+msgstr "リンクの追跡"
+
+#: admin/view/wp-slimstat-reports.php:127
+msgid "Top Referring Domains"
+msgstr "上位の参照元ドメイン"
+
+#: admin/config/index.php:329
+msgid "Activate this feature if your reports take a while to load. It breaks down the load on your server into multiple smaller requests, thus avoiding memory issues and performance problems."
+msgstr "レポートの読み込みに時間がかかる場合は、この機能を有効にしてください。サーバーの負荷を複数の小さなリクエストに分解し、メモリの問題やパフォーマンスの問題を回避します。"
+
+#: admin/config/index.php:327
+msgid "Async Mode"
+msgstr "非同期モード"
+
+#: admin/config/index.php:96
+msgid "Archive Records"
+msgstr "記録をアーカイブ"
+
+#: admin/index.php:632 admin/index.php:704
+msgid "Slimstat"
+msgstr "Slimstat"
+
+#: admin/view/wp-slimstat-db.php:38
+msgid "Visitor's Username"
+msgstr "訪問者のユーザー名"
+
+#: admin/view/right-now.php:235
+msgid "Time spent on this page"
+msgstr "このページでの滞在時間"
+
+#: languages/index.php:508
+msgid "Playstation"
+msgstr "プレイステーション"
+
+#: languages/index.php:501
+msgid "Nintendo"
+msgstr "任天堂"
+
+#: languages/index.php:481
+msgid "Gentoo"
+msgstr "Gentoo"
+
+#: languages/index.php:478
+msgid "Fedora"
+msgstr "Fedora"
+
+#: languages/index.php:474
+msgid "Commodore 64"
+msgstr "Commodore 64"
+
+#: admin/config/index.php:519
+msgid "Troubleshooting"
+msgstr "トラブルシューティング"
+
+#: admin/view/right-now.php:289
+msgid "User Logged Out"
+msgstr "ユーザーのログアウト"
+
+#: admin/view/right-now.php:279
+msgid "User Logged In"
+msgstr "ログイン中のユーザー"
+
+#: admin/config/index.php:34
+msgid "Enable Tracking"
+msgstr "追跡を有効にする"
+
+#: admin/view/wp-slimstat-reports.php:796
+msgid "Unique Outbound"
+msgstr "ユニーク外部リンク"
+
+#: admin/view/wp-slimstat-reports.php:795
+msgid "Outbound Links"
+msgstr "外部リンク"
+
+#: admin/view/wp-slimstat-reports.php:466
+msgid "Unique Users"
+msgstr "ユニークユーザー"
+
+#: admin/view/wp-slimstat-reports.php:456
+#: admin/view/wp-slimstat-reports.php:465
+msgid "Users"
+msgstr "ユーザー"
+
+#: admin/view/wp-slimstat-reports.php:224
+msgid "Unique Terms"
+msgstr "ユニークキーワード"
+
+#: admin/view/wp-slimstat-reports.php:124
+msgid "Here a \"page\" is not just a WordPress page type, but any webpage on your site, including posts, products, categories, and any other custom post type. For example, you can set the corresponding filter where Resource Content Type equals cpt:you_cpt_slug_here to get top web pages for a specific custom post type you have."
+msgstr "ここでいう「ページ」とは、WordPress のページタイプだけではなく、投稿、商品、カテゴリ、その他のカスタム投稿タイプを含む、あなたのサイト上のあらゆる Web ページを指します。例えば、Resource Content Type が cpt:you_cpt_slug_here の場合、対応するフィルタを設定することで、特定のカスタム投稿タイプのトップ Web ページを取得することができます。"
+
+#: admin/view/wp-slimstat-reports.php:115
+msgid "Top Web Pages"
+msgstr "トップ Web ページ"
+
+#: admin/index.php:70
+msgid "Customize"
+msgstr "カスタマイズ"
+
+#: admin/index.php:98
+msgid "Inactive Reports"
+msgstr "停止中レポート"
+
+#: admin/index.php:91
+msgid "WordPress Dashboard"
+msgstr "WordPress ダッシュボード"
+
+#: admin/view/layout.php:42
+msgid "Delete"
+msgstr "削除"
+
+#: admin/view/layout.php:38
+msgid "Clone"
+msgstr "複製"
+
+#: admin/view/layout.php:7
+msgid "Customize and organize your reports"
+msgstr "レポートのカスタマイズと整理"
+
+#: admin/config/index.php:443
+msgid "Access Control"
+msgstr "アクセス制御"
+
+#: admin/config/index.php:207
+msgid "Add the following code to all the non-WordPress pages you would like to track, right before the closing BODY tag. Please make sure to change the protocol of all the URLs to HTTPS, if you external site is using a secure channel."
+msgstr "追跡したい WordPress 以外のすべてのページで、BODY の閉じタグの直前に次のコードを追加します。外部サイトがセキュアチャネルを使用している場合は、すべての URL のプロトコルを HTTPS に変更してください。"
+
+#: admin/config/index.php:163
+msgid "Advanced Options"
+msgstr "上級者向け設定"
+
+#: admin/view/wp-slimstat-db.php:1234
+msgid "Pageviews per visit"
+msgstr "1回の訪問でのページビュー"
+
+#: admin/view/wp-slimstat-reports.php:1085
+msgid "URL"
+msgstr "URL"
+
+#: admin/view/wp-slimstat-reports.php:1054
+#: admin/view/wp-slimstat-reports.php:1068
+#: admin/view/wp-slimstat-reports.php:1073
+msgid "Code"
+msgstr "コード"
+
+#: admin/view/wp-slimstat-reports.php:199
+msgid "Users Currently Online"
+msgstr "現在オンラインのユーザー"
+
+#: admin/config/index.php:311
+msgid "Customize the look and feel of your charts by assigning your own colors to each metric. List four hex colors, in the following order: metric 1 previous, metric 2 previous, metric 1 current, metric 2 current. For example: <code>#ccc, #999, #bbcc44, #21759b</code>."
+msgstr "各メトリックに独自の色を割り当てることで、グラフの外観をカスタマイズすることができます。次の順序で4つの16進数の色をリストアップします: metric 1 previous, metric 2 previous, metric 1 current, metric 2 current. 例: <code>#ccc、#999、#bbcc44、#21759b</code>。"
+
+#: admin/config/index.php:309
+msgid "Chart Colors"
+msgstr "グラフの色"
+
+#: admin/view/wp-slimstat-db.php:1189
+msgid "Average Visit Duration"
+msgstr "平均滞在時間"
+
+#: admin/view/wp-slimstat-db.php:99
+msgid "Timestamp"
+msgstr "タイムスタンプ"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://wp-slimstat.com/"
+msgstr "https://wp-slimstat.com/"
+
+#. Description of the plugin
+msgid "The leading web analytics plugin for WordPress"
+msgstr "WordPress の代表的なウェブ解析プラグイン"
+
+#: languages/index.php:568
+msgid "Invalid data signature. Try clearing your WordPress cache."
+msgstr "無効なデータ署名です。WordPress のキャッシュをクリアしてみてください。"
+
+#: admin/index.php:1114
+msgid "set the filter to Referer contains cd=N&, where N is the position you are looking for"
+msgstr "cd=N& を含むリファラーにフィルターをセットします。N は表示したいリファラーの位置を表します。"
+
+#: admin/index.php:1114
+msgid "SERP Position"
+msgstr "SERP 位置"
+
+#: admin/index.php:1113
+msgid "you can specify the timeframe by entering a number in the <em>interval</em> field; use -1 to indicate <em>to date</em> (i.e., day=1, month=1, year=blank, interval=-1 will set a year-to-date filter)"
+msgstr "<em>interval</em> フィールドに数字を入力して時間枠を指定することができます;  <em>日付まで</em>を示すには -1 を使用します (すなわち、day=1, month=1, year=blank, interval=-1 は1年分のフィルタを設定します)"
+
+#: admin/index.php:1113
+msgid "Date Filters"
+msgstr "日付フィルター"
+
+#: admin/index.php:1112
+msgid "generally used in conjunction with <em>is not empty</em>, identifies human visitors"
+msgstr "一般的に、人間の訪問者を確認する際 <em>is not empy</em> と合わせて使用されます。"
+
+#: admin/index.php:1111
+msgid "viewport width and height (1024x768, 800x600, ...)"
+msgstr "モニタ解像度の幅と高さ (1024x768、800x600、1920x1080、etc) を入力します。"
+
+#: admin/index.php:1111
+msgid "Screen Resolution"
+msgstr "画面の解像度"
+
+#: admin/index.php:1110
+msgid "post, page, cpt:<em>custom-post-type</em>, attachment, singular, post_type_archive, tag, taxonomy, category, date, author, archive, search, feed, home; please refer to the <a target=\"_blank\" href=\"https://codex.wordpress.org/Conditional_Tags\">Conditional Tags</a> manual page for more information"
+msgstr "post, page, cpt: <em>カスタム投稿タイプ</em>, attachment, singular, post_type_archive, tag, taxonomy, category, date, author, archive, search, feed, home; 詳細については、<a target=\"_blank\" href=\"https://codex.wordpress.org/Conditional_Tags\">条件付きタグ</a>のマニュアルページを参照してください。"
+
+#: admin/index.php:1109
+msgid "visitor's originating IP address, if available"
+msgstr "訪問者の送信元 IP (存在する場合)"
+
+#: admin/index.php:1108
+msgid "ID of the category/term associated to the resource, when available"
+msgstr "リソースに紐づくカテゴリー/キーワード IDを入力します (有効な場合)。"
+
+#: admin/index.php:1107
+msgid "author associated to that post/page when the resource was accessed"
+msgstr "アクセスされた投稿/ページに関連した投稿者を入力します。"
+
+#: admin/index.php:1106
+msgid "this field is set to <em>[pre]</em> if the resource has been accessed through <a target=\"_blank\" href=\"https://developer.mozilla.org/en/Link_prefetching_FAQ\">Link Prefetching</a> or similar techniques"
+msgstr "<a target=\"_blank\" href=\"https://developer.mozilla.org/en/Link_prefetching_FAQ\">リンクの先読み</a> または同様の手法でアクセスされた場合、このフィールドには <em>[pre]</em> が設定されます。"
+
+#: admin/index.php:1106
+msgid "Pageview Attributes"
+msgstr "ページビュー属性"
+
+#: admin/index.php:1105
+msgid "1 = search engine crawler, 2 = mobile device, 3 = syndication reader, 0 = all others"
+msgstr "1 = 検索エンジンのクローラー、2 = 携帯端末、3 = RSSリーダー、0 = その他全て"
+
+#: admin/index.php:1104
+msgid "user agent version (9.0, 11, ...)"
+msgstr "ユーザーエージェントのバージョン (9.0、11 など) を入力します。"
+
+#: admin/index.php:1101
+msgid "Advanced Filters"
+msgstr "高度なフィルター"
+
+#: admin/index.php:1093
+msgid "Visitors' names according to the cookie set by WordPress after they leave a comment"
+msgstr "訪問者がコメントを残した後 WordPress が設定する Cookie に基づく訪問者の名前"
+
+#: admin/index.php:1092
+msgid "Complete address of the referrer page"
+msgstr "リファラーページの完全なアドレス"
+
+#: admin/index.php:1091
+msgid "URL accessed on your site"
+msgstr "サイト上でアクセスされた URL"
+
+#: admin/index.php:1090
+msgid "Accepts identifiers like win7, win98, macosx, ...; please refer to <a target=\"_blank\" href=\"https://php.net/manual/en/function.get-browser.php\">this manual page</a> for more information"
+msgstr "win7, win98, macosx, ... のような識別子を受け付けます。詳細については <a target=\"_blank\" href=\"https://php.net/manual/en/function.get-browser.php\">このマニュアルページ</a> を参照してください。"
+
+#: admin/index.php:1089
+msgid "Please refer to this <a target=\"_blank\" href=\"https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx\">language culture page</a> (first column) for more information"
+msgstr "詳細はこちらの<a target=\"_blank\" href=\"https://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx\">言語文化のページ</a> (第1カラム) を参照してください。"
+
+#: admin/index.php:1087
+msgid "Visitor's public IP address"
+msgstr "訪問者の公開 IP アドレス"
+
+#: admin/index.php:1087 admin/view/wp-slimstat-reports.php:1354
+msgid "IP"
+msgstr "IP"
+
+#: admin/index.php:1086
+msgid "2-letter code (us, ru, de, it, ...)"
+msgstr "2文字コード (us, ru, de, it, …)"
+
+#: admin/index.php:1085
+msgid "User agent (Firefox, Chrome, ...)"
+msgstr "ユーザーエージェント(Firefox、Chrome など)"
+
+#: admin/index.php:1082
+msgid "Basic Filters"
+msgstr "基本フィルター"
+
+#: admin/index.php:1075
+msgid "A link from one domain to another is said to be outbound from its source anchor and inbound to its target. This report lists all the links to other websites followed by your visitors."
+msgstr "外部サイトへの URL が指定されたリンクを表します。このレポートは訪問者によってクリックされた外部サイトへのリンクを一覧表示します。"
+
+#: admin/index.php:1074
+msgid "Any program used for accessing a website; this includes browsers, robots, spiders and any other program that was used to retrieve information from the site"
+msgstr "Web サイトへアクセスするのに使用されたプログラム (またはその名前の一部) を表します。この値にはブラウザのほか、ロボット、スパイダー、クローラーなど、サイトから情報を取得するために使用されたあらゆるプログラムが含まれます。"
+
+#: admin/index.php:1073
+msgid "Short for search engine results page, the Web page that a search engine returns with the results of its search. The value shown represents your rank (or position) within that list of results"
+msgstr "検索エンジン結果ページ (Search Engine Results Page) の略です。この値は、対応する検索キーワードによって生成される検索結果ページ内で、あなたのサイトがどのランク (または位置) に表示されているかを表します。"
+
+#: admin/index.php:1073
+msgid "SERP"
+msgstr "SERP"
+
+#: admin/index.php:1072 admin/index.php:1088
+msgid "Keywords used by your visitors to find your website on a search engine"
+msgstr "訪問者が検索エンジン上で Web サイトを見つけるために使用したキーワードを入力します。"
+
+#: admin/index.php:1071
+msgid "Google, Yahoo, MSN, Ask, others; this bucket will include both your organic as well as your paid (PPC/SEM) traffic, so be aware of that"
+msgstr "Google、Yahoo、MSN、Ask などの検索エンジンです。この値にはオーガニック検索および有料の検索トラフィックが含まれます。"
+
+#: admin/index.php:1071
+msgid "Search Engine"
+msgstr "検索エンジン"
+
+#: admin/index.php:1070
+msgid "All those people showing up to your Web site by typing in the URL of your Web site coming or from a bookmark; some people also call this \"default traffic\" or \"ambient traffic\""
+msgstr "アドレスバーにサイト URL を直接打ち込んだ、またはブックマークからサイトを表示した訪問者を表します。"
+
+#: admin/index.php:1070
+msgid "Direct Traffic"
+msgstr "ダイレクトトラフィック"
+
+#: admin/index.php:1069
+msgid "the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer"
+msgstr "HTTP プロキシまたはロードバランサーを通して Web サーバーに接続したクライアントの IP アドレスです。"
+
+#: admin/index.php:1068
+msgid "Used to differentiate between multiple requests to download a file from one internet address (IP) and requests originating from many distinct addresses; since this measurement looks only at the internet address a pageview came from, it is useful, but not perfect"
+msgstr "サイトを訪れた全ての IP アドレスから重複を除いた値を表します。この値はあくまで IP アドレスだけを見るものであり、サイトを訪れた特定の個人の数を表す値ではありません。例えば、同じ人物が職場と自宅から同じサイトを訪れると、ユニーク IP は 2 としてカウントされます。"
+
+#: admin/index.php:1068
+msgid "Unique IP"
+msgstr "ユニーク IP"
+
+#: admin/index.php:1067
+msgid "Any user who has left a comment on your blog, and is thus identified by WordPress as a returning visitor"
+msgstr "ブログにコメントを残したユーザーと、WordPress によってリピーターとして確認された訪問者を表します。"
+
+#: admin/index.php:1066
+msgid "A period of interaction between a visitor's browser and your website, ending when the browser is closed or when the user has been inactive on that site for 30 minutes"
+msgstr "SlimStat は、訪問者がページを離脱する、ブラウザを閉じる、または 30 分以上滞在するまでを 1 回の訪問としてカウントします"
+
+#: admin/index.php:1066
+msgid "(Human) Visit"
+msgstr "人間による訪問"
+
+#: admin/index.php:1065
+msgid "A request to load a single HTML file (\"page\"). This should be contrasted with a \"hit\", which refers to a request for any file from a web server. Slimstat logs a pageview each time the tracking code is executed"
+msgstr "サイト内に存在する HTML ファイル (\"page\") が読み込まれた回数の合計です。これは Web サーバーから何らかのファイルが読み込まれた時に記録される \"hit\" とは別物と考えてください。SlimStat は解析コードが実行されるたびに PV を記録します。"
+
+#: admin/index.php:1065
+msgid "Pageview"
+msgstr "PV"
+
+#: admin/index.php:1062
+msgid "Definitions"
+msgstr "定義"
+
+#: admin/config/index.php:910
+msgid "Save Changes"
+msgstr "変更を保存"
+
+#: admin/index.php:1038
+msgid "Delete this filter"
+msgstr "このフィルターを削除"
+
+#: admin/index.php:1018
+msgid "Saved"
+msgstr "保存しました"
+
+#: admin/index.php:1010
+msgid "Already saved"
+msgstr "保存済み"
+
+#: admin/view/wp-slimstat-reports.php:1646
+msgid "Reset All"
+msgstr "すべてリセット"
+
+#: admin/view/wp-slimstat-reports.php:1642
+msgid "Save"
+msgstr "保存"
+
+#: admin/view/wp-slimstat-reports.php:1637
+msgid "Remove filter for"
+msgstr "フィルターを除去:"
+
+#: admin/view/wp-slimstat-reports.php:1610
+msgid "serp"
+msgstr "serp"
+
+#: admin/view/wp-slimstat-reports.php:1606
+msgid "src"
+msgstr "src"
+
+#: admin/view/wp-slimstat-reports.php:1354
+msgid "Date"
+msgstr "日付"
+
+#: admin/view/wp-slimstat-db.php:50 admin/view/wp-slimstat-reports.php:1354
+msgid "Coordinates"
+msgstr "座標"
+
+#: admin/view/wp-slimstat-db.php:1272
+msgid "Latency is the amount of time it takes for the host server to receive and process a request for a page object. The amount of latency depends largely on how far away the user is from the server."
+msgstr "レイテンシとは、ホストサーバがページオブジェクトのリクエストを受信して処理するのにかかる時間のことです。待ち時間の長さは、ユーザがサーバからどれだけ離れているかに大きく依存します。"
+
+#: admin/view/wp-slimstat-db.php:1270
+msgid "Avg Server Latency"
+msgstr "サーバーの平均遅延"
+
+#: admin/view/wp-slimstat-db.php:1267
+msgid "Avg Comments per Post"
+msgstr "平均コメント数 / 投稿"
+
+#: admin/view/wp-slimstat-db.php:1264
+msgid "Comments"
+msgstr "コメント"
+
+#: admin/view/wp-slimstat-db.php:1261
+msgid "Revisions"
+msgstr "リビジョン"
+
+#: admin/view/wp-slimstat-db.php:1258
+msgid "Attachments"
+msgstr "添付ファイル"
+
+#: admin/view/wp-slimstat-db.php:1255
+msgid "Pages"
+msgstr "固定ページ"
+
+#: admin/view/wp-slimstat-db.php:1252
+msgid "Posts"
+msgstr "投稿"
+
+#: admin/view/wp-slimstat-db.php:1250
+msgid "This value includes not only posts and pages, but any custom post type, regardless of their status."
+msgstr "この値は投稿だけでなく、カスタム投稿タイプも含まれます。下書き・公開などの状態は考慮されません。"
+
+#: admin/view/wp-slimstat-db.php:1248
+msgid "Content Items"
+msgstr "コンテンツ項目"
+
+#: admin/view/wp-slimstat-reports.php:1454
+msgid "Alexa Popularity"
+msgstr "Alexa Popularity"
+
+#: admin/view/wp-slimstat-reports.php:1449
+msgid "Alexa Country Rank"
+msgstr "Alexa 国別ランク"
+
+#: admin/view/wp-slimstat-reports.php:1444
+msgid "Alexa World Rank"
+msgstr "Alexa World Rank"
+
+#: admin/view/wp-slimstat-reports.php:1445
+msgid "Alexa is a subsidiary company of Amazon.com which provides commercial web traffic data."
+msgstr "Alexa は商業的な Web トラフィックデータを提供する Amazon.com の子会社です。"
+
+#: admin/view/wp-slimstat-db.php:1128
+msgid "Currently from search engines"
+msgstr "最新 検索エンジンからの訪問"
+
+#: admin/view/wp-slimstat-db.php:1124
+msgid "New Visitors Rate"
+msgstr "新規の訪問者の割合"
+
+#: admin/view/wp-slimstat-db.php:1120
+msgid "Bounce Pages"
+msgstr "直帰ページ"
+
+#: admin/view/wp-slimstat-db.php:1116
+msgid "Unique Landing Pages"
+msgstr "ユニークランディングページ"
+
+#: admin/view/wp-slimstat-db.php:1108
+msgid "Direct Pageviews"
+msgstr "ダイレクト PV"
+
+#: admin/view/wp-slimstat-db.php:1106
+msgid "A referrer (or referring site) is a site that a visitor previously visited before following a link to your site."
+msgstr "リファラー (または参照元サイト) とは訪問者があなたのサイトへのリンクをクリックする前に訪問していたサイトです。"
+
+#: admin/view/wp-slimstat-db.php:1104
+msgid "Unique Referrers"
+msgstr "ユニークリファラー"
+
+#: admin/view/wp-slimstat-db.php:1178
+msgid "More than 10 minutes"
+msgstr "10 分以上"
+
+#: admin/view/wp-slimstat-db.php:1172
+msgid "7 - 10 minutes"
+msgstr "7～10分"
+
+#: admin/view/wp-slimstat-db.php:1166
+msgid "5 - 7 minutes"
+msgstr "5～7分"
+
+#: admin/view/wp-slimstat-db.php:1160
+msgid "3 - 5 minutes"
+msgstr "3〜5分"
+
+#: admin/view/wp-slimstat-db.php:1154
+msgid "1 - 3 minutes"
+msgstr "1～3分"
+
+#: admin/view/wp-slimstat-db.php:1148
+msgid "31 - 60 seconds"
+msgstr "31～60秒"
+
+#: admin/view/wp-slimstat-db.php:1142
+msgid "0 - 30 seconds"
+msgstr "0〜30秒"
+
+#: admin/view/wp-slimstat-db.php:1238
+msgid "hits"
+msgstr "ヒット"
+
+#: admin/view/wp-slimstat-db.php:1237
+msgid "Longest visit"
+msgstr "最長の滞在時間"
+
+#: admin/config/index.php:364 admin/view/wp-slimstat-db.php:1231
+msgid "Bots"
+msgstr "ボット"
+
+#: admin/view/wp-slimstat-db.php:1225
+msgid "Visitors who have previously left a comment on your blog."
+msgstr "以前にあなたのブログにコメントを残したことのある訪問者。"
+
+#: admin/view/wp-slimstat-db.php:1223
+msgid "Known visitors"
+msgstr "既知の訪問者"
+
+#: admin/view/wp-slimstat-db.php:1126
+msgid "Percentage of single-page visits, i.e. visits in which the person left your site from the entrance page."
+msgstr "単一ページの訪問者の割合、すなわち入ってきたページでサイトを離れた訪問者の割合。"
+
+#: admin/view/wp-slimstat-db.php:1219
+msgid "Bounce rate"
+msgstr "直帰率"
+
+#: admin/view/wp-slimstat-db.php:1217
+msgid "It includes only traffic generated by human visitors."
+msgstr "この値は人間の訪問者によって生成されたトラフィックのみを含みます。"
+
+#: admin/view/wp-slimstat-db.php:879
+msgid "Last 30 minutes"
+msgstr "過去 30 分"
+
+#: admin/view/wp-slimstat-db.php:877
+msgid "Used to differentiate between multiple requests to download a file from one internet address (IP) and requests originating from many distinct addresses."
+msgstr "サイトを訪れた全ての IP アドレスから重複を除いた値を表します。"
+
+#: admin/view/wp-slimstat-db.php:867
+msgid "Average Daily Pageviews"
+msgstr "1日平均ページビュー数"
+
+#: admin/view/wp-slimstat-db.php:864
+msgid "Days in Range"
+msgstr "対象日数"
+
+#: admin/view/wp-slimstat-reports.php:509
+msgid "Domains"
+msgstr "ドメイン"
+
+#: admin/view/wp-slimstat-db.php:1211 admin/view/wp-slimstat-reports.php:243
+msgid "Visits"
+msgstr "訪問"
+
+#: admin/config/index.php:74 admin/view/wp-slimstat-db.php:105
+#: admin/view/wp-slimstat-db.php:1144 admin/view/wp-slimstat-db.php:1150
+#: admin/view/wp-slimstat-db.php:1156 admin/view/wp-slimstat-db.php:1162
+#: admin/view/wp-slimstat-db.php:1168 admin/view/wp-slimstat-db.php:1174
+#: admin/view/wp-slimstat-db.php:1180 admin/view/wp-slimstat-reports.php:1145
+#: admin/view/wp-slimstat-reports.php:1148
+msgid "Hits"
+msgstr "ヒット"
+
+#: admin/view/wp-slimstat-reports.php:1104
+msgid "Referrer"
+msgstr "リファラー"
+
+#: admin/view/wp-slimstat-reports.php:1049
+msgid "Category ID"
+msgstr "カテゴリー ID"
+
+#: admin/view/wp-slimstat-reports.php:948
+msgid "Refresh in"
+msgstr "更新まで"
+
+#: admin/view/wp-slimstat-reports.php:945
+msgid "Results %s - %s of %s"
+msgstr "結果 %s (%s/%s)"
+
+#: admin/view/wp-slimstat-reports.php:895
+msgid "Refresh"
+msgstr "更新"
+
+#: admin/view/wp-slimstat-reports.php:815
+msgid "World Map"
+msgstr "世界地図"
+
+#: admin/view/wp-slimstat-reports.php:773
+msgid "Top Entry Pages"
+msgstr "上位の流入ページ"
+
+#: admin/view/wp-slimstat-reports.php:760
+msgid "Top Exit Pages"
+msgstr "上位の離脱ページ"
+
+#: admin/view/wp-slimstat-reports.php:746
+msgid "Top Bounce Pages"
+msgstr "上位の直帰ページ"
+
+#: admin/view/wp-slimstat-reports.php:743
+msgid "Your content at a glance: posts, comments, pingbacks, etc. Please note that this report is not affected by the filters set here above."
+msgstr "投稿、コメント、ピンバックなどの情報を瞬時に閲覧できます。このレポートは上でセットしたフィルターの影響を受けない点に注意してください。"
+
+#: admin/view/wp-slimstat-reports.php:736
+msgid "Your Website"
+msgstr "あなたのサイト"
+
+#: admin/view/wp-slimstat-reports.php:724
+msgid "Top Outbound Links"
+msgstr "上位の外部リンク"
+
+#: admin/view/wp-slimstat-reports.php:712
+msgid "Recent Downloads"
+msgstr "最近のダウンロード"
+
+#: admin/view/wp-slimstat-reports.php:700
+msgid "Top Tags"
+msgstr "人気のタグ"
+
+#: admin/view/wp-slimstat-reports.php:689
+msgid "Top Authors"
+msgstr "人気の投稿者"
+
+#: admin/view/wp-slimstat-reports.php:677
+msgid "Top Pages Not Found"
+msgstr "上位の見つからなかったページ"
+
+#: admin/view/wp-slimstat-reports.php:664
+msgid "Recent Categories"
+msgstr "最近のカテゴリー"
+
+#: admin/view/wp-slimstat-reports.php:652
+msgid "Top Internal Searches"
+msgstr "上位のサイト内検索"
+
+#: admin/view/wp-slimstat-reports.php:628
+msgid "Top Posts"
+msgstr "人気の投稿"
+
+#: admin/view/wp-slimstat-reports.php:625
+#: admin/view/wp-slimstat-reports.php:649
+msgid "This report lists any <em>event</em> occurred on your website. Please refer to the FAQ for more information on how to use this functionality."
+msgstr "このレポートは、あなたのサイトで発生した<em>イベント</em>をリストアップします。この機能の使用方法については、FAQ を参照してください。"
+
+#: admin/view/wp-slimstat-reports.php:613
+msgid "You can configure Slimstat to track specific file extensions as downloads."
+msgstr "特定のファイル拡張子を「ダウンロード」として追跡するように Slimstat を設定できます。"
+
+#: admin/view/wp-slimstat-reports.php:602
+msgid "Top Downloads"
+msgstr "上位のダウンロード"
+
+#: admin/view/wp-slimstat-reports.php:590
+msgid "Top Categories"
+msgstr "人気のカテゴリー"
+
+#: admin/view/wp-slimstat-reports.php:587
+msgid "Searches performed using WordPress' built-in search functionality."
+msgstr "WordPress 内蔵の検索機能を利用した検索。"
+
+#: admin/view/wp-slimstat-reports.php:577
+msgid "Recent Internal Searches"
+msgstr "最近のサイト内検索"
+
+#: admin/view/wp-slimstat-reports.php:565
+msgid "Recent Pages Not Found"
+msgstr "最近の見つからなかったページ"
+
+#: admin/view/wp-slimstat-reports.php:553
+msgid "Recent Feeds"
+msgstr "最近のフィード"
+
+#: admin/view/wp-slimstat-reports.php:540
+msgid "Recent Posts"
+msgstr "最近の投稿"
+
+#: admin/view/wp-slimstat-reports.php:528
+msgid "Recent Outbound Links"
+msgstr "最近の外部リンク"
+
+#: admin/view/wp-slimstat-reports.php:518
+msgid "Traffic Summary"
+msgstr "トラフィック概要"
+
+#: admin/view/wp-slimstat-reports.php:444
+msgid "Top Users"
+msgstr "上位のユーザー"
+
+#: admin/view/wp-slimstat-reports.php:432
+msgid "Recent Users"
+msgstr "最新ユーザー"
+
+#: admin/view/wp-slimstat-reports.php:429
+msgid "This report shows you what operating system families (no version considered) are popular among your visitors."
+msgstr "このレポートは訪問者が使用している OS の種類を表示します。"
+
+#: admin/view/wp-slimstat-reports.php:418
+msgid "Top OS Families"
+msgstr "上位の OS ファミリー"
+
+#: admin/view/wp-slimstat-reports.php:415
+msgid "This report shows you what user agent families (no version considered) are popular among your visitors."
+msgstr "このレポートは訪問者が使用しているブラウザの種類を表示します。"
+
+#: admin/view/wp-slimstat-reports.php:406
+msgid "Top Browser Families"
+msgstr "上位のブラウザーファミリー"
+
+#: admin/view/wp-slimstat-reports.php:395
+msgid "Recent Languages"
+msgstr "最近の言語"
+
+#: admin/view/wp-slimstat-reports.php:384
+msgid "Recent Browsers"
+msgstr "最近のブラウザー"
+
+#: admin/view/wp-slimstat-reports.php:373
+msgid "Recent Operating Systems"
+msgstr "最近の OS"
+
+#: admin/view/wp-slimstat-reports.php:362
+msgid "Recent Viewport Sizes"
+msgstr "最近の Viewport サイズ"
+
+#: admin/view/wp-slimstat-reports.php:351
+msgid "Recent Countries"
+msgstr "最近の国"
+
+#: admin/view/wp-slimstat-reports.php:348
+msgid "All values represent the percentages of pageviews within the corresponding time range."
+msgstr "すべての値は、対応する時間範囲内でのページビューの割合を表しています。"
+
+#: admin/config/index.php:174 admin/view/wp-slimstat-reports.php:341
+msgid "Visit Duration"
+msgstr "滞在時間"
+
+#: admin/view/wp-slimstat-reports.php:321
+msgid "Top Viewport Sizes"
+msgstr "上位の Viewport サイズ"
+
+#: admin/view/wp-slimstat-reports.php:309
+msgid "Top Screen Resolutions"
+msgstr "上位の画面解像度"
+
+#: admin/view/wp-slimstat-reports.php:297
+msgid "Top Operating Systems"
+msgstr "上位の OS"
+
+#: admin/view/wp-slimstat-reports.php:294
+#: admin/view/wp-slimstat-reports.php:306
+msgid "Internet Service Provider: a company which provides other companies or individuals with access to the Internet. Your DSL or cable internet service is provided to you by your ISP.<br><br>You can ignore specific IP addresses by setting the corresponding filter under Settings > Slimstat > Filters."
+msgstr "インターネットサービスプロバイダ: 企業や個人に対して、インターネットへのアクセス権を提供する会社のこと。<br><br>設定 > SlimStat > フィルター で対応するフィルターを設定することで、特定の IP アドレスを解析から除外することができます。"
+
+#: admin/view/wp-slimstat-reports.php:285
+msgid "Top Service Providers"
+msgstr "上位のサービスプロバイダー"
+
+#: admin/view/wp-slimstat-reports.php:262
+msgid "Top Languages"
+msgstr "上位の言語"
+
+#: admin/view/wp-slimstat-reports.php:259
+msgid "Where not otherwise specified, the metrics in this report are referred to human visitors."
+msgstr "特に指定されていない場合、このレポートのメトリクスは、人間の訪問者を参照しています。"
+
+#: admin/view/wp-slimstat-reports.php:252
+msgid "Audience Overview"
+msgstr "訪問者の概要"
+
+#: admin/view/wp-slimstat-reports.php:233
+msgid "Human Visits"
+msgstr "人間の訪問"
+
+#: admin/view/wp-slimstat-reports.php:186
+msgid "Top Language Families"
+msgstr "上位の言語ファミリー"
+
+#: admin/view/wp-slimstat-reports.php:176
+msgid "Rankings"
+msgstr "ランキング"
+
+#: admin/view/wp-slimstat-reports.php:173
+msgid "You can configure Slimstat to not track specific Countries by setting the corresponding filter in Slimstat > Settings > Exclusions."
+msgstr "Slimstat > 設定 > フィルター > 除外で対応フィルターを設定することで、特定の国を解析から除外できます。"
+
+#: admin/view/wp-slimstat-reports.php:164
+msgid "Top Countries"
+msgstr "上位の国"
+
+#: admin/view/wp-slimstat-reports.php:152
+msgid "Top Search Terms"
+msgstr "上位の検索キーワード"
+
+#: admin/view/wp-slimstat-reports.php:141
+msgid "Top Known Visitors"
+msgstr "トップ既知の訪問者"
+
+#: admin/view/wp-slimstat-reports.php:112
+msgid "Keywords used by your visitors to find your website on a search engine."
+msgstr "訪問者が検索エンジン上で あなたの Web サイトを見つけるために使用したキーワードです。"
+
+#: admin/view/wp-slimstat-reports.php:101
+msgid "Recent Search Terms"
+msgstr "最近の検索キーワード"
+
+#: admin/view/wp-slimstat-reports.php:210
+msgid "When visitors leave a comment on your blog, WordPress assigns them a cookie. Slimstat leverages this information to identify returning visitors. Please note that visitors also include registered users."
+msgstr "訪問者があなたのブログにコメントを残した際、WordPress はその訪問者に cookie を発行します。SlimStat はリピート訪問者を検出するためにこの情報を活用しています。この値には登録ユーザーが含まれます。"
+
+#: admin/view/wp-slimstat-reports.php:88
+msgid "Currently Online"
+msgstr "現在の閲覧者"
+
+#: admin/view/wp-slimstat-reports.php:57
+msgid "Bot or Crawler"
+msgstr "ボットまたはクローラー"
+
+#: admin/view/wp-slimstat-reports.php:57
+msgid "Other Human"
+msgstr "その他の人間"
+
+#: admin/index.php:1067
+msgid "Known Visitor"
+msgstr "既知の訪問者"
+
+#: admin/view/wp-slimstat-reports.php:57
+msgid "From search result page"
+msgstr "検索結果ページから"
+
+#: admin/view/wp-slimstat-reports.php:57
+msgid "Color Codes"
+msgstr "カラーコード"
+
+#: admin/view/wp-slimstat-reports.php:44
+msgid "While zooming in, drag the chart to move to a different area"
+msgstr "チャートの移動: ズームイン中にドラッグ"
+
+#: admin/view/wp-slimstat-reports.php:44
+msgid "Use your mouse wheel to zoom in and out"
+msgstr "ズームイン／アウト: マウスホイール"
+
+#: admin/view/wp-slimstat-reports.php:44
+msgid "Chart Controls"
+msgstr "グラフコントロール"
+
+#: admin/index.php:63 admin/view/wp-slimstat-reports.php:499
+msgid "Traffic Sources"
+msgstr "トラフィックソース"
+
+#: admin/index.php:56
+msgid "Site Analysis"
+msgstr "サイト分析"
+
+#: admin/index.php:49
+msgid "Audience"
+msgstr "訪問者"
+
+#: admin/index.php:42
+msgid "Overview"
+msgstr "概要"
+
+#: admin/view/wp-slimstat-reports.php:48
+msgid "Access Log"
+msgstr "アクセスログ"
+
+#: admin/view/wp-slimstat-db.php:118
+msgid "Offset"
+msgstr "オフセット"
+
+#: admin/view/wp-slimstat-db.php:115
+msgid "Event Coordinates"
+msgstr "イベント座標"
+
+#: admin/view/wp-slimstat-db.php:114
+msgid "Event Description"
+msgstr "イベント詳細"
+
+#: admin/view/wp-slimstat-db.php:113
+msgid "Type"
+msgstr "タイプ"
+
+#: admin/view/wp-slimstat-db.php:112
+msgid "Event ID"
+msgstr "イベント ID"
+
+#: admin/view/wp-slimstat-db.php:108 admin/view/wp-slimstat-db.php:109
+msgid "Notes"
+msgstr "メモ"
+
+#: admin/view/wp-slimstat-db.php:104
+msgid "Value"
+msgstr "値"
+
+#: admin/view/wp-slimstat-db.php:103
+msgid "Metric"
+msgstr "メトリック"
+
+#: admin/view/wp-slimstat-db.php:34
+msgid "Language"
+msgstr "言語"
+
+#: admin/view/wp-slimstat-db.php:100
+msgid "Exit Timestamp"
+msgstr "終了時間"
+
+#: admin/view/wp-slimstat-db.php:98
+msgid "minutes"
+msgstr "分"
+
+#: admin/view/wp-slimstat-db.php:91
+msgid "Minute"
+msgstr "分"
+
+#: admin/index.php:1112 admin/view/wp-slimstat-db.php:61
+msgid "Visit ID"
+msgstr "訪問 ID"
+
+#: admin/view/wp-slimstat-db.php:60
+msgid "Viewport Size"
+msgstr "ビューポートのサイズ"
+
+#: admin/view/wp-slimstat-db.php:59
+msgid "Screen Height"
+msgstr "画面の高さ"
+
+#: admin/view/wp-slimstat-db.php:58
+msgid "Screen Width"
+msgstr "画面の幅"
+
+#: admin/view/wp-slimstat-db.php:57
+msgid "Resource ID"
+msgstr "リソース ID"
+
+#: admin/index.php:1110 admin/view/wp-slimstat-db.php:56
+msgid "Resource Content Type"
+msgstr "リソースコンテンツタイプ"
+
+#: admin/index.php:1108 admin/view/wp-slimstat-db.php:54
+msgid "Post Category ID"
+msgstr "投稿カテゴリー ID"
+
+#: admin/index.php:1107 admin/view/wp-slimstat-db.php:53
+msgid "Post Author"
+msgstr "投稿者"
+
+#: admin/view/wp-slimstat-db.php:52
+msgid "Server Latency"
+msgstr "サーバーの遅延"
+
+#: admin/view/wp-slimstat-db.php:51
+msgid "Annotations"
+msgstr "注釈"
+
+#: admin/index.php:1074 admin/view/wp-slimstat-db.php:48
+msgid "User Agent"
+msgstr "ユーザーエージェント"
+
+#: admin/index.php:1105 admin/view/wp-slimstat-db.php:47
+msgid "Browser Type"
+msgstr "ブラウザの種類"
+
+#: admin/index.php:1104 admin/view/wp-slimstat-db.php:46
+msgid "Browser Version"
+msgstr "ブラウザのバージョン"
+
+#: admin/view/wp-slimstat-reports.php:332
+msgid "Browser Capabilities"
+msgstr "ブラウザーの機能"
+
+#: admin/view/wp-slimstat-db.php:45
+msgid "-- Advanced filters --"
+msgstr "-- 高度なフィルター --"
+
+#: admin/view/wp-slimstat-db.php:43
+msgid "Page Speed"
+msgstr "ページ速度"
+
+#: admin/index.php:1075 admin/view/wp-slimstat-db.php:40
+msgid "Outbound Link"
+msgstr "外部リンク"
+
+#: admin/index.php:1093
+msgid "Visitor's Name"
+msgstr "訪問者名"
+
+#: admin/index.php:1092 admin/view/wp-slimstat-db.php:37
+msgid "Referer"
+msgstr "リファラー"
+
+#: admin/index.php:1091 admin/view/wp-slimstat-db.php:36
+msgid "Permalink"
+msgstr "パーマリンク"
+
+#: admin/index.php:1090 admin/view/wp-slimstat-db.php:35
+msgid "Operating System"
+msgstr "OS"
+
+#: admin/index.php:1089
+msgid "Language Code"
+msgstr "言語コード"
+
+#: admin/view/wp-slimstat-db.php:32
+msgid "IP Address"
+msgstr "IP アドレス"
+
+#: admin/index.php:1086 admin/view/wp-slimstat-db.php:31
+msgid "Country Code"
+msgstr "国別コード"
+
+#: admin/index.php:1085 admin/view/wp-slimstat-db.php:30
+msgid "Browser"
+msgstr "ブラウザー"
+
+#: admin/view/right-now.php:80
+msgid "Date and Time"
+msgstr "日付と時間"
+
+#: admin/view/right-now.php:253
+msgid "Content Type"
+msgstr "コンテンツタイプ"
+
+#: admin/view/right-now.php:258
+msgid "Open this outbound link in a new window"
+msgstr "この外部リンクを新規ウィンドウで開く"
+
+#: admin/view/right-now.php:252
+msgid "Open this referrer in a new window"
+msgstr "このリファラーを新しいウィンドウで開く"
+
+#: admin/index.php:1072 admin/index.php:1088 admin/view/right-now.php:217
+#: admin/view/wp-slimstat-db.php:33 admin/view/wp-slimstat-reports.php:213
+#: admin/view/wp-slimstat-reports.php:223
+msgid "Search Terms"
+msgstr "検索キーワード"
+
+#: admin/view/right-now.php:208
+msgid "Local search results page"
+msgstr "ローカル検索結果ページ"
+
+#: admin/view/right-now.php:196 admin/view/wp-slimstat-reports.php:1159
+#: admin/view/wp-slimstat-reports.php:1167
+#: admin/view/wp-slimstat-reports.php:1396
+msgid "Open this URL in a new window"
+msgstr "この URL を新しいウィンドウで開く"
+
+#: admin/view/right-now.php:228
+msgid "PS"
+msgstr "PS"
+
+#: admin/view/right-now.php:228
+msgid "SL"
+msgstr "SL"
+
+#: admin/view/right-now.php:228
+msgid "Server Latency and Page Speed in milliseconds"
+msgstr "サーバーの遅延とページ速度(ミリ秒単位)"
+
+#: admin/index.php:1069 admin/index.php:1109 admin/view/right-now.php:162
+#: admin/view/wp-slimstat-db.php:55
+msgid "Originating IP"
+msgstr "発信元 IP"
+
+#: admin/view/right-now.php:49 admin/view/wp-slimstat-reports.php:1008
+#: admin/view/wp-slimstat-reports.php:1208
+#: admin/view/wp-slimstat-reports.php:1329
+#: admin/view/wp-slimstat-reports.php:1379
+msgid "No data to display"
+msgstr "表示するデータがありません"
+
+#: admin/view/right-now.php:23
+msgid "Syndication Reader"
+msgstr "フィードリーダー"
+
+#: admin/view/right-now.php:23
+msgid "Mobile Device"
+msgstr "モバイル端末"
+
+#: admin/view/right-now.php:23
+msgid "Bot/Crawler"
+msgstr "ボット/クローラー"
+
+#: admin/view/right-now.php:23
+msgid "Human"
+msgstr "人間"
+
+#: admin/view/index.php:104
+msgid "Reset Filters"
+msgstr "絞り込みを解除"
+
+#: admin/view/wp-slimstat-db.php:97
+msgid "hours"
+msgstr "時間"
+
+#: admin/view/index.php:69 admin/view/wp-slimstat-db.php:92
+msgid "Hour"
+msgstr "時"
+
+#: admin/view/index.php:84 admin/view/wp-slimstat-db.php:95
+msgid "Year"
+msgstr "年"
+
+#: admin/view/index.php:76 admin/view/wp-slimstat-db.php:94
+msgid "Month"
+msgstr "月"
+
+#: admin/view/index.php:72 admin/view/wp-slimstat-db.php:93
+msgid "Day"
+msgstr "日"
+
+#: admin/view/index.php:66
+msgid "Date Range"
+msgstr "日付の範囲"
+
+#: admin/view/index.php:60
+msgid "Last 7 Days"
+msgstr "過去7日間"
+
+#: admin/view/index.php:59 admin/view/wp-slimstat-db.php:885
+msgid "Yesterday"
+msgstr "昨日"
+
+#: admin/view/index.php:58 admin/view/wp-slimstat-db.php:882
+msgid "Today"
+msgstr "今日"
+
+#: admin/view/index.php:34
+msgid "Load"
+msgstr "読み込む"
+
+#: admin/view/wp-slimstat-db.php:81
+msgid "is between (x,y)"
+msgstr "の間 (x,y)"
+
+#: languages/index.php:539 languages/index.php:540 languages/index.php:541
+#: languages/index.php:543
+msgid "Windows Phone"
+msgstr "Windows Phone"
+
+#: languages/index.php:8 languages/index.php:11 languages/index.php:12
+#: languages/index.php:234 languages/index.php:235 languages/index.php:236
+#: languages/index.php:520 languages/index.php:550 languages/index.php:551
+msgid "Unknown"
+msgstr "不明"
+
+#: languages/index.php:518
+msgid "Ubuntu"
+msgstr "Ubuntu"
+
+#: languages/index.php:514
+msgid "Solaris"
+msgstr "Solaris"
+
+#: languages/index.php:560 languages/index.php:564
+msgid "Linux"
+msgstr "Linux"
+
+#: languages/index.php:477
+msgid "Digital Unix"
+msgstr "Digital Unix"
+
+#: languages/index.php:476
+msgid "Debian"
+msgstr "Debian"
+
+#: languages/index.php:475
+msgid "Cygwin"
+msgstr "Cygwin"
+
+#: languages/index.php:469 languages/index.php:553
+msgid "Android"
+msgstr "Android"
+
+#: languages/index.php:468
+msgid "Amiga"
+msgstr "Amiga"
+
+#: admin/config/index.php:563
+msgid "Please confirm that you want to PERMANENTLY DELETE ALL the records from your database."
+msgstr "データベースからすべての記録を永久に削除することを確認してください。"
+
+#: admin/view/index.php:30 admin/view/index.php:95
+msgid "Apply"
+msgstr "適用"
+
+#: admin/view/wp-slimstat-db.php:85
+msgid "is not empty"
+msgstr "が空でない"
+
+#: admin/view/wp-slimstat-db.php:84
+msgid "is empty"
+msgstr "が空"
+
+#: admin/view/wp-slimstat-db.php:83
+msgid "does not match"
+msgstr "一致しない"
+
+#: admin/view/wp-slimstat-db.php:82
+msgid "matches"
+msgstr "と一致"
+
+#: admin/view/wp-slimstat-db.php:80
+msgid "is less than"
+msgstr "より小さい"
+
+#: admin/view/wp-slimstat-db.php:79
+msgid "is greater than"
+msgstr "より大きい"
+
+#: admin/view/wp-slimstat-db.php:78
+msgid "sounds like"
+msgstr "に近い"
+
+#: admin/view/wp-slimstat-db.php:77
+msgid "ends with"
+msgstr "で終わる"
+
+#: admin/view/wp-slimstat-db.php:76
+msgid "starts with"
+msgstr "で始まる"
+
+#: admin/view/wp-slimstat-db.php:75
+msgid "does not contain"
+msgstr "を含まない"
+
+#: admin/view/wp-slimstat-db.php:74
+msgid "is included in"
+msgstr "は以下に含まれます:"
+
+#: admin/view/wp-slimstat-db.php:73
+msgid "contains"
+msgstr "を含む"
+
+#: admin/view/wp-slimstat-db.php:72
+msgid "is not equal to"
+msgstr "等しくない"
+
+#: admin/view/wp-slimstat-db.php:71
+msgid "equals"
+msgstr "と等しい"
+
+#: admin/config/index.php:622
+msgid "All your records were successfully deleted."
+msgstr "全てのレコードは正常に削除されました。"
+
+#: admin/config/index.php:662
+msgid "The geolocation database has been installed on your server."
+msgstr "あなたのサーバーには位置情報データベースがインストールされています。"
+
+#: admin/config/index.php:673 admin/config/index.php:681
+msgid "The geolocation database has been uninstalled from your server."
+msgstr "位置情報データベースがサーバーからアンインストールされました。"
+
+#: admin/config/index.php:648
+msgid "Table indexes have been disabled. Enjoy the extra database space!"
+msgstr "テーブルインデックスが無効になりました。データベースの空き容量をお楽しみください。"
+
+#: admin/config/index.php:639
+msgid "Congratulations! Slimstat Analytics is now optimized for <a href=\"https://www.youtube.com/watch?v=ygE01sOhzz0\" target=\"_blank\">ludicrous speed</a>."
+msgstr "おめでとうございます！ Slimstat Analytics は<a href=\"https://www.youtube.com/watch?v=ygE01sOhzz0\" target=\"_blank\">驚異的な速度</a>に最適化されました。"
+
+#: admin/config/index.php:515
+msgid "Maintenance"
+msgstr "メンテナンス"
+
+#: admin/config/index.php:306
+msgid "Enter your own stylesheet definitions to customize the way your reports look. <a href='https://slimstat.freshdesk.com/support/solutions/articles/5000528528-how-can-i-change-the-colors-associated-to-color-coded-pageviews-known-user-known-visitors-search-e' target='_blank'>Check our FAQs</a> for more information on how to use this option."
+msgstr "独自のスタイルシート定義を入力して、レポートの表示方法をカスタマイズできます。このオプションの使用方法の詳細については、 <a href='https://slimstat.freshdesk.com/support/solutions/articles/5000528528-how-can-i-change-the-colors-associated-to-color-coded-pageviews-known-user-known-visitors-search-e' target='_blank'>FAQ をご覧ください</a>。"
+
+#: admin/config/index.php:302
+msgid "Custom CSS"
+msgstr "カスタム CSS"
+
+#: admin/config/index.php:203
+msgid "If you are getting an error saying that no 'Access-Control-Allow-Origin' header is present on the requested resource, when using the external tracking code here above, list the domains (complete with scheme) you would like to allow. For example: <code>https://my.domain.ext</code> (no trailing slash). Please see <a href='https://www.w3.org/TR/cors/#security' target='_blank'>this W3 resource</a> for more information on the security implications of allowing CORS requests."
+msgstr "要求されたリソースに 'Access-Control-Allow-Origin' ヘッダーが存在しないというエラーが発生している場合、上記の外部トラッキングコードを使用する際に、許可したいドメイン (スキームを含む) をリストアップしてください。例えば、以下のようになります。<code>https://my.domain.ext</code> (末尾にスラッシュを入れない)。CORS リクエストを許可することによるセキュリティへの影響についての詳細は <a href='https://www.w3.org/TR/cors/#security' target='_blank'>this W3 resource</a> を参照してください。"
+
+#: admin/config/index.php:197
+msgid "External Pages"
+msgstr "外部ページ"
+
+#: admin/config/index.php:187
+msgid "Use <a href='https://www.jsdelivr.com/' target='_blank'>JSDelivr</a>'s CDN, by serving our tracking code from their fast and reliable network (free service)."
+msgstr "<a href='https://www.jsdelivr.com/' target='_blank'>JSDelivr</a>のCDNを使用して、彼らの高速かつ信頼性の高いネットワーク（無料サービス）から当社のトラッキングコードを提供しています。"
+
+#: admin/config/index.php:185
+msgid "Enable CDN"
+msgstr "CDN を有効化"
+
+#: admin/config/index.php:177
+msgid "How many seconds should a human visit last? Google Analytics sets it to 1800 seconds."
+msgstr "セッション時間の最大値を指定します。Google アナリティクスはこの値を 1800 秒に設定しています。"
+
+#: admin/config/index.php:486 admin/config/index.php:567
+#: admin/config/index.php:769 admin/index.php:77
+msgid "Settings"
+msgstr "設定"
+
+#: admin/config/index.php:453
+msgid "Enable this option if you want your authors to only see statistics related to their own content."
+msgstr "投稿者が自分のコンテンツに関連したレポートのみを閲覧できるようにします。"
+
+#: admin/config/index.php:451
+msgid "Restrict Authors"
+msgstr "投稿者を制限"
+
+#: admin/config/index.php:425
+msgid "Referring Sites"
+msgstr "参照元サイト"
+
+#: admin/config/index.php:399
+msgid "User Agents"
+msgstr "ユーザーエージェント"
+
+#: admin/config/index.php:389
+msgid "Countries"
+msgstr "国"
+
+#: admin/config/index.php:415
+msgid "Permalinks"
+msgstr "パーマリンク設定"
+
+#: admin/config/index.php:340
+msgid "In linguistic typology, a subject-object-verb (SOV) language is one in which the subject, object, and verb of a sentence appear in that order, like in Japanese."
+msgstr "言語類型論では、日本語のように文の主語、目的語、動詞の順に主語、目的語、動詞が現れる言語をSOV（主語-目的語-動詞）言語という。"
+
+#: admin/config/index.php:338
+msgid "Enable SOV"
+msgstr "SOV を有効化"
+
+#: admin/config/index.php:322
+msgid "Show User Agent"
+msgstr "ユーザーエージェントを表示"
+
+#: admin/config/index.php:298
+msgid "Miscellaneous"
+msgstr "その他"
+
+#: admin/config/index.php:176 admin/config/index.php:282
+msgid "seconds"
+msgstr "秒"
+
+#: admin/view/wp-slimstat-db.php:117
+msgid "Max Results"
+msgstr "最大の結果"
+
+#: admin/config/index.php:238 admin/config/index.php:285
+msgid "Rows to Display"
+msgstr "表示する行数"
+
+#: admin/config/index.php:223
+msgid "Functionality"
+msgstr "機能"
+
+#: admin/config/index.php:256
+msgid "By default, users are listed by their usernames. Enable this option to show their display names instead."
+msgstr "初期状態では、ユーザーはユーザー名で表示されます (例: admin)。ユーザー名の代わりにブログ上の表示名 (例: 管理人) を表示したい場合は、このオプションを有効にします。"
+
+#: admin/config/index.php:254
+msgid "Use Display Name"
+msgstr "表示名を使用"
+
+#: admin/config/index.php:219 admin/config/index.php:447
+msgid "Reports"
+msgstr "レポート"
+
+#: admin/config/index.php:563
+msgid "Delete Records"
+msgstr "レコードの削除"
+
+#: admin/config/index.php:92 admin/config/index.php:234
+#: admin/view/wp-slimstat-db.php:96
+msgid "days"
+msgstr "日"
+
+#: admin/config/index.php:86
+msgid "Database"
+msgstr "データベース"
+
+#: admin/config/index.php:79
+msgid "Hide Add-ons"
+msgstr "アドオンを非表示"
+
+#: admin/view/wp-slimstat-db.php:875 admin/view/wp-slimstat-db.php:1215
+#: admin/view/wp-slimstat-reports.php:71 admin/view/wp-slimstat-reports.php:244
+#: admin/view/wp-slimstat-reports.php:510
+msgid "Unique IPs"
+msgstr "ユニーク IP"
+
+#: admin/view/wp-slimstat-db.php:860 admin/view/wp-slimstat-db.php:1100
+#: admin/view/wp-slimstat-reports.php:61 admin/view/wp-slimstat-reports.php:70
+msgid "Pageviews"
+msgstr "PV"
+
+#: admin/config/index.php:72
+msgid "Report Type"
+msgstr "レポートタイプ"
+
+#: admin/config/index.php:57
+msgid "Dashboard Widgets"
+msgstr "ダッシュボードウィジェット"
+
+#: admin/config/index.php:67
+msgid "Posts and Pages"
+msgstr "投稿とページ"
+
+#: admin/config/index.php:53
+msgid "WordPress Integration"
+msgstr "WordPress 連携"
+
+#: admin/config/index.php:47
+msgid "Server"
+msgstr "サーバー"
+
+#: admin/config/index.php:46
+msgid "Client"
+msgstr "クライアント"
+
+#: admin/config/index.php:44
+msgid "Tracking Mode"
+msgstr "追跡モード"
+
+#: admin/config/index.php:41
+msgid "Enable this option to track your users' activity within the WordPress admin."
+msgstr "登録ユーザーの管理ページ内での行動を解析します。"
+
+#: admin/config/index.php:833
+msgid "Off"
+msgstr "オフ"
+
+#: admin/config/index.php:832
+msgid "On"
+msgstr "オン"
+
+#: admin/config/index.php:36
+msgid "Turn the tracker on or off, while keeping the reports accessible."
+msgstr "レポートにアクセス可能な状態を維持しながら、トラッカーのオン/オフを切り替えます。"
+
+#: admin/config/index.php:30 admin/config/index.php:104
+msgid "Tracker"
+msgstr "トラッカー"
+
+#: admin/config/index.php:26
+msgid "General"
+msgstr "一般"
+
+#: admin/view/addons.php:82
+msgid "Installed and Active"
+msgstr "インストールと有効化済み"
+
+#: admin/view/addons.php:80
+msgid "Your Version:"
+msgstr "お使いのバージョン:"
+
+#: admin/view/addons.php:69
+msgid "Version"
+msgstr "バージョン"
+
+#: admin/view/addons.php:69
+msgid "Repo Version"
+msgstr "レポジトリバージョン"
+
+#: admin/view/addons.php:58
+msgid "Description"
+msgstr "説明"
+
+#: admin/view/addons.php:57
+msgid "Add-on"
+msgstr "アドオン"
+
+#: admin/view/addons.php:42
+msgid "This list is refreshed once daily: <a href=\"%s&amp;force_refresh=true\" class=\"noslimstat\">click here</a> to clear the cache."
+msgstr "このリストは1日1回更新されます。<a href=\"%s&amp;force_refresh=true\" class=\"noslimstat\">ここをクリックしてください</a> キャッシュをクリアします。"
+
+#: admin/view/addons.php:39
+msgid "Add-ons extend the functionality of Slimstat in many interesting ways. We offer both free and premium (paid) extensions. Each add-on can be installed as a separate plugin, which will receive regular updates via the WordPress Plugins panel. In order to be notified when a new version of a premium add-on is available, please enter the <strong>license key</strong> you received when you purchased it."
+msgstr "アドオンは Slimstat の機能を様々な方法で拡張します。弊社では、無料とプレミアム (有料) の両方の拡張機能を提供しています。それぞれのアドオンは独立したプラグインとしてインストールすることができ、WordPress プラグインパネルを介して定期的に更新されます。プレミアムアドオンの新バージョンが利用可能になった際に通知を受けるには、購入時に受け取った <strong>ライセンスキー</strong> を入力してください。"
+
+#: admin/config/index.php:581 admin/view/addons.php:38
+msgid "Add-ons"
+msgstr "アドオン"
+
+#: admin/view/addons.php:33
+msgid "There was an error decoding the add-ons list from the server. Please try again later."
+msgstr "アドオンリストの復号化にエラーが発生しました。しばらく経ってから再度お試しください。"
+
+#: admin/view/addons.php:23
+msgid "There was an error retrieving the add-ons list from the server. Please try again later. Error Message: %s"
+msgstr "サーバーからアドオンリストを取得する際にエラーが発生しました。後でもう一度お試しください。エラー・メッセージ。%s"
