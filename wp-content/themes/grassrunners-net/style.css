@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   -webkit-overflow-scrolling: touch;
-}
+} */
 
 html, body {
   width: 100vw;
