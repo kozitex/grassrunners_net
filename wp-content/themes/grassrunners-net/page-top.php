@@ -7,7 +7,25 @@
 <section id="fv">
     <div class="pre-title">Welcome to</div>
     <div class="flash-line"></div>
-    <div class="title animate">grassrunners.net</div>
+    <!-- <div class="title animate">grassrunners.net</div> -->
+    <div class="title animate">
+      <div>g</div>
+      <div>r</div>
+      <div>a</div>
+      <div>s</div>
+      <div>s</div>
+      <div>r</div>
+      <div>u</div>
+      <div>n</div>
+      <div>n</div>
+      <div>e</div>
+      <div>r</div>
+      <div>s</div>
+      <div>.</div>
+      <div>n</div>
+      <div>e</div>
+      <div>t</div>
+    </div>
     <div class="guide animate">
         <div class="text"><span>I want you to know me.</span><br><span>Please scroll !</span></div>
         <div class="arrow">

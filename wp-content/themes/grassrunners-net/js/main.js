@@ -5,10 +5,19 @@ window.addEventListener('DOMContentLoaded', function(){
 	// スクロールに応じて、fvの文字を透明にする
 	window.addEventListener('scroll', function(){
 		var scrollAmt = window.scrollY;
-		var threshold = 1/3;
+		var threshold = 1 / 1.5;
 		var winInHeight = window.innerHeight;
 		var opacity = 1 - scrollAmt / ( winInHeight * threshold );
 		this.document.getElementById('fv').style.opacity = opacity;
+	});
+
+	// スクロールに応じて、videoの文字を透明にする
+	window.addEventListener('scroll', function(){
+		var scrollAmt = window.scrollY;
+		var threshold = 1 / 1.5;
+		var winInHeight = window.innerHeight;
+		var opacity = 1 - scrollAmt / ( winInHeight * threshold );
+		this.document.getElementById('video').style.opacity = opacity;
 	});
 
 	// 各workがクリックされたら、モーダルウィンドウを表示する
@@ -55,7 +64,7 @@ window.addEventListener('DOMContentLoaded', function(){
 		var element = document.getElementsByClassName('animate');
 		if (!element) return;
 
-		var activeTime = window.innerHeight > 768 ? 200 : 40;
+		var activeTime = window.innerHeight > 768 ? 50 : 40;
 		var scrollAmt = window.scrollY;
 		var winHeight = window.innerHeight;
 

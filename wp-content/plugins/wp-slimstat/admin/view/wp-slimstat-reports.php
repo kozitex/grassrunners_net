@@ -957,6 +957,16 @@ class wp_slimstat_reports
 
     public static function callback_wrapper()
     {
+        // If this user is whitelisted, we use the minimum capability
+        $minimum_capability = 'read';
+        if (strpos(wp_slimstat::$settings['can_view'], $GLOBALS['current_user']->user_login) === false && !empty(wp_slimstat::$settings['capability_can_view'])) {
+            $minimum_capability = wp_slimstat::$settings['capability_can_view'];
+        }
+
+        if (!current_user_can($minimum_capability)) {
+            return;
+        }
+
         $_args = self::_check_args(func_get_args());
         if (!empty($_args) && !empty($_args['callback'])) {
             call_user_func($_args['callback'], $_args['callback_args']);
@@ -1580,8 +1590,8 @@ class wp_slimstat_reports
         }
 
         $path_slimstat = dirname(dirname(__FILE__));
-        wp_enqueue_script('slimstat_jqvmap', plugins_url('/admin/assets/js/jqvmap/jquery.vmap.min.js', $path_slimstat), array(), '1.5.1', false);
-        wp_enqueue_script('slimstat_jqvmap_world', plugins_url('/admin/assets/js/jqvmap/jquery.vmap.world.min.js', $path_slimstat), array(), '1.5.1', false);
+        wp_enqueue_script('slimstat_jqvmap', plugins_url('/admin/assets/js/jqvmap/jquery.vmap.min.js', $path_slimstat), array('jquery'), '1.5.1', false);
+        wp_enqueue_script('slimstat_jqvmap_world', plugins_url('/admin/assets/js/jqvmap/jquery.vmap.world.min.js', $path_slimstat), array('jquery'), '1.5.1', false);
         ?>
 
         <div id="map_slim_p6_01" style="height: 100%"></div>
@@ -1604,6 +1614,11 @@ class wp_slimstat_reports
     {
         $query_details     = '';
         $search_terms_info = '';
+
+        if (!$_referer) {
+            $_referer = '';
+        }
+
         parse_str($_referer, $query_parse_str);
 
         if (!empty($query_parse_str['source']) && !$_serp_only) {
@@ -1731,6 +1746,11 @@ class wp_slimstat_reports
             $term_names    = array();
             $home_url      = get_home_url();
             $relative_home = parse_url($home_url, PHP_URL_PATH);
+
+            // PHP ^v8 compatibility
+            if (!$relative_home) {
+                $relative_home = '';
+            }
 
             $all_terms = get_terms('category');
             foreach ($all_terms as $a_term) {

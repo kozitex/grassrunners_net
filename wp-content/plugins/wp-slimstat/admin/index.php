@@ -20,6 +20,14 @@ class wp_slimstat_admin
      */
     public static function init()
     {
+        // Redirect to the pro settings
+        add_action('admin_menu', function () {
+            if (is_admin() && isset($_GET['page']) && $_GET['page'] === 'slimpro' && wp_slimstat::pro_is_installed()) {
+                wp_safe_redirect(admin_url('admin.php?page=slimconfig&tab=7'));
+                exit();
+            }
+        });
+
         // Action for reset layout
         add_action('admin_post_slimstat_reset_layout', array('wp_slimstat_admin', 'handle_reset_layout'));
 
@@ -191,7 +199,7 @@ class wp_slimstat_admin
             }
 
             // Update the table structure and options, if needed
-            if (!empty(wp_slimstat::$settings['version']) && wp_slimstat::$settings['version'] != wp_slimstat::$version) {
+            if (!empty(wp_slimstat::$settings['version']) && wp_slimstat::$settings['version'] != SLIMSTAT_ANALYTICS_VERSION) {
                 add_action('admin_init', array(__CLASS__, 'update_tables_and_options'));
             }
         }
@@ -212,10 +220,11 @@ class wp_slimstat_admin
 
         // Dashboard Widgets
         if (wp_slimstat::$settings['add_dashboard_widgets'] == 'on') {
-            $request_length = strlen(sanitize_url(wp_unslash($_SERVER['REQUEST_URI'])));
+            $sanitized_uri  = sanitize_url(wp_unslash($_SERVER['REQUEST_URI']));
+            $request_length = strlen($sanitized_uri);
             $temp           = $request_length - 10;
 
-            if (strpos($_SERVER['REQUEST_URI'], 'index.php') !== false || ($temp >= 0 && $temp <= $request_length && strpos($_SERVER['REQUEST_URI'], '/wp-admin/', $temp) !== false)) {
+            if (strpos($_SERVER['REQUEST_URI'], 'index.php') !== false || ($temp >= 0 && $temp <= $request_length && strpos($sanitized_uri, '/wp-admin/', $temp) !== false)) {
                 add_action('admin_enqueue_scripts', array(__CLASS__, 'wp_slimstat_enqueue_scripts'));
                 add_action('admin_enqueue_scripts', array(__CLASS__, 'wp_slimstat_stylesheet'));
             }
@@ -443,7 +452,7 @@ class wp_slimstat_admin
 
         // Let's save the version in the database
         if (empty(wp_slimstat::$settings['version'])) {
-            wp_slimstat::$settings['version'] = wp_slimstat::$version;
+            wp_slimstat::$settings['version'] = SLIMSTAT_ANALYTICS_VERSION;
         }
     }
     // END: init_tables
@@ -515,7 +524,7 @@ class wp_slimstat_admin
         }
 
         // Now we can update the version stored in the database
-        wp_slimstat::$settings['version']            = wp_slimstat::$version;
+        wp_slimstat::$settings['version']            = SLIMSTAT_ANALYTICS_VERSION;
         wp_slimstat::$settings['notice_latest_news'] = 'on';
         wp_slimstat::update_option('slimstat_options', wp_slimstat::$settings);
 
@@ -778,11 +787,6 @@ class wp_slimstat_admin
      */
     public static function wp_slimstat_pro()
     {
-        if (wp_slimstat::pro_is_installed()) {
-            // Redirect to layout page
-            wp_safe_redirect(admin_url('admin.php?page=slimconfig&tab=7'));
-        }
-        
         include(dirname(__FILE__) . '/view/upgrade-pro.php');
     }
 
@@ -1001,6 +1005,16 @@ class wp_slimstat_admin
     {
         check_ajax_referer('meta-box-order', 'security');
 
+        // If this user is whitelisted, we use the minimum capability
+        $minimum_capability = 'read';
+        if (strpos(wp_slimstat::$settings['can_view'], $GLOBALS['current_user']->user_login) === false && !empty(wp_slimstat::$settings['capability_can_view'])) {
+            $minimum_capability = wp_slimstat::$settings['capability_can_view'];
+        }
+
+        if (!current_user_can($minimum_capability)) {
+            return;
+        }
+
         include_once(plugin_dir_path(__FILE__) . 'view/wp-slimstat-reports.php');
         wp_slimstat_reports::init();
 
@@ -1008,7 +1022,7 @@ class wp_slimstat_admin
 
         switch ($_POST['type']) {
             case 'save':
-                $new_filter = json_decode(stripslashes_deep($_POST['filter_array']), true);
+                $new_filter = json_decode(stripslashes_deep(sanitize_text_field($_POST['filter_array'])), true);
 
                 // Check if this filter is already saved
                 foreach ($saved_filters as $a_saved_filter) {
@@ -1052,7 +1066,7 @@ class wp_slimstat_admin
                         $filter_html[]           = strtolower(wp_slimstat_db::$columns_names[$a_filter_label][0]) . ' ' . __(str_replace('_', ' ', $a_filter_details[0]), 'wp-slimstat') . ' ' . $filter_value_no_slashes;
                         $filter_strings[]        = "$a_filter_label {$a_filter_details[0]} $filter_value_no_slashes";
                     }
-                    echo '<p><a class="slimstat-font-cancel slimstat-delete-filter" data-filter-id="' . $a_filter_id . '" title="' . __('Delete this filter', 'wp-slimstat') . '" href="#"></a> <a class="slimstat-filter-link" data-reset-filters="true" href="' . wp_slimstat_reports::fs_url(implode('&&&', $filter_strings)) . '">' . implode(', ', $filter_html) . '</a></p>';
+                    echo '<p><a class="slimstat-font-cancel slimstat-delete-filter" data-filter-id="' . esc_attr($a_filter_id) . '" title="' . __('Delete this filter', 'wp-slimstat') . '" href="#"></a> <a class="slimstat-filter-link" data-reset-filters="true" href="' . wp_slimstat_reports::fs_url(implode('&&&', $filter_strings)) . '">' . implode(', ', $filter_html) . '</a></p>';
                 }
                 echo '</div>';
                 break;
@@ -1169,6 +1183,12 @@ class wp_slimstat_admin
                 wp_enqueue_script('feedbackbird-app-script', 'https://cdn.jsdelivr.net/gh/feedbackbird/assets@master/wp/app.js?uid=01H5FBKA9Z5M2VJWQXZSX4Q7MS');
                 wp_add_inline_script('feedbackbird-app-script', sprintf('var feedbackBirdObject = %s;', json_encode([
                     'user_email'    => function_exists('wp_get_current_user') ? wp_get_current_user()->user_email : '',
+                    'platform'      => 'wordpress-admin',
+                    'config'        => [
+                        'color'    => '#e8294c',
+                        'button'   => __('Feedback', 'wp-sms'),
+                        'subtitle' => __('Feel free to share your thoughts!', 'wp-sms'),
+                    ],
                     'meta'          => [
                         'php_version'    => PHP_VERSION,
                         'active_plugins' => array_map(function ($plugin, $pluginPath) {
@@ -1178,9 +1198,6 @@ class wp_slimstat_admin
                                 'status'  => is_plugin_active($pluginPath) ? 'active' : 'deactivate',
                             ];
                         }, get_plugins(), array_keys(get_plugins())),
-                    ],
-                    'customization' => [
-                        "color" => "#e8294c"
                     ]
                 ])));
 

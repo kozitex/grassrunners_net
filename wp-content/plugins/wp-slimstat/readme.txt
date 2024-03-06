@@ -1,11 +1,11 @@
-=== Slimstat Analytics ===
+=== SlimStat Analytics ===
 Contributors: coolmann, toxicum, veronalabs, mostafas1990
 Tags: analytics, statistics, counter, tracking, reports, geolocation, online users, spider, tracker, pageviews, stats, maxmind, statistics, statpress, power stats, hit
 Text Domain: wp-slimstat
 Requires at least: 5.6
 Requires PHP: 7.4+
 Tested up to: 6.4
-Stable tag: 5.1
+Stable tag: 5.1.4
 
 == Description ==
 Track returning customers and registered users, monitor Javascript events, detect intrusions, analyze email campaigns. Thousands of WordPress sites are already using it.
@@ -61,6 +61,30 @@ An extensive knowledge base is available on our [website](https://www.wp-slimsta
 7. **Settings** - Plenty of options to customize the plugin's behavior
 
 == Changelog ==
+= 5.1.4 =
+* [Fixes] Update maxmind plugin to get `wp_slimstat` version
+* [Enhancement] Sanitized input `filter_array`
+* [Enhancement] Added minimum cap to ajax callback report to prevent unauthorized use by low-privileged users
+
+= 5.1.3 =
+* [Enhancement] PHP v8.2 compatibility
+* [Enhancement] Refactor IP Anonymization Logic to Use `wp_privacy_anonymize_ip()` Function
+* [Enhancement] Enhance exclusion options in fingerprinting prevention
+* [Enhancement] Fix passing Fingerprint2 options
+* [Enhancement] Updated jQuery Dependency for SlimStat vMap Scripts in Reports
+* [Enhancement] Minor improvements and cleanups and fixed some wrong documents URLs
+* [Enhancement] Updated reference to Git repository to download the latest Browscap
+* [Enhancement] Updated the POT file
+
+= 5.1.2 =
+* [Fix] Fixed loading of Constants.php for users not logged in.
+* [Enhancement] Improved CSS color styles for new visitors.
+
+= 5.1.1 =
+* [Enhancement] Ensured compatibility with PHP version 8.2.
+* [Enhancement] Refined color scheme to enhance differentiation and visibility of new visitors.
+* [Fix] An issue with handling multiple array parameters in URLs.
+
 = 5.1 =
 We're excited to announce the release of Slimstat v5.1! This update includes a big design change, as well as a number of new features and improvements.
 
