@@ -13,7 +13,8 @@ html, body {
 
 body {
   /* font-family: 'Montserrat'; */
-  font-family: "Noto Sans JP";
+  /* font-family: "Noto Sans JP"; */
+  font-family: "Noto Serif JP";
   overflow-x: hidden;
   margin: 0;
 }
@@ -87,7 +88,7 @@ section {
 }
 
 .section-sub-title {
-  font-family: "M PLUS 1p";
+  /* font-family: "M PLUS 1p"; */
   font-size: 1.4rem;
   color: #ccc;
   letter-spacing: 4px;
@@ -107,6 +108,7 @@ section {
 }
 
 #fv .pre-title {
+  font-family: "Montserrat";
   font-size: 3.2rem;
   line-height: 1.8;
   color: #fff;
@@ -122,6 +124,7 @@ section {
 }
 
 #fv div.title {
+  font-family: "Montserrat";
   color: #ffffff00;
   font-size: 8.8rem;
   line-height: 1.1;
@@ -310,7 +313,7 @@ section {
   font-size: 1.8rem;
   line-height: 2.0;
   letter-spacing: 1px;
-  font-family: "Noto Sans JP";
+  /* font-family: "Noto Sans JP"; */
   /* font-family: "Noto Serif JP"; */
   color: #333;
   margin: 0 0 3.2rem;
@@ -398,7 +401,7 @@ section {
   margin: auto;
   padding: 0 2.4rem;
   color: #ffffff00;
-  font-family: "M PLUS 1p";
+  /* font-family: "M PLUS 1p"; */
   font-size: 2.8rem;
   text-align: center;
   z-index: 2;
@@ -446,7 +449,7 @@ section {
 
 #service .card > li .title {
   color: #38b48b;
-  font-family: "M PLUS 1p";
+  /* font-family: "M PLUS 1p"; */
   font-size: 2.8rem;
   font-weight: 500;
   text-align: left;
@@ -454,7 +457,7 @@ section {
 }
 
 #service .card > li .body {
-  font-family: "Noto Serif JP";
+  /* font-family: "Noto Serif JP"; */
   font-size: 1.8rem;
   line-height: 2.0;
   letter-spacing: 1px;
@@ -535,7 +538,7 @@ section {
   z-index: 10001;
   width: 96.0rem;
   background-color: #fff;
-  font-family: "M PLUS 1p";
+  /* font-family: "M PLUS 1p"; */
   padding: 7.2rem 4.8rem;
   color: #333;
   /* border-radius: 0.8rem; */
@@ -620,7 +623,7 @@ section {
 }
 
 .modal .content .desc {
-  font-family: "Noto Serif JP";
+  /* font-family: "Noto Serif JP"; */
   font-size: 1.8rem;
   line-height: 2.0;
   letter-spacing: 1px;
