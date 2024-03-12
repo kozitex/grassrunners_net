@@ -182,7 +182,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 // スタイル・スクリプトファイルの呼び出し
 function add_css_js() {
-	wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
+	// wp_enqueue_script('scripts', get_template_directory_uri() . '/js/star.js');
 	wp_enqueue_script('scripts', get_template_directory_uri() . '/js/main.js');
+	wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
 }
 add_action('wp_enqueue_scripts', 'add_css_js');

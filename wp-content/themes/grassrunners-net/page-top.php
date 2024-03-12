@@ -1,32 +1,56 @@
 <?php get_header(); ?>
-<main>
+<main id="main" class="loading">
   <div id="video-area">
     <video id="video" poster="<?php echo get_bloginfo('template_directory'); ?>/img/bg.png" webkit-playsinline playsinline muted autoplay loop>
       <source src="<?php echo get_bloginfo('template_directory'); ?>/video/bg.mp4" type="video/mp4">
     </video>
   </div>
   <section id="mv">
-    <div class="welcome">Welcome to</div>
+    <!-- <div id="coordinate"></div>
+    <div id="now"></div>
+    <div id="offset">0000</div> -->
     <div class="cross-line"></div>
-    <div class="title animate">
-      <div>g</div>
-      <div>r</div>
-      <div>a</div>
-      <div>s</div>
-      <div>s</div>
-      <div>r</div>
-      <div>u</div>
-      <div>n</div>
-      <div>n</div>
-      <div>e</div>
-      <div>r</div>
-      <div>s</div>
-      <div>.</div>
-      <div>n</div>
-      <div>e</div>
-      <div>t</div>
+    <div class="title-wrapper">
+      <div class="welcome">Welcome to</div>
+      <div class="title-shadow">
+        <div>g</div>
+        <div>r</div>
+        <div>a</div>
+        <div>s</div>
+        <div>s</div>
+        <div>r</div>
+        <div>u</div>
+        <div>n</div>
+        <div>n</div>
+        <div>e</div>
+        <div>r</div>
+        <div>s</div>
+        <div>.</div>
+        <div>n</div>
+        <div>e</div>
+        <div>t</div>
+      </div>
+      <div class="title">
+        <div>g</div>
+        <div>r</div>
+        <div>a</div>
+        <div>s</div>
+        <div>s</div>
+        <div>r</div>
+        <div>u</div>
+        <div>n</div>
+        <div>n</div>
+        <div>e</div>
+        <div>r</div>
+        <div>s</div>
+        <div>.</div>
+        <div>n</div>
+        <div>e</div>
+        <div>t</div>
+      </div>
+      <div class="flash-bar"></div>
     </div>
-    <div class="guide animate">
+    <div class="guide">
       <div class="text"><span>I want you to know me.</span><br><span>Please scroll !</span></div>
       <div class="arrow">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 16">
@@ -179,7 +203,13 @@
       </div>
     </div>
   </section>
-  <div id="cursor"></div>
-  <div id="stalker" class="loading"></div>
+  <div id="cursor" class="loading"></div>
+  <div id="stalker"></div>
+  <div id="status">loading</div>
+  
+
+
+  <!-- <div id="stalker" class="loading"></div>
+  <div id="cursor"></div> -->
 </main>
 <?php get_footer(); ?>

@@ -1,46 +1,66 @@
 'use strict';
 
-window.addEventListener('DOMContentLoaded', function(){
+window.addEventListener('DOMContentLoaded', function() {
 
-  var video = document.getElementById('video');
-  video.addEventListener('progress', function() {
-    console.log("progress");
-    stalker.classList.add('loading');
-  });
+  var
+  loadingFlg = false,
+  waitingFlg = false;
 
-  video.addEventListener('suspend', function() {
-    console.log("suspend");
-    stalker.classList.add('loading');
-  });
+  var
+  cursor = document.getElementById('cursor'),
+  stalker = document.getElementById('stalker'),
+  status = document.getElementById('status'),
+  main = document.getElementById('main'),
+  mv = document.getElementById('mv'),
+  video = document.getElementById('video')
+	// titles = document.getElementsByClassName('title')[0].children,
+	// titleShadows = document.getElementsByClassName('title-shadow')[0].children;
+  ;
 
-  document.getElementById('video').addEventListener('loadeddata', function() {
-    console.log("loadeddata");
-    stalker.classList.remove('loading');
-  });
+  var moveTimer = 0;
 
-  document.getElementById('video').addEventListener('canplay', function() {
-    console.log("canplay");
-    stalker.classList.remove('loading');
-  });
+  var scrollAmt;
+  var winInHeight = window.innerHeight;
 
+  // 待機フラグと読込フラグがtrueならローディングを終了
+  const loadingEnded = () => {
+    if (waitingFlg && loadingFlg) {
+      main.classList.remove('loading');
+      status.textContent = '';
+      mv.classList.add('active');
+      setTimeout(() => {
+        document.removeEventListener('touchmove', noscroll);
+        document.removeEventListener('wheel', noscroll);
+      }, 4800);
+    }
+  }
 
-	// スクロールに応じて、fvの文字を透明にする
-	window.addEventListener('scroll', function(){
-		var scrollAmt = window.scrollY;
-		var threshold = 1 / 1.5;
-		var winInHeight = window.innerHeight;
-		var opacity = 1 - scrollAmt / ( winInHeight * threshold );
-		this.document.getElementById('mv').style.opacity = opacity;
-	});
+  // スクロールを禁止
+  const noscroll = (e) => e.preventDefault();
 
-	// スクロールに応じて、videoの文字を透明にする
-	window.addEventListener('scroll', function(){
-		var scrollAmt = window.scrollY;
-		var threshold = 1 / 1.5;
-		var winInHeight = window.innerHeight;
-		var opacity = 1 - scrollAmt / ( winInHeight * threshold );
-		this.document.getElementById('video').style.opacity = opacity;
-	});
+  // スクロールに応じてmvをフェードアウト
+  const mvFadeOut = () => {
+		var threshold = 1 / 2;
+		var ratio = 1 - scrollAmt / ( winInHeight * threshold );
+		mv.style.opacity = ratio;
+  }
+
+  // マウスカーソルの色を反転させる
+  const invertCursorColor = (pageY) => {
+    console.log(pageY, window.innerHeight);
+    if (pageY > window.innerHeight) {
+      main.classList.add('inversion');
+    } else {
+      main.classList.remove('inversion');
+    }
+  }
+
+  // スクロールに応じて動画を変化
+  const videoAlter = () => {
+		var threshold = 1 / 2;
+		var ratio = scrollAmt / ( winInHeight * threshold );
+		video.style.filter = 'blur(' + ratio * 50 + 'px)';
+  }
 
 	// 各workがクリックされたら、モーダルウィンドウを表示する
 	var works = document.getElementsByClassName('work');
@@ -99,15 +119,23 @@ window.addEventListener('DOMContentLoaded', function(){
 		}
 	}
 
-	animateActive();
-
-	window.addEventListener('scroll', animateActive);
-
 	// worksの並び順に応じて、トランジションのディレイを設定する
 	for (var $i = 0;$i < works.length;$i++) {
 		var loop = Math.floor($i / lineNum);
 		works[$i].style.transitionDelay = ($i - loop * lineNum) * 200 + 'ms';
 	}
+
+  // // タイトル文字の並び順に応じてディレイを設定
+	// for (var $i = 0;$i < titles.length;$i++) {
+  //   var start = 3130;
+  //   titles[$i].style.animationDelay = (start + (20 * $i)) + 'ms';
+  // };
+
+  // // タイトル文字の並び順に応じてディレイを設定
+	// for (var $i = 0;$i < titleShadows.length;$i++) {
+  //   var start = 3130;
+  //   titleShadows[$i].style.animationDelay = (start + (20 * $i)) + 'ms';
+  // };
 
 	function checkLine() {
 		return new Promise(function (resolve, reject) {
@@ -124,62 +152,71 @@ window.addEventListener('DOMContentLoaded', function(){
 		});
 	}
 
-  var
-  cursor = document.getElementById('cursor'),
-  stalker = document.getElementById('stalker'),
-  cursorSize = 16,
-  stalkerSize = 48,
-  mouseX = 0,
-  mouseY = 0,
-  amountX = 0,
-  amountY = 0;
-
-  window.addEventListener('mousemove', cursorMove);
-
-  // window.addEventListener('scroll', cursorMoveByScroll);
-
-  function cursorMove(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    console.log(mouseX, mouseY);
-    // cursor.style.left = mouseX - (cursorSize / 2) + "px";
-    // cursor.style.top  = mouseY - (cursorSize / 2) + "px";
-    // stalker.style.left = mouseX - (stalkerSize / 2) + "px";
-    // stalker.style.top  = mouseY - (stalkerSize / 2) + "px";
-    cursor.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
-    stalker.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
+  // カーソル要素を画面の中央に移動
+  const cursorCentering = () => {
+    var centerX = window.innerWidth / 2;
+    var centerY = window.innerHeight / 2;
+    cursorChace(centerX, centerY)
   }
 
-  // function cursorMove(e) {
-  //   mouseX = e.pageX;
-  //   mouseY = e.pageY;
-  //   cursor.style.left = mouseX - (cursorSize / 2) + "px";
-  //   cursor.style.top  = mouseY - (cursorSize / 2) + "px";
-  //   // stalker.style.left = mouseX - (stalkerSize / 2) + "px";
-  //   // stalker.style.top  = mouseY - (stalkerSize / 2) + "px";
-  //   stalker.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
-  // }
-
-  function cursorMoveByScroll() {
-    console.log(mouseX, mouseY);
-    var mouseX2 = mouseX + (window.scrollX - amountX);
-    var mouseY2 = mouseY + (window.scrollY - amountY);
-    console.log(mouseX2, mouseY2);
-    // mouseX = mouseX + window.scrollX;
-    // mouseY = mouseY + window.scrollY;
-
-
-    // cursor.style.left = mouseX - (cursorSize / 2) + "px";
-    // cursor.style.top  = mouseY - (cursorSize / 2) + "px";
-    // stalker.style.left = mouseX - (stalkerSize / 2) + "px";
-    // stalker.style.top  = mouseY - (stalkerSize / 2) + "px";
+  // マウスの動きに合わせてカーソル要素を動かす
+  const cursorChace = (mouseX, mouseY) => {
     cursor.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
     stalker.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
-    amountX = window.scrollX;
-    amountY = window.scrollY;
+    status.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
+  }
+
+  // マウスが停まったことを検知
+  const detectMouseStop = () => {
+    clearTimeout(moveTimer);
+    cursor.classList.add('moving');
+    moveTimer = setTimeout(() => {
+      cursor.classList.remove('moving');
+    }, 400);
   }
 
 
 
-  
+
+
+  // スクロールを禁止
+  document.addEventListener('touchmove', noscroll, {passive: false});
+  document.addEventListener('wheel', noscroll, {passive: false});
+
+  // 読み込み時に実行
+  video.load();
+  cursorCentering();
+	animateActive();
+
+  // 読み込みから3秒経ったら待機フラグを更新
+  setTimeout(() => {
+    waitingFlg = true;
+    loadingEnded();
+    // カーソル要素を画面右下端に移動
+    cursorChace(window.innerWidth, window.innerHeight)
+  }, 3000);
+
+  // 動画が再生可能になったら読込フラグを更新
+  video.addEventListener('canplay', function() {
+    loadingFlg = true;
+    // console.log("canplay");
+    loadingEnded();
+  });
+
+  // マウスが動くたびに実行
+  window.addEventListener('mousemove', (e) => {
+    cursorChace(e.clientX, e.clientY);
+    invertCursorColor(e.pageY);
+    detectMouseStop();
+  });
+
+  // 画面がスクロールするたびに実行
+  window.addEventListener('scroll', () => {
+		scrollAmt = window.scrollY;
+    mvFadeOut();
+    videoAlter();
+    animateActive();
+  });
+
+
 });
