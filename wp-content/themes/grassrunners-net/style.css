@@ -517,6 +517,40 @@ section {
   opacity: 0.5;
 }
 
+
+
+
+/* .imgWrapper {
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+
+.imgWrapper::before {
+  content: '';
+  display: block;
+  padding-top: 150%;
+}
+ 
+.displacement-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.displacement-hover canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.displacement-hover img {
+  display: none;
+} */
+
+
+
+
 #about {
   position: relative;
   background-color: #fff;

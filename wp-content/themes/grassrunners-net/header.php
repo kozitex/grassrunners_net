@@ -7,6 +7,33 @@
 	<!-- FAVICONを設定 -->
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/img/apple-touch-icon.png" sizes="180x180">
+
+  <!-- <script async src="https://unpkg.com/es-module-shims@1.5.8/dist/es-module-shims.js"></script>
+<script type="importmap">
+   {
+       "imports": {
+           "three": "https://unpkg.com/three@0.142.0/build/three.module.js"
+       }
+   }
+</script> -->
+
+  <!-- <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+      }
+    }
+  </script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.162.0/three.module.js" integrity="sha512-0XQNqFQUDxCJPikfkl+TwMm0YblRLrIoBb7MvYZ4Q7BUoeNBXUvW/PawMUgT2jn3w/AFTxANjy0mJ94ob215mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <!-- <script src="https://unpkg.com/three@0.162.0/build/three.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
+
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js"></script>
+
 	<!-- sanitize.cssを読み込み -->
 	<link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
 	<!-- Google Fontsを読み込み -->

@@ -60,6 +60,14 @@
       </div>
     </div>
   </section>
+
+<!-- <div class="imgWrapper">
+<div class="displacement-hover" data-displacement="<?php echo get_bloginfo('template_directory'); ?>/img/displacement.png" data-speediut="1.2" data-speedout="0.9" data-intensity="0.2">
+<img class="lazy" src="" data-src="<?php echo get_bloginfo('template_directory'); ?>/img/02.jpg" alt="" />
+<img class="lazy" src="" data-src="<?php echo get_bloginfo('template_directory'); ?>/img/05.jpg" alt="" />
+</div>
+</div> -->
+
   <section id="about">
       <div class="section-title animate">About</div>
       <div class="section-sub-title animate">自己紹介</div>
