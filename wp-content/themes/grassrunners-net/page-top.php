@@ -2,16 +2,32 @@
 <main id="main" class="loading">
   <div id="video-area">
     <video id="video" poster="<?php echo get_bloginfo('template_directory'); ?>/img/bg.png" webkit-playsinline playsinline muted autoplay loop>
-      <source src="<?php echo get_bloginfo('template_directory'); ?>/video/bg.mp4" type="video/mp4">
+      <source src="<?php echo get_bloginfo('template_directory'); ?>/video/movie02.mov" type="video/mp4">
     </video>
   </div>
   <section id="mv">
-    <!-- <div id="coordinate"></div>
-    <div id="now"></div>
-    <div id="offset">0000</div> -->
+    <div id="movie"></div>
     <div class="cross-line"></div>
     <div class="title-wrapper">
       <div class="welcome">Welcome to</div>
+      <div class="title-shadow2">
+        <div>g</div>
+        <div>r</div>
+        <div>a</div>
+        <div>s</div>
+        <div>s</div>
+        <div>r</div>
+        <div>u</div>
+        <div>n</div>
+        <div>n</div>
+        <div>e</div>
+        <div>r</div>
+        <div>s</div>
+        <div>.</div>
+        <div>n</div>
+        <div>e</div>
+        <div>t</div>
+      </div>
       <div class="title-shadow">
         <div>g</div>
         <div>r</div>
@@ -60,13 +76,6 @@
       </div>
     </div>
   </section>
-
-<!-- <div class="imgWrapper">
-<div class="displacement-hover" data-displacement="<?php echo get_bloginfo('template_directory'); ?>/img/displacement.png" data-speediut="1.2" data-speedout="0.9" data-intensity="0.2">
-<img class="lazy" src="" data-src="<?php echo get_bloginfo('template_directory'); ?>/img/02.jpg" alt="" />
-<img class="lazy" src="" data-src="<?php echo get_bloginfo('template_directory'); ?>/img/05.jpg" alt="" />
-</div>
-</div> -->
 
   <section id="about">
       <div class="section-title animate">About</div>

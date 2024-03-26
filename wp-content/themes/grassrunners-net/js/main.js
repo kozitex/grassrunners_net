@@ -2,6 +2,8 @@
 
 window.addEventListener('DOMContentLoaded', function() {
 
+
+
   var
   loadingFlg = false,
   waitingFlg = false;
@@ -194,7 +196,7 @@ window.addEventListener('DOMContentLoaded', function() {
     loadingEnded();
     // カーソル要素を画面右下端に移動
     cursorChace(window.innerWidth, window.innerHeight)
-  }, 3000);
+  }, 500);
 
   // 動画が再生可能になったら読込フラグを更新
   video.addEventListener('canplay', function() {
@@ -213,26 +215,25 @@ window.addEventListener('DOMContentLoaded', function() {
   // 画面がスクロールするたびに実行
   window.addEventListener('scroll', () => {
 		scrollAmt = window.scrollY;
-    mvFadeOut();
-    videoAlter();
+    // mvFadeOut();
+    // videoAlter();
     animateActive();
   });
 
-  console.log(THREE);
 
 
+  // mv.addEventListener('mouseenter', () => {
+  //   TweenMax.to('#mv', 2, {
+  //     x: 200,
+  //     value: 1,
+  //   });
+  // });
 
-  mv.addEventListener('mouseenter', () => {
-    TweenMax.to('#mv', 2, {
-      x: 200,
-    });
-  });
-
-  mv.addEventListener('mouseleave', () => {
-    TweenMax.to('#mv', 0.5, {
-      x: 0,
-    });
-  });
+  // mv.addEventListener('mouseleave', () => {
+  //   TweenMax.to('#mv', 0.5, {
+  //     x: 0,
+  //   });
+  // });
 
 
 
@@ -303,7 +304,7 @@ window.addEventListener('DOMContentLoaded', function() {
   //   var speedIn = opts.speedIn || 1.6;
   //   var speedOut = opts.speedOut || 1.2;
   //   var userHover = (opts.hover === undefined) ? true : opts.hover;
-  //   // var easing = opts.easing || Expo.easeOut;
+  //   var easing = opts.easing || Expo.easeOut;
      
   //   var mobileAndTabletcheck = function() {
   //       var check = false;
@@ -379,7 +380,7 @@ window.addEventListener('DOMContentLoaded', function() {
   //       }
   //       parent.addEventListener(evtIn, function(e) {
   //           TweenMax.to(mat.uniforms.dispFactor, speedIn, {
-  //               value: 1,
+  //               value: 1.0,
   //               ease: easing
   //           });
   //       });
@@ -441,4 +442,5 @@ window.addEventListener('DOMContentLoaded', function() {
   //       });
   //   });
   //   // });
+
 });
