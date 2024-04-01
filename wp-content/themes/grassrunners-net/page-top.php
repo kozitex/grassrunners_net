@@ -2,77 +2,29 @@
 <main id="main" class="loading">
   <div id="video-area">
     <video id="video" poster="<?php echo get_bloginfo('template_directory'); ?>/img/bg.png" webkit-playsinline playsinline muted autoplay loop>
+      <!-- <source src="<?php echo get_bloginfo('template_directory'); ?>/video/bg.mp4" type="video/mp4"> -->
       <source src="<?php echo get_bloginfo('template_directory'); ?>/video/movie02.mov" type="video/mp4">
     </video>
   </div>
   <section id="mv">
-    <div id="movie"></div>
-    <div class="cross-line"></div>
-    <div class="title-wrapper">
-      <div class="welcome">Welcome to</div>
-      <div class="title-shadow2">
-        <div>g</div>
-        <div>r</div>
-        <div>a</div>
-        <div>s</div>
-        <div>s</div>
-        <div>r</div>
-        <div>u</div>
-        <div>n</div>
-        <div>n</div>
-        <div>e</div>
-        <div>r</div>
-        <div>s</div>
-        <div>.</div>
-        <div>n</div>
-        <div>e</div>
-        <div>t</div>
+    <div class="wrapper">
+      <div id="movie"></div>
+      <div class="cross-line"></div>
+      <div class="title-wrapper">
+        <div class="welcome">Welcome to</div>
+        <div id="title-stalker2"></div>
+        <div id="title-stalker"></div>
+        <div id="title"></div>
+        <div class="flash-bar"></div>
       </div>
-      <div class="title-shadow">
-        <div>g</div>
-        <div>r</div>
-        <div>a</div>
-        <div>s</div>
-        <div>s</div>
-        <div>r</div>
-        <div>u</div>
-        <div>n</div>
-        <div>n</div>
-        <div>e</div>
-        <div>r</div>
-        <div>s</div>
-        <div>.</div>
-        <div>n</div>
-        <div>e</div>
-        <div>t</div>
-      </div>
-      <div class="title">
-        <div>g</div>
-        <div>r</div>
-        <div>a</div>
-        <div>s</div>
-        <div>s</div>
-        <div>r</div>
-        <div>u</div>
-        <div>n</div>
-        <div>n</div>
-        <div>e</div>
-        <div>r</div>
-        <div>s</div>
-        <div>.</div>
-        <div>n</div>
-        <div>e</div>
-        <div>t</div>
-      </div>
-      <div class="flash-bar"></div>
-    </div>
-    <div class="guide">
-      <div class="text"><span>I want you to know me.</span><br><span>Please scroll !</span></div>
-      <div class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 16">
-          <line x1="16" y1="16" x2="16" y2="0" style="stroke:rgb(255,255,255);stroke-width: 0.8" />
-          <line x1="13" y1="10" x2="16" y2="16" style="stroke:rgb(255,255,255);stroke-width: 0.8" />
-        </svg>
+      <div class="guide">
+        <div class="text"><span>I want you to know me.</span><br><span>Please scroll !</span></div>
+        <div class="arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 16">
+            <line x1="16" y1="16" x2="16" y2="0" style="stroke:rgb(255,255,255);stroke-width: 0.8" />
+            <line x1="13" y1="10" x2="16" y2="16" style="stroke:rgb(255,255,255);stroke-width: 0.8" />
+          </svg>
+        </div>
       </div>
     </div>
   </section>

@@ -1,71 +1,75 @@
 'use strict';
+import Movie from './animation/movie.js';
+import sticky from './animation/sticky.js';
 
-window.addEventListener('DOMContentLoaded', function() {
+var moveTimer = 0;
+var scrollAmt;
+var winInHeight = window.innerHeight;
+var lineNum = 0;
+var
+loadingFlg = false,
+waitingFlg = false;
 
+var
+cursor = document.getElementById('cursor'),
+stalker = document.getElementById('stalker'),
+status = document.getElementById('status'),
+main = document.getElementById('main'),
+mv = document.getElementById('mv'),
+video = document.getElementById('video')
+var works = document.getElementsByClassName('work');
 
+window.addEventListener('DOMContentLoaded', () => {
+  init();
+});
 
-  var
-  loadingFlg = false,
-  waitingFlg = false;
+const init = () => {
+  // タイトルのDOMとスタイルを用意
+  const title = document.getElementById('title');
+  const titleStalker = document.getElementById('title-stalker');
+  const titleStalker2 = document.getElementById('title-stalker2');
+  const text = 'grassrunners.net';
+  textSlicer(title, text);
+  textSlicer(titleStalker, text);
+  textSlicer(titleStalker2, text);
 
-  var
-  cursor = document.getElementById('cursor'),
-  stalker = document.getElementById('stalker'),
-  status = document.getElementById('status'),
-  main = document.getElementById('main'),
-  mv = document.getElementById('mv'),
-  video = document.getElementById('video')
-	// titles = document.getElementsByClassName('title')[0].children,
-	// titleShadows = document.getElementsByClassName('title-shadow')[0].children;
-  ;
-
-  var moveTimer = 0;
-
-  var scrollAmt;
-  var winInHeight = window.innerHeight;
-
-  // 待機フラグと読込フラグがtrueならローディングを終了
-  const loadingEnded = () => {
-    if (waitingFlg && loadingFlg) {
-      main.classList.remove('loading');
-      status.textContent = '';
-      mv.classList.add('active');
-      setTimeout(() => {
-        document.removeEventListener('touchmove', noscroll);
-        document.removeEventListener('wheel', noscroll);
-      }, 4800);
-    }
-  }
+  const titles = title.children;
+  const titleStalkers = titleStalker.children;
+  const titleStalkers2 = titleStalker2.children;
+  setDelay(titles, 3130);
+  setDelay(titleStalkers, 3230);
+  setDelay(titleStalkers2, 3330);
 
   // スクロールを禁止
-  const noscroll = (e) => e.preventDefault();
+  document.addEventListener('touchmove', noscroll, {passive: false});
+  document.addEventListener('wheel', noscroll, {passive: false});
+  
+  // オープニングムービー開始
+  const movie = new Movie();
+  new sticky(titleStalker);
+  // movie.onWindowResize;
+  movie.onWindowResize;
+  window.addEventListener('resize', movie.onWindowResize);
+  window.addEventListener('scroll', () => movie.onScroll(window.scrollY));
 
-  // スクロールに応じてmvをフェードアウト
-  const mvFadeOut = () => {
-		var threshold = 1 / 2;
-		var ratio = 1 - scrollAmt / ( winInHeight * threshold );
-		mv.style.opacity = ratio;
-  }
+  // const targets = document.getElementById('title-stalker').children;
+  // Array.from(targets).forEach(function(target) {
+  //   new sticky(target);
+  // });
 
-  // マウスカーソルの色を反転させる
-  const invertCursorColor = (pageY) => {
-    // console.log(pageY, window.innerHeight);
-    if (pageY > window.innerHeight) {
-      main.classList.add('inversion');
-    } else {
-      main.classList.remove('inversion');
-    }
-  }
+	// worksの並び順に応じて、トランジションのディレイを設定する
+  checkLine().then(function (value) {
+		lineNum = value;
+	}).catch(function (error) {
+		console.log(error);
+	})
 
-  // スクロールに応じて動画を変化
-  const videoAlter = () => {
-		var threshold = 1 / 2;
-		var ratio = scrollAmt / ( winInHeight * threshold );
-		video.style.filter = 'blur(' + ratio * 50 + 'px)';
-  }
+	for (var $i = 0;$i < works.length;$i++) {
+		var loop = Math.floor($i / lineNum);
+		works[$i].style.transitionDelay = ($i - loop * lineNum) * 200 + 'ms';
+	}
 
 	// 各workがクリックされたら、モーダルウィンドウを表示する
-	var works = document.getElementsByClassName('work');
 	for (var $i = 0;$i < works.length;$i++) {
 		works[$i].onclick = function() {
 			var id = this.dataset.id;
@@ -73,14 +77,6 @@ window.addEventListener('DOMContentLoaded', function() {
 			document.getElementsByTagName('body')[0].classList.add('fixed');
 		};
 	}
-
-	// worksが横何列で並んでいるかをチェックする
-	var lineNum = 0;
-	checkLine().then(function (value) {
-		lineNum = value;
-	}).catch(function (error) {
-		console.log(error);
-	})
 
 	// モーダルの閉じるボタンがクリックされたら、モーダルを閉じる
 	var closeBtn = document.getElementsByClassName('close-btn');
@@ -102,88 +98,6 @@ window.addEventListener('DOMContentLoaded', function() {
 			}
 		};
 	}
-
-	// 画面の可視範囲に来たら、アニメーションを開始する
-	function animateActive() {
-		var element = document.getElementsByClassName('animate');
-		if (!element) return;
-
-		var activeTime = window.innerHeight > 768 ? 50 : 40;
-		var scrollAmt = window.scrollY;
-		var winHeight = window.innerHeight;
-
-		for (var $i = 0;$i < element.length;$i++) {
-			var elemClientRect = element[$i].getBoundingClientRect();
-			var elemY = scrollAmt + elemClientRect.top;
-			if ( scrollAmt + winHeight - activeTime > elemY ) {
-				element[$i].classList.add('active');
-			}
-		}
-	}
-
-	// worksの並び順に応じて、トランジションのディレイを設定する
-	for (var $i = 0;$i < works.length;$i++) {
-		var loop = Math.floor($i / lineNum);
-		works[$i].style.transitionDelay = ($i - loop * lineNum) * 200 + 'ms';
-	}
-
-  // // タイトル文字の並び順に応じてディレイを設定
-	// for (var $i = 0;$i < titles.length;$i++) {
-  //   var start = 3130;
-  //   titles[$i].style.animationDelay = (start + (20 * $i)) + 'ms';
-  // };
-
-  // // タイトル文字の並び順に応じてディレイを設定
-	// for (var $i = 0;$i < titleShadows.length;$i++) {
-  //   var start = 3130;
-  //   titleShadows[$i].style.animationDelay = (start + (20 * $i)) + 'ms';
-  // };
-
-	function checkLine() {
-		return new Promise(function (resolve, reject) {
-			for (var $i = 0;$i < works.length;$i++) {
-				var crntTop = works[$i].getBoundingClientRect().top;
-				var nextTop = works[$i + 1].getBoundingClientRect().top;
-				if (crntTop != nextTop) {
-					lineNum = $i + 1;
-					resolve(lineNum);
-					reject(0);
-					return;
-				}
-			}
-		});
-	}
-
-  // カーソル要素を画面の中央に移動
-  const cursorCentering = () => {
-    var centerX = window.innerWidth / 2;
-    var centerY = window.innerHeight / 2;
-    cursorChace(centerX, centerY)
-  }
-
-  // マウスの動きに合わせてカーソル要素を動かす
-  const cursorChace = (mouseX, mouseY) => {
-    cursor.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
-    stalker.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
-    status.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
-  }
-
-  // マウスが停まったことを検知
-  const detectMouseStop = () => {
-    clearTimeout(moveTimer);
-    cursor.classList.add('moving');
-    moveTimer = setTimeout(() => {
-      cursor.classList.remove('moving');
-    }, 400);
-  }
-
-
-
-
-
-  // スクロールを禁止
-  document.addEventListener('touchmove', noscroll, {passive: false});
-  document.addEventListener('wheel', noscroll, {passive: false});
 
   // 読み込み時に実行
   video.load();
@@ -219,6 +133,176 @@ window.addEventListener('DOMContentLoaded', function() {
     // videoAlter();
     animateActive();
   });
+
+}
+
+
+
+
+
+// テキストを１文字ずつ分割して要素として追加
+const textSlicer = (id, text) => {
+  var words= [];
+  for (var i = 0;i < text.length;i ++) {
+    words.push(text.substring(i, i + 1));
+  }
+  words.forEach((word) => {
+    const div = document.createElement('div');
+    div.innerText = word;
+    id.appendChild(div);
+  });
+}
+
+// アニメーションディレイを設定
+const setDelay = (words, start) => {
+  for (var $i = 0;$i < words.length;$i ++) {
+    const radians = $i * Math.PI / 180;
+    const increment = Math.sin(radians) * 2000;
+    words[$i].style.animationDelay = start + increment + 'ms';
+  };
+}
+
+// スクロールを禁止
+const noscroll = (e) => e.preventDefault();
+
+// 待機フラグと読込フラグがtrueならローディングを終了
+const loadingEnded = () => {
+  if (waitingFlg && loadingFlg) {
+    main.classList.remove('loading');
+    status.textContent = '';
+    mv.classList.add('active');
+    setTimeout(() => {
+      document.removeEventListener('touchmove', noscroll);
+      document.removeEventListener('wheel', noscroll);
+    }, 4800);
+  }
+}
+
+// スクロールに応じてmvをフェードアウト
+const mvFadeOut = () => {
+  var threshold = 1 / 2;
+  var ratio = 1 - scrollAmt / ( winInHeight * threshold );
+  mv.style.opacity = ratio;
+}
+
+// マウスカーソルの色を反転させる
+const invertCursorColor = (pageY) => {
+  // console.log(pageY, window.innerHeight);
+  if (pageY > window.innerHeight) {
+    main.classList.add('inversion');
+  } else {
+    main.classList.remove('inversion');
+  }
+}
+
+// スクロールに応じて動画を変化
+const videoAlter = () => {
+  var threshold = 1 / 2;
+  var ratio = scrollAmt / ( winInHeight * threshold );
+  video.style.filter = 'blur(' + ratio * 50 + 'px)';
+}
+
+// カーソル要素を画面の中央に移動
+const cursorCentering = () => {
+  var centerX = window.innerWidth / 2;
+  var centerY = window.innerHeight / 2;
+  cursorChace(centerX, centerY)
+}
+
+// マウスの動きに合わせてカーソル要素を動かす
+const cursorChace = (mouseX, mouseY) => {
+  cursor.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
+  stalker.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
+  status.style.transform = 'translate(' + mouseX + 'px, ' + mouseY + 'px)';
+}
+
+// マウスが停まったことを検知
+const detectMouseStop = () => {
+  clearTimeout(moveTimer);
+  cursor.classList.add('moving');
+  moveTimer = setTimeout(() => {
+    cursor.classList.remove('moving');
+  }, 400);
+}
+
+// 画面の可視範囲に来たら、アニメーションを開始する
+const animateActive = () => {
+  var element = document.getElementsByClassName('animate');
+  if (!element) return;
+
+  var activeTime = window.innerHeight > 768 ? 50 : 40;
+  var scrollAmt = window.scrollY;
+  var winHeight = window.innerHeight;
+
+  for (var $i = 0;$i < element.length;$i++) {
+    var elemClientRect = element[$i].getBoundingClientRect();
+    var elemY = scrollAmt + elemClientRect.top;
+    if ( scrollAmt + winHeight - activeTime > elemY ) {
+      element[$i].classList.add('active');
+    }
+  }
+}
+
+// worksが横何列で並んでいるかをチェックする
+const checkLine = () => {
+  return new Promise(function (resolve, reject) {
+    for (var $i = 0;$i < works.length;$i++) {
+      var crntTop = works[$i].getBoundingClientRect().top;
+      var nextTop = works[$i + 1].getBoundingClientRect().top;
+      if (crntTop != nextTop) {
+        lineNum = $i + 1;
+        resolve(lineNum);
+        reject(0);
+        return;
+      }
+    }
+  });
+}
+
+
+
+window.addEventListener('DOMContentLoaded', function() {
+
+
+  
+  
+
+
+	// titles = document.getElementsByClassName('title')[0].children,
+	// titleShadows = document.getElementsByClassName('title-shadow')[0].children;
+  ;
+
+
+
+
+
+  // const target = document.getElementById('title').children;
+  // const target = document.getElementById('title-stalker');
+
+
+
+
+
+
+  // // タイトル文字の並び順に応じてディレイを設定
+	// for (var $i = 0;$i < titles.length;$i++) {
+  //   var start = 3130;
+  //   titles[$i].style.animationDelay = (start + (20 * $i)) + 'ms';
+  // };
+
+  // // タイトル文字の並び順に応じてディレイを設定
+	// for (var $i = 0;$i < titleShadows.length;$i++) {
+  //   var start = 3130;
+  //   titleShadows[$i].style.animationDelay = (start + (20 * $i)) + 'ms';
+  // };
+
+
+
+
+
+
+
+
 
 
 
