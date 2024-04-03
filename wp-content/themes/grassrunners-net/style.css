@@ -411,7 +411,7 @@ section {
   transition: -webkit-text-stroke 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 3400ms
   , color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 3400ms;
 
-  /* color: #ffffff00; */
+  color: #ffffff00;
   /* transition: color 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 3400ms; */
 }
 
@@ -428,7 +428,7 @@ section {
 /* } */
 
 #mv.active .title-wrapper #title-stalker {
-  /* color: #ffffff1a; */
+  /* color: #ffffff4d; */
   -webkit-text-stroke: 0.1rem #ffffff4d;
   pointer-events: fill;
   /* pointer-events: none; */
@@ -437,7 +437,7 @@ section {
 }
 
 #mv.active .title-wrapper #title-stalker2 {
-  /* color: #ffffff0d; */
+  /* color: #ffffff1a; */
   -webkit-text-stroke: 0.1rem #ffffff1a;
   pointer-events: none;
   /* padding: 1.0rem; */

@@ -1,6 +1,7 @@
 'use strict';
 import Movie from './animation/movie.js';
-import sticky from './animation/sticky.js';
+// import sticky from './animation/sticky.js';
+// import sticky2 from './animation/sticky2.js';
 
 var moveTimer = 0;
 var scrollAmt;
@@ -46,15 +47,16 @@ const init = () => {
   
   // オープニングムービー開始
   const movie = new Movie();
-  new sticky(titleStalker);
+  // new sticky(titleStalker);
   // movie.onWindowResize;
   movie.onWindowResize;
   window.addEventListener('resize', movie.onWindowResize);
   window.addEventListener('scroll', () => movie.onScroll(window.scrollY));
 
-  // const targets = document.getElementById('title-stalker').children;
+  // const targets = document.getElementById('title').children;
+    // new sticky(targets[0]);
   // Array.from(targets).forEach(function(target) {
-  //   new sticky(target);
+  //   new sticky2(target);
   // });
 
 	// worksの並び順に応じて、トランジションのディレイを設定する
@@ -64,13 +66,13 @@ const init = () => {
 		console.log(error);
 	})
 
-	for (var $i = 0;$i < works.length;$i++) {
+	for (var $i = 0;$i < works.length;$i ++) {
 		var loop = Math.floor($i / lineNum);
 		works[$i].style.transitionDelay = ($i - loop * lineNum) * 200 + 'ms';
 	}
 
 	// 各workがクリックされたら、モーダルウィンドウを表示する
-	for (var $i = 0;$i < works.length;$i++) {
+	for (var $i = 0;$i < works.length;$i ++) {
 		works[$i].onclick = function() {
 			var id = this.dataset.id;
 			document.getElementById(id).classList.add('show');

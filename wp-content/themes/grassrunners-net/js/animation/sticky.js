@@ -1,8 +1,12 @@
 export default class sticky {
   constructor(target){
-    
+
+    // ウィンドウサイズ
+    this.w = window.innerWidth;
+    this.h = window.innerHeight
+
     this.gbcr = target.getBoundingClientRect();
-    
+
     this.el = {
       target: target,
       x: this.gbcr.x,
@@ -22,15 +26,24 @@ export default class sticky {
 
     this.frag = false;
 
-    this.el.target.addEventListener('mouseenter', () => { this.mouseEnter() });
-    this.el.target.addEventListener('mouseleave', () => { this.mouseLeave() });
+    const titleStalker = document.getElementById('title-stalker');
+    titleStalker.addEventListener('mouseenter', () => { this.mouseEnter() });
+    titleStalker.addEventListener('mouseleave', () => { this.mouseLeave() });
     this.bindMouseMove = this.mouseMove.bind(this);
     this.onRequestAnimationFrame();
   }
 
   mouseMove(e) {
+    // console.log(gsap.utils.mapRange(100, 150, -20, 20, 50));
+    // console.log(gsap.utils.mapRange(100, 150, -20, 20, 90));
+    // console.log('this.el.x:' + this.el.x + ' this.el.y:' + this.el.y + ' e.clientX:' + e.clientX + ' e.clientY:' + e.clientY + 'this.mouse.x:' + this.mouse.x + ' this.mouse.y:' + this.mouse.y);
     this.mouse.x = gsap.utils.mapRange(this.el.x, this.el.x + this.el.w, -this.attraction, this.attraction, e.clientX);
     this.mouse.y = gsap.utils.mapRange(this.el.y, this.el.y + this.el.h, -this.attraction, this.attraction, e.clientY);
+    // if (this.mouse.x > this.attraction) {this.mouse.x = this.attraction;}
+    // if (this.mouse.x < -this.attraction) {this.mouse.x = -this.attraction;}
+    // if (this.mouse.y > this.attraction) {this.mouse.y = this.attraction;}
+    // if (this.mouse.y < -this.attraction) {this.mouse.y = -this.attraction;}
+    console.log('this.mouse.x:' + this.mouse.x + ', this.mouse.y:' + this.mouse.y);
   }
 
   mouseEnter() {
@@ -58,9 +71,23 @@ export default class sticky {
   }
 
   onRequestAnimationFrame() {
-    if(this.frag){
-      this.mouse.cx = gsap.utils.interpolate(this.mouse.cx, this.mouse.x, 0.01);
-      this.mouse.cy = gsap.utils.interpolate(this.mouse.cy, this.mouse.y, 0.01);
+    const b = Math.sqrt(this.mouse.x ** 2 + this.mouse.y ** 2);
+    if(this.frag && b <= this.attraction * 5){
+      console.log('this.mouse.cx:' + this.mouse.cx + ', this.mouse.cy:' + this.mouse.cy);
+      // console.log('this.el.x:' + this.el.x + ', this.el.y:' + this.el.y);
+      console.log('this.mouse.x:' + this.mouse.x + ', this.mouse.y:' + this.mouse.y);
+      // var disX = Math.abs(this.el.x - this.mouse.x);
+      // var disY = Math.abs(this.el.y - this.mouse.y);
+      // console.log('disX:' + disX + ', disY:' + disY);
+      this.mouse.cx = gsap.utils.interpolate(this.mouse.cx, this.mouse.x, 0.05);
+      this.mouse.cy = gsap.utils.interpolate(this.mouse.cy, this.mouse.y, 0.05);
+      if (this.mouse.cx > this.attraction) {this.mouse.cx = this.attraction;}
+      if (this.mouse.cx < -this.attraction) {this.mouse.cx = -this.attraction;}
+      if (this.mouse.cy > this.attraction) {this.mouse.cy = this.attraction;}
+      if (this.mouse.cy < -this.attraction) {this.mouse.cy = -this.attraction;}
+  
+      // this.mouse.cx = gsap.utils.interpolate(this.mouse.cx, this.mouse.x, 0.1);
+      // this.mouse.cy = gsap.utils.interpolate(this.mouse.cy, this.mouse.y, 0.1);
       // this.el.target.style = 'transform: skew(' + this.mouse.cy + 'deg, ' + this.mouse.cx + 'deg);'
       gsap.set(this.el.target, {
         // skewX: this.mouse.cx + 'deg',
@@ -70,14 +97,28 @@ export default class sticky {
         // z: this.mouse.cx / this.mouse.cy,
         x: this.mouse.cx,
         y: this.mouse.cy,
-        scaleX: 1.0 + Math.abs(this.mouse.cx) * 0.01,
-        scaleY: 1.0 + Math.abs(this.mouse.cy) * 0.01,
-        transformOrigin: (this.mouse.cx > 0 ? 0 : 100) + '% ' + (this.mouse.cy > 0 ? 0 : 100) + '%',
+        // scaleX: 1.0 + Math.abs(this.mouse.cx) * 0.05,
+        // scaleY: 1.0 + Math.abs(this.mouse.cy) * 0.05,
+        // transformOrigin: (this.mouse.cx > 0 ? 0 : 100) + '% ' + (this.mouse.cy > 0 ? 0 : 100) + '%',
       });
       // gsap.set(this.el.target, {
       //   x: this.mouse.cx,
       //   y: this.mouse.cy
       // });
+    } else{
+      this.mouse.cx = 0;
+      this.mouse.cy = 0;
+      gsap.to(this.el.target, {
+        x: 0,
+        y: 0,
+        scaleX: 1.0,
+        scaleY: 1.0,
+        // skewX: '0deg',
+        // skewY: '0deg',
+        duration: .3,
+        ease: 'elastic.out(1, 0.5)'
+      });
+      // removeEventListener('mousemove',this.bindMouseMove);  
     }
     
     requestAnimationFrame(() => { this.onRequestAnimationFrame() });
