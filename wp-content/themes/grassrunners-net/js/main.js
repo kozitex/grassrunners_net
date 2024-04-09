@@ -51,6 +51,11 @@ const init = () => {
   // movie.onWindowResize;
   movie.onWindowResize;
   window.addEventListener('resize', movie.onWindowResize);
+  // let timeoutId = 0;
+  // window.addEventListener('resize', () => {
+  //   if (timeoutId) clearTimeout(timeoutId);
+  //   timeoutId = setTimeout(resize, 200);
+  // });
   window.addEventListener('scroll', () => movie.onScroll(window.scrollY));
 
   // const targets = document.getElementById('title').children;
