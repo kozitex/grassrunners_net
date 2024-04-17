@@ -40,8 +40,6 @@ export default class Movie {
     
       float noise = texture2D(uNoiseTex, textureUv).r;
       vec4 pTexColor = vec4(1.0, 1.0, 1.0, 0.0);
-      // vec4 pTexColor = vec4(0.22, 0.71, 0.55, 1.0);
-      // vec4 pTexColor = vec4(vec3(0.0, 0.0, 0.0), textureUv);
       float mixed;
       float change;
 
@@ -54,22 +52,9 @@ export default class Movie {
         if ( change >= 1.0 ) { change = 1.0; }
         mixed = 1.0 - uScroll * 0.3;
       } else {
-        // change = noise;
         mixed = 0.8;
         change = noise * (uScroll - 4.0) * 0.3;
-        // change = 2.0;
-        // mixed = noise * (uScroll - 4.0) * 0.9;
       }
-
-      // if (uMixed >= 0.999 && uScroll <= 1.0) {
-      //   change = noise * uScroll;
-      //   if ( change >= 1.0 ) { change = 1.0; }
-      //   mixed = 1.0 - uScroll * 0.3;
-      // } else {
-      //   change = 1.0 - (noise * uProgress * 5.5 + uProgress * 1.2);
-      //   if ( change <= 0.0 ) { change = 0.0; }
-      //   mixed = uMixed;
-      // }
 
       vec4 nTexColor = texture2D(uMovieTex, vec2(textureUv.x, textureUv.y - change));
       gl_FragColor = mix( pTexColor, nTexColor, mixed );
@@ -208,8 +193,6 @@ export default class Movie {
     }
     `;
 
-
-
     // ウィンドウサイズ
     this.w = window.innerWidth;
     this.h = window.innerHeight
@@ -220,29 +203,13 @@ export default class Movie {
     // テクスチャー
     const loader = new THREE.TextureLoader();
     const noiseTex = loader.load('/wp-content/themes/grassrunners-net/img/noise2.png');
-    // const noiseTex2 = loader.load('/wp-content/themes/grassrunners-net/img/noise8.png');
     const noiseTex2 = loader.load('/wp-content/themes/grassrunners-net/img/noise6.jpg');
-
-    const video = document.getElementById('video');
-    // const main = document.getElementById('main');
-    // video.addEventListener('loadeddata', () => {
-    //   video.play();
-    //   main.classList.remove('loading');
-    //   console.log('video loaded');
-    // });
-    // video.load();
-
-    // let video = document.createElement('video');
-    // video.src = '/wp-content/themes/grassrunners-net/video/movie02.mov';
-    // video.muted = true;
-    // video.loop = true;
-    
+    const video = document.getElementById('video');    
     const movieTex = new THREE.VideoTexture(video);
     const welcomeTex = loader.load('/wp-content/themes/grassrunners-net/img/welcome.png');
     const logoTex = loader.load('/wp-content/themes/grassrunners-net/img/logo.png');
     const guideTex = loader.load('/wp-content/themes/grassrunners-net/img/guide.png');
     const texAspect = 1920.0 / 1080.0;
-
 
     // レンダラー
     this.renderer = new THREE.WebGLRenderer({
@@ -306,7 +273,6 @@ export default class Movie {
       uTexAspect: { value: texAspect },
       uScrAspect: { value: this.w / this.h },
     };
-
 
     // マテリアル
     const movieMat = new THREE.ShaderMaterial({
@@ -374,10 +340,6 @@ export default class Movie {
     // 次のフレームを要求
     requestAnimationFrame(() => this.render());
 
-    // const easeOutQuad = (t, b, c, d) => {
-    //   return -c * (t /= d) * (t - 2) + b;
-    // };
-
     const sec = performance.now() / 1000;
 
     // ムービーのアニメーション
@@ -425,7 +387,6 @@ export default class Movie {
         duration: 15.5,
         value: 1.0,
         ease: 'expo.out',
-        // ease: 'none',
       });
     }
 
@@ -472,7 +433,6 @@ export default class Movie {
 
   onScroll = (y) => {
     this.scroll = y;
-    // console.log(this.scroll / this.h);
 
     this.movieUnifs.uScroll.value = this.scroll / this.h;
     this.welcomeUnifs.uScroll.value = this.scroll / this.h;
