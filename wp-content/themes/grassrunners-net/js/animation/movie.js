@@ -32,7 +32,7 @@ export default class Movie {
         min(uScrAspect / uTexAspect, 1.0),
         min(uTexAspect / uScrAspect, 1.0)
       );
-
+    
       vec2 textureUv = vec2(
         (vUv.x - 0.5) * ratio.x + 0.5,
         (vUv.y - 0.5) * ratio.y + 0.5
@@ -74,8 +74,8 @@ export default class Movie {
 
     void main() {
       vec2 ratio = vec2(
-        min(uScrAspect / uTexAspect, 1.0),
-        min(uTexAspect / uScrAspect, 1.0)
+        1.0,
+        uTexAspect / uScrAspect
       );
 
       vec2 textureUv = vec2(
@@ -119,8 +119,8 @@ export default class Movie {
     void main() {
 
       vec2 ratio = vec2(
-        min(uScrAspect / uTexAspect, 1.0),
-        min(uTexAspect / uScrAspect, 1.0)
+        1.0,
+        uTexAspect / uScrAspect
       );
 
       vec2 textureUv = vec2(
@@ -163,8 +163,8 @@ export default class Movie {
 
     void main() {
       vec2 ratio = vec2(
-        min(uScrAspect / uTexAspect, 1.0),
-        min(uTexAspect / uScrAspect, 1.0)
+        1.0,
+        uTexAspect / uScrAspect
       );
 
       vec2 textureUv = vec2(
@@ -202,14 +202,39 @@ export default class Movie {
 
     // テクスチャー
     const loader = new THREE.TextureLoader();
+    this.welcomeTexPc = loader.load('/wp-content/themes/grassrunners-net/img/welcome.png');
+    this.welcomeTexTb = loader.load('/wp-content/themes/grassrunners-net/img/welcome_tb.png');
+    this.welcomeTexSp = loader.load('/wp-content/themes/grassrunners-net/img/welcome_sp.png');
+    this.logoTexPc = loader.load('/wp-content/themes/grassrunners-net/img/logo.png');
+    this.logoTexTb = loader.load('/wp-content/themes/grassrunners-net/img/logo_tb.png');
+    this.logoTexSp = loader.load('/wp-content/themes/grassrunners-net/img/logo_sp.png');
+    this.guideTexPc = loader.load('/wp-content/themes/grassrunners-net/img/guide.png');
+    this.guideTexTb = loader.load('/wp-content/themes/grassrunners-net/img/guide_tb.png');
+    this.guideTexSp = loader.load('/wp-content/themes/grassrunners-net/img/guide_sp.png');
+    var welcomeTex;
+    var logoTex;
+    var guideTex;
+    var texAspect;
+    if (this.w > 1024) {
+      welcomeTex = this.welcomeTexPc;
+      logoTex = this.logoTexPc;
+      guideTex = this.guideTexPc;
+      texAspect = 1920.0 / 1080.0;
+    } else if (this.w > 600) {
+      welcomeTex = this.welcomeTexTb;
+      logoTex = this.logoTexTb;
+      guideTex = this.guideTexTb;
+      texAspect = 1024.0 / 1080.0;
+    } else {
+      welcomeTex = this.welcomeTexSp;
+      logoTex = this.logoTexSp;
+      guideTex = this.guideTexSp;
+      texAspect = 600.0 / 1080.0;
+    }
     const noiseTex = loader.load('/wp-content/themes/grassrunners-net/img/noise2.png');
     const noiseTex2 = loader.load('/wp-content/themes/grassrunners-net/img/noise6.jpg');
-    const video = document.getElementById('video');    
+    const video = document.getElementById('video');
     const movieTex = new THREE.VideoTexture(video);
-    const welcomeTex = loader.load('/wp-content/themes/grassrunners-net/img/welcome.png');
-    const logoTex = loader.load('/wp-content/themes/grassrunners-net/img/logo.png');
-    const guideTex = loader.load('/wp-content/themes/grassrunners-net/img/guide.png');
-    const texAspect = 1920.0 / 1080.0;
 
     // レンダラー
     this.renderer = new THREE.WebGLRenderer({
@@ -242,17 +267,7 @@ export default class Movie {
       uMovieTex:  { value: movieTex },
       uNoiseTex:  { value: noiseTex },
       uScroll:    { value: this.scroll / this.h },
-      uTexAspect: { value: texAspect },
-      uScrAspect: { value: this.w / this.h },
-    };
-
-    this.logoUnifs = {
-      uProgress:  { value: 0.0 },
-      uMixed:     { value: 0.0 },
-      uLogoTex:   { value: logoTex },
-      uNoiseTex:  { value: noiseTex2 },
-      uScroll:    { value: this.scroll / this.h },
-      uTexAspect: { value: texAspect },
+      uTexAspect: { value: 1920.0 / 1080.0 },
       uScrAspect: { value: this.w / this.h },
     };
 
@@ -263,6 +278,16 @@ export default class Movie {
       uScroll:     { value: this.scroll / this.h },
       uTexAspect:  { value: texAspect },
       uScrAspect:  { value: this.w / this.h },
+    };
+
+    this.logoUnifs = {
+      uProgress:  { value: 0.0 },
+      uMixed:     { value: 0.0 },
+      uLogoTex:   { value: logoTex },
+      uNoiseTex:  { value: noiseTex2 },
+      uScroll:    { value: this.scroll / this.h },
+      uTexAspect: { value: texAspect },
+      uScrAspect: { value: this.w / this.h },
     };
 
     this.guideUnifs = {
@@ -419,16 +444,51 @@ export default class Movie {
   }
 
   onWindowResize = () => {
-    this.w = window.innerWidth;
-    this.h = window.innerHeight
+    setTimeout(() => {
+      this.w = window.innerWidth;
+      this.h = window.innerHeight
 
-    this.movieUnifs.uScrAspect.value = this.w / this.h;
-    this.welcomeUnifs.uScrAspect.value = this.w / this.h;
-    this.logoUnifs.uScrAspect.value = this.w / this.h;
-    this.guideUnifs.uScrAspect.value = this.w / this.h;
+      const scrAspect = this.w / this.h;
 
-    this.renderer.setSize(this.w, this.h);
-    this.renderer.setPixelRatio(window.devicePixelRatio);
+      this.movieUnifs.uScrAspect.value = scrAspect;
+      this.welcomeUnifs.uScrAspect.value = scrAspect;
+      this.logoUnifs.uScrAspect.value = scrAspect;
+      this.guideUnifs.uScrAspect.value = scrAspect;
+
+      var welcomeTex;
+      var logoTex;
+      var guideTex;
+      var texAspect;
+  
+      if (this.w > 1024) {
+        welcomeTex = this.welcomeTexPc;
+        logoTex = this.logoTexPc;
+        guideTex = this.guideTexPc;
+        texAspect = 1920.0 / 1080.0;
+      } else if (this.w > 600) {
+        welcomeTex = this.welcomeTexTb;
+        logoTex = this.logoTexTb;
+        guideTex = this.guideTexTb;
+        texAspect = 1024.0 / 1080.0;
+      } else {
+        welcomeTex = this.welcomeTexSp;
+        logoTex = this.logoTexSp;
+        guideTex = this.guideTexSp;
+        texAspect = 600.0 / 1080.0;
+      }
+
+      this.welcomeUnifs.uWelcomeTex.value = welcomeTex;
+      this.logoUnifs.uLogoTex.value = logoTex;
+      this.guideUnifs.uGuideTex.value = guideTex;
+
+      this.welcomeUnifs.uTexAspect.value = texAspect;
+      this.logoUnifs.uTexAspect.value = texAspect;
+      this.guideUnifs.uTexAspect.value = texAspect;
+
+      this.renderer.setSize(this.w, this.h);
+      this.renderer.setPixelRatio(window.devicePixelRatio);
+
+    }, 500);
   }
 
   onScroll = (y) => {

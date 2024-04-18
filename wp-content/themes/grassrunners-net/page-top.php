@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <main id="main" class="loading">
+
   <!-- MV -->
   <section id="mv">
     <div id="movie">
@@ -8,6 +9,7 @@
       </video>
     </div>
   </section>
+
   <!-- ABOUT -->
   <section id="about">
     <div class="section-title">
@@ -25,6 +27,7 @@
         <p>私にはITのことしかできませんが、自分の技術や経験を活かせる機会が必ずあると信じています。多くの人が互いに思いやり、助け合える社会に一歩でも近付くことを目指して活動していきます！</p>
     </div>
   </section>
+
   <!-- WORKS -->
   <section id="works">
     <div class="section-title">
@@ -60,6 +63,7 @@
       ?>
     </ul>
   </section>
+
   <!-- PROVISION -->
   <section id="provision">
     <div class="section-title">
@@ -93,6 +97,7 @@
       </li>
     </ul>
   </section>
+
   <!-- LINKS -->
   <section id="links">
     <div class="section-title">
@@ -118,6 +123,7 @@
       </div>
     </div>
   </section>
+
   <!-- COMMON -->
   <div id="cursor"></div>
   <div id="stalker"></div>
