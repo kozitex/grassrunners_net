@@ -1,12 +1,8 @@
-version: '3'
-
 services:
   db:
     platform: linux/x86_64
-    # platform: linux/amd64
     container_name: database
     image: mysql:5.7
-    # image: mysql:latest
     volumes:
       - db_data:/var/lib/mysql
     restart: always
@@ -24,8 +20,6 @@ services:
     restart: always
     volumes:
       - "$PWD:/var/www/html"
-      # - "./:/var/www/html"
-      # - ./php.ini:/usr/local/etc/php/conf.d/php.ini
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_NAME: wp-db
