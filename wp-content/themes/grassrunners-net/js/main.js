@@ -10,10 +10,13 @@ var memoryPos;
 
 window.addEventListener('DOMContentLoaded', () => {
   video = document.getElementById('video');
-  video.addEventListener('loadeddata', () => {
-    setTimeout(init, 1000);
-  });
+  video.preload = 'metadata';
   video.load();
+  init();
+  video.addEventListener('loadeddata', () => {
+    video.play();
+    // setTimeout(init, 1000);
+  });
 });
 
 const init = () => {
@@ -25,7 +28,7 @@ const init = () => {
   thresholdTo   = getPositionY(links);
 
   // MVの準備
-  video.play();
+  // video.play();
   const main = document.getElementById('main');
   main.classList.remove('loading');
   const movie = new Movie();

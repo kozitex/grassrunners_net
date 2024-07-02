@@ -4,7 +4,7 @@
   <!-- MV -->
   <section id="mv">
     <div id="movie">
-      <video id="video" poster="<?php echo get_bloginfo('template_directory'); ?>/img/bg.png" muted loop>
+      <video id="video" poster="<?php echo get_bloginfo('template_directory'); ?>/img/bg.png" muted loop autoplay playsinline>
         <source src="<?php echo get_bloginfo('template_directory'); ?>/video/movie02.mov" type="video/mp4">
       </video>
     </div>

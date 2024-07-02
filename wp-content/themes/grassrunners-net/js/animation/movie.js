@@ -234,7 +234,11 @@ export default class Movie {
     const noiseTex = loader.load('/wp-content/themes/grassrunners-net/img/noise2.png');
     const noiseTex2 = loader.load('/wp-content/themes/grassrunners-net/img/noise6.jpg');
     const video = document.getElementById('video');
-    const movieTex = new THREE.VideoTexture(video);
+    // video.preload = 'metadata';
+    // video.load();
+    // video.play();
+    this.movieTex = new THREE.VideoTexture(video);
+    // this.movieTex.needsUpdate = true;
 
     // レンダラー
     this.renderer = new THREE.WebGLRenderer({
@@ -264,7 +268,7 @@ export default class Movie {
     this.movieUnifs = {
       uMixed:     { value: 0.0 },
       uProgress:  { value: 0.0 },
-      uMovieTex:  { value: movieTex },
+      uMovieTex:  { value: this.movieTex },
       uNoiseTex:  { value: noiseTex },
       uScroll:    { value: this.scroll / this.h },
       uTexAspect: { value: 1920.0 / 1080.0 },
@@ -357,6 +361,8 @@ export default class Movie {
     this.scene.add(this.logoMesh);
     this.scene.add(this.guideMesh);
 
+    video.play();
+
     // 描画ループ開始
     this.render();
   }
@@ -364,6 +370,8 @@ export default class Movie {
   render = () => {
     // 次のフレームを要求
     requestAnimationFrame(() => this.render());
+
+    // this.movieTex.needsUpdate = true;
 
     const sec = performance.now() / 1000;
 
