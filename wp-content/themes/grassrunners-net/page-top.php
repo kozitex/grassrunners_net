@@ -54,7 +54,7 @@
               $url = get_field('sample-image-img');
             }
       ?>
-      <li data-cli="<?php the_field('client-name'); ?>" data-img="<?php the_post_thumbnail_url(); ?>" data-mov="<?php echo $url; ?>">
+      <li data-cli="<?php the_field('client-name'); ?>" data-img="<?php the_post_thumbnail_url(); ?>" data-mov="<?php echo $url; ?>" data-url="<?php the_field('client-url'); ?>">
         <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
       </li>
       <?php

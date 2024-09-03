@@ -38,6 +38,15 @@
   <!-- JSを読み込み -->
   <script type="module" src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
   <?php wp_head(); ?>
+  <link rel="preload" href="https://i.gyazo.com/c0446e04a8d0880f7cef974bdee77447.gif" as="image">
+  <link rel="preload" href="https://i.gyazo.com/d3f280b46ec1c3712bf8a6f1bd481afd.gif" as="image">
+  <link rel="preload" href="https://i.gyazo.com/b6bce0b64cdd03ddca9b16043f40373c.gif" as="image">
+  <link rel="preload" href="https://i.gyazo.com/7522ac334b640a9ca8e90fad14214062.gif" as="image">
+  <link rel="preload" href="https://i.gyazo.com/da82938b4aaf844ab7afaac392fa0af6.gif" as="image">
+  <link rel="preload" href="https://i.gyazo.com/359e204e7f4562a7938d3babf12f4b1d.gif" as="image">
+  <link rel="preload" href="https://i.gyazo.com/54c199c7107d58953ee575adb3159d68.gif" as="image">
+  <link rel="preload" href="https://i.gyazo.com/958b2f5b57cb0c36a955e1467d77c9eb.gif" as="image">
+  <link rel="preload" href="https://i.gyazo.com/44bca660dc1455edbc6bafb9aa988634.gif" as="image">
 </head>
 
 <body <?php body_class(); ?>>

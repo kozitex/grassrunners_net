@@ -49,13 +49,17 @@ const init = () => {
   const modalImg = document.getElementById('modal-img');
   const modalTitle = document.getElementById('modal-title');
   const body = document.getElementsByTagName('body')[0];
-  const adjTop = -38;
+  const adjTop = - 38;
   Array.from(works).forEach((work) => {
     const workImg = work.getElementsByTagName('img')[0];
     workImg.addEventListener('click', () => {
       body.classList.add('fixed');
       modalImg.src = work.dataset.img;
-      modalTitle.textContent = work.dataset.cli;
+      if (work.dataset.url) {
+        modalTitle.innerHTML = `<a href="${work.dataset.url}" target="_blank">${work.dataset.cli}</a>`;
+      } else {
+        modalTitle.textContent = work.dataset.cli;
+      }
       memoryPos = work.getBoundingClientRect();
       modalWrap.style.top = memoryPos.top + adjTop + 'px';
       modalWrap.style.left = memoryPos.left + 'px';
