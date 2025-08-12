@@ -8,31 +8,40 @@ var thresholdTo;
 var video;
 var memoryPos;
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', async () => {
+  // setTimeout(init, 2000);
   video = document.getElementById('video');
   video.preload = 'metadata';
   video.load();
-  init();
-  video.addEventListener('loadeddata', () => {
+  video.addEventListener('loadeddata', async () => {
+    setTimeout(async () => await init(), 1000);
+    // await init();
     video.play();
-    // setTimeout(init, 1000);
   });
+
+  // window.addEventListener('scroll', () => {
+  //   const about = document.getElementById('about');
+  //   const aboutY = getPositionY(about);
+  //   const scrollY = window.scrollY;
+  //   about.style.backgroundColor = `rgba(255, 255, 255, ${scrollY / aboutY})`;
+  // })
 });
 
-const init = () => {
+
+const init = async () => {
 
   // カーソルの色を反転させる境界値を取得する
   var about = document.getElementById('about');
   var links = document.getElementById('links');
   thresholdFrom = getPositionY(about);
-  thresholdTo   = getPositionY(links);
+  thresholdTo = getPositionY(links);
 
   // MVの準備
   // video.play();
   const main = document.getElementById('main');
   main.classList.remove('loading');
   const movie = new Movie();
-  
+
   movie.onWindowResize;
 
   window.addEventListener('resize', movie.onWindowResize);
@@ -40,6 +49,7 @@ const init = () => {
   window.addEventListener('scroll', () => {
     movie.onScroll(window.scrollY);
     animateActive();
+    about.style.backgroundColor = `rgba(255, 255, 255, ${window.scrollY / thresholdFrom})`;
   });
 
   // WORKSの準備
@@ -99,7 +109,7 @@ const init = () => {
   });
 
   // 読み込み時に実行
-	animateActive();
+  animateActive();
 
   // マウスが動くたびに実行
   window.addEventListener('mousemove', (e) => {
@@ -123,7 +133,7 @@ const invertCursorColor = (pageY) => {
 // 要素のY座標を取得する
 const getPositionY = (element) => {
   const clientRect = element.getBoundingClientRect();
-  return window.scrollY + clientRect.top ;
+  return window.scrollY + clientRect.top;
 }
 
 // マウスの動きに合わせてカーソル要素を動かす
@@ -153,10 +163,10 @@ const animateActive = () => {
   var scrollAmt = window.scrollY;
   var winHeight = window.innerHeight;
 
-  for (var $i = 0;$i < element.length;$i++) {
+  for (var $i = 0; $i < element.length; $i++) {
     var elemClientRect = element[$i].getBoundingClientRect();
     var elemY = scrollAmt + elemClientRect.top;
-    if ( scrollAmt + winHeight - activeTime > elemY ) {
+    if (scrollAmt + winHeight - activeTime > elemY) {
       element[$i].classList.add('active');
     }
   }
